@@ -12,10 +12,13 @@ function page() {
   return (
     <section className={`w-full ${GLOBAL_X_PADDING} py-5`}>
       <PageIntroBanner src="/gallery.jpg" text="BLOGS" />
-      <div className="w-full flex items-center justify-center my-10">
+      {/* <div className="w-full flex items-center justify-center my-10">
         <SearchInput />
-      </div>
-      <ul className="w-full grid grid-cols-3 gap-6 sm:grid-cols-1">
+      </div> */}
+
+      <h2 className="w-full text-center pt-10 text-lg">Comming Soon..</h2>
+
+      {/* <ul className="w-full grid grid-cols-3 gap-6 sm:grid-cols-1">
         {blogs.map((item, index) => (
           <li
             key={index}
@@ -50,7 +53,7 @@ function page() {
             </div>
           </li>
         ))}
-      </ul>
+      </ul> */}
     </section>
   );
 }

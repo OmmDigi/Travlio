@@ -9,7 +9,9 @@ function page() {
     <div className={`${GLOBAL_X_PADDING} sm:mt-3`}>
       <PageIntroBanner src="/gallery.jpg" text="GALLERY"/>
 
-      <ul className="w-full grid grid-cols-3 gap-10 my-10 sm:grid-cols-2">
+      <h2 className="w-full text-center pt-10 text-lg">Comming Soon..</h2>
+
+      {/* <ul className="w-full grid grid-cols-3 gap-10 my-10 sm:grid-cols-2">
         {gallery.map((item, index) => (
           <li key={item} className="w-full cursor-pointer relative group/gallery overflow-hidden">
             <div className="bg-[#0000009a] translate-y-[100%] group-hover/gallery:translate-y-0 transition-all duration-500 h-full w-full absolute flex items-center justify-center">
@@ -23,7 +25,7 @@ function page() {
             />
           </li>
         ))}
-      </ul>
+      </ul> */}
     </div>
   );
 }
