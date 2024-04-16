@@ -22,7 +22,7 @@ function TourPackagesList({ datas }: IProps) {
           <Link href={`/tour/${item.ID}`}>
             <Image
               className="w-full h-52 hover:scale-105 transition-all duration-500"
-              src={item.IMG}
+              src={decodeURI(item.IMG)}
               alt="img"
               height={1200}
               width={1200}
