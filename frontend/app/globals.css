@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.toupPackagesShdow {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+@font-face {
+  font-family: "ArcaMajora";
+  font-style: normal;
+  font-weight: 800;
+  src: local(""),
+    url("/arca-majora-3-cufonfonts/ArcaMajora3-Bold.otf") format("otf");
+}
+
+.testimonialScroll::-webkit-scrollbar {
+  width: 2px; /* width of the entire scrollbar */
+}
+
+.testimonialScroll::-webkit-scrollbar-track {
+  background: #4d6093; /* color of the tracking area */
+}
+
+.testimonialScroll::-webkit-scrollbar-thumb {
+  background-color: #fab819; /* color of the scroll thumb */
+  /* border-radius: 1px; roundness of the scroll thumb */
+}
+
+.blogItemShdow {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.searchBoxShdow {
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+.banner .img {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  position: absolute;
+}
+
+.banner .img.active {
+  opacity: 1;
+}
+
+.servicesShdow {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.homeInfoSection{ 
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+.tourInfo h2, h3, h4 {
+ font-weight: bold;
+ font-size: larger;
+ padding: 12px 0 0 0;
+}
+
+.tourInfo ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.tourInfo li {
+  font-size: 14px;
+}
