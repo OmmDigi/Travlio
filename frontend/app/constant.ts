@@ -13,6 +13,6 @@ if(env == "development"){
 }
 else if (env == "production"){
  // do something
- BASE_URL = "https://travliofrontend.vercel.app";
+ BASE_URL = "https://travlio.in";
  API_BASE_URL = "https://travliobackend.vercel.app";
 }
