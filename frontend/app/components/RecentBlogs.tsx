@@ -32,11 +32,9 @@ function RecentBlogs() {
   ];
   return (
     <div className={`w-full flex flex-col gap-3 items-center ${GLOBAL_X_PADDING}`}>
-      <h2 className="font-bold text-xl text-center">Trending Tour Packages</h2>
+      <h2 className="font-bold text-xl text-center">Trending Blogs</h2>
       <p className="text-center text-gray-600">
-        Discover the best offers on trending international tour packages from
-        Kolkata with us. Your gateway to an unforgettable journey awaits, so
-        don&apos;t miss out!
+        Discover the best offers on trending Blogs
       </p>
       <Link href="" className="flex items-center gap-3 text-[#1764B4]">
         Read The Blog
