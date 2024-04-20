@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 import React from "react";
 import { IoSearchOutline } from "react-icons/io5";
@@ -12,6 +14,7 @@ function SearchInput({ className }: IProps) {
       className={`w-[30%] border-2 py-2 pl-4 flex items-center relative sm:w-[90%] ${className}`}
     >
       <input
+        
         className="outline-none text-sm flex-grow"
         type="text"
         placeholder="Search.."
