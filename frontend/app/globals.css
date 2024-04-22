@@ -32,7 +32,8 @@
 }
 
 .searchBoxShdow {
-  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
 
 .banner .img {
@@ -49,14 +50,17 @@
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
-.homeInfoSection{ 
-  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+.homeInfoSection {
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
 
-.tourInfo h2, h3, h4 {
- font-weight: bold;
- font-size: larger;
- padding: 12px 0 0 0;
+.tourInfo h2,
+h3,
+h4 {
+  font-weight: bold;
+  font-size: larger;
+  padding: 12px 0 0 0;
 }
 
 .tourInfo ul {
@@ -66,4 +70,48 @@
 
 .tourInfo li {
   font-size: 14px;
+}
+
+.inner:before,
+.inner:after {
+  position: absolute;
+  top: 0;
+  width: 250px;
+  height: 100%;
+  content: "";
+  z-index: 2;
+}
+
+.inner:before {
+  left: 0;
+  background: linear-gradient(
+    to left,
+    rgba(255, 255, 255, 0),
+    rgb(255, 255, 255)
+  );
+}
+
+.inner:after {
+  right: 0;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0),
+    rgb(255, 255, 255)
+  );
+}
+
+@media only screen and (max-width: 639px) {
+  .inner:before,
+  .inner:after {
+    width: 0px;
+  }
+}
+
+.testimonialBg {
+  background: rgb(232, 161, 15);
+  background: linear-gradient(
+    49deg,
+    rgba(232, 161, 15, 1) 44%,
+    rgba(249, 87, 198, 1) 97%
+  );
 }

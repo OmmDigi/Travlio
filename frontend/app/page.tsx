@@ -9,6 +9,8 @@ import RecentBlogs from "./components/RecentBlogs";
 import MoreAboutUs from "./components/MoreAboutUs";
 import CollapsibleMenu from "./components/CollapsibleMenu";
 import Service from "./components/Service";
+import NewCarousel from "./components/NewCarousel";
+import NewTestimonial from "./components/NewTestimonial/NewTestimonial";
 
 export default async function Home() {
   return (
@@ -16,31 +18,31 @@ export default async function Home() {
       <BannerImage />
       <HomeInfo />
       <div className="w-full">
-        <TourPackages
+        {/* <TourPackages
           tourType="Trending Tour"
           title="Trending Tour Packages"
-          subtitle="Discover the best offers on trending international tour packages from Kolkata with us. Your gateway to an unforgettable journey awaits, so don't miss out!"
+          subtitle="Discover the best offers on trending international tour packages from Kolkata with us."
           linktxt="View All Tour Packages"
           link="/tour-packages/all"
         />
         <TourPackages
           tourType="International Tour"
           title="International Tour Packages"
-          subtitle="Embark on global adventures with our international tour packages from Kolkata. Let us turn your international travel dreams into reality."
+          subtitle="Embark on global adventures with our international tour packages from Kolkata."
           linktxt="View All International Tour Packages"
           link="/tour-packages/international-tour"
         />
         <TourPackages
           tourType="Domestic Tour"
           title="Domestic Tour Packages"
-          subtitle="Embark on seamless adventures with our diverse array of domestic tour packages from Kolkata. Let us be your ultimate guide to crafting unforgettable experiences! With our comprehensive selection and expert guidance, your journey promises to be nothing short of extraordinary."
+          subtitle="Embark on seamless adventures with our diverse array of domestic tour packages from Kolkata."
           linktxt="View All Domestic Tour Packages"
           link="tour-packages/domestic-tour"
-        />
-        <div className={`${GLOBAL_X_PADDING}`}>
-          <h2 className="font-semibold text-xl text-gray-700 w-full text-center">Why Travlio ?</h2>
+        /> */}
+        <div className={`${GLOBAL_X_PADDING} pt-10`}>
+          <h2 className="font-semibold text-2xl text-gray-700 w-full text-center leading-none">WHY TRAVLIO</h2>
           <div
-            className={`w-full grid grid-cols-4 mt-9 gap-7 pb-20 sm:mt-0 sm:grid-cols-2 sm:gap-3`}
+            className={`w-full grid grid-cols-4 mt-0 gap-7 pb-20 sm:mt-0 sm:grid-cols-2 sm:gap-3`}
           >
             <Service
               bgColor="#4E76B1"
@@ -69,7 +71,8 @@ export default async function Home() {
           </div>
         </div>
         <Deal />
-        <Testimonial />
+        {/* <Testimonial /> */}
+        <NewTestimonial />
         <RecentBlogs />
         <div className="w-full mb-10">
           <CollapsibleMenu heading="More About Us">

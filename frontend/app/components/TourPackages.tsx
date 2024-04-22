@@ -28,7 +28,7 @@ async function TourPackages(props: IProps) {
     <div
       className={`w-full flex flex-col gap-3 mt-10 items-center ${GLOBAL_X_PADDING}`}
     >
-      <h2 className="font-bold text-xl text-center">{props.title}</h2>
+      <h2 className="font-bold text-2xl text-center">{props.title.toUpperCase()}</h2>
       <p className="text-center text-gray-600">{props.subtitle}</p>
       <Link
         href={props.link}

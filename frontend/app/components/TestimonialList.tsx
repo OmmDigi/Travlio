@@ -23,7 +23,7 @@ function TestimonialList({info} : IProps) {
     );
 
   return (
-    <Carousel datasLength={testimonials.length}>
+    <Carousel datasLength={info.length}>
       {info.map((item, index) => (
         <li
           key={index}

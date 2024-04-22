@@ -62,8 +62,10 @@ function TourForm() {
       onSubmit={onFormSubmit}
       className="text-gray-600 font-medium w-full my-16 sm:my-0 space-y-5"
     >
+      <div className="w-full flex items-center justify-center flex-col">
       <h2 className="font-semibold tracking-widest">LEAVE US YOUR INFO</h2>
       <span className="text-xs">and we will get back to you!!</span>
+      </div>
       <input
         required
         name="name"

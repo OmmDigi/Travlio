@@ -31,12 +31,10 @@ function Testimonial() {
     }
   ]
   return (
-    <div className={`w-full ${GLOBAL_X_PADDING} py-10 sm:mt-24`}>
-      <h2 className="font-bold text-xl text-center">Customer Reviews</h2>
+    <div className={`w-full ${GLOBAL_X_PADDING} py-10 mt-10 sm:mt-24`}>
+      <h2 className="font-bold text-2xl text-center">CUSTOMER REVIEWS</h2>
       <p className="text-center text-gray-600 mt-1 pb-10">
-        Discover why we&apos;re Kolkata&apos;s top-rated travel agency! With exceptional
-        customer service and glowing reviews, we consistently ensure the
-        satisfaction of you and your loved ones, every time.
+        Discover why we&apos;re Kolkata&apos;s top-rated travel agency!
       </p>
       <TestimonialList info={testimonialData}/>
     </div>

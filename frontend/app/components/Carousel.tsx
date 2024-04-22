@@ -17,6 +17,8 @@ const Carousel = ({ children, datasLength, className }: IProps) => {
   const [intervalId, setIntervalId] = useState<NodeJS.Timeout>();
   const scrollRef = useRef<HTMLUListElement | null>(null);
 
+  let numberToScroll = 1167;
+
   let scrollCurrentPosition = 0;
   let isAtEnd = false;
 
@@ -39,7 +41,7 @@ const Carousel = ({ children, datasLength, className }: IProps) => {
   };
 
   const goToNextSlide = () => {
-    const positionToScroll = scrollCurrentPosition + 400;
+    const positionToScroll = scrollCurrentPosition + numberToScroll;
     if (isAtEnd) return false;
 
     scroll(positionToScroll, scrollRef);
@@ -48,7 +50,7 @@ const Carousel = ({ children, datasLength, className }: IProps) => {
   };
 
   const goPrevSlide = () => {
-    const positionToScroll = scrollCurrentPosition - 400;
+    const positionToScroll = scrollCurrentPosition - numberToScroll;
     if (positionToScroll < 0) return false;
 
     scroll(positionToScroll, scrollRef);
@@ -78,6 +80,13 @@ const Carousel = ({ children, datasLength, className }: IProps) => {
     //   const isSuccess = goToNextSlide();
     //   if(!isSuccess) goPrevSlide();
     // }, 3000)
+
+    // alert(window.innerWidth);
+
+    //this is for mobile devices
+    if(window.innerWidth <= 639) {
+      numberToScroll = 365;
+    }
   }, []);
 
   const onPrevBtnClicked = () => {
@@ -101,7 +110,7 @@ const Carousel = ({ children, datasLength, className }: IProps) => {
       <div className="overflow-hidden bg-transparent relative w-full">
         <ul
           ref={scrollRef}
-          className="flex bg-transparent transition-transform duration-300 ease-in-out overflow-x-scroll gap-12 flex-nowrap"
+          className="flex bg-transparent transition-transform duration-300 ease-in-out overflow-x-scroll gap-6 flex-nowrap"
           style={{
             scrollbarWidth: "none",
             WebkitOverflowScrolling: "touch",

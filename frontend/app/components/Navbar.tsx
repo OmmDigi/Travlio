@@ -21,7 +21,7 @@ function Navbar() {
         className={`${GLOBAL_X_PADDING} w-full py-3 flex items-center justify-between sm:relative`}
       >
         <Link href="/">
-          <Image src="/logo.webp" alt="logo" height={170} width={170} />
+          <Image src="/Travlio-new-logo.webp" alt="logo" height={170} width={170} />
         </Link>
 
         <nav className={`flex items-center sm:w-44 gap-10 sm:absolute sm:flex-col ${isNavMenuVisiable ? "sm:flex" : "sm:hidden"} sm:right-0 sm:gap-3 sm:bg-white sm:top-16 z-10 sm:items-start sm:py-2 sm:px-4 sm:border sm:shadow`}>

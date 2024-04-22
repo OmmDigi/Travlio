@@ -16,3 +16,5 @@ else if (env == "production"){
  BASE_URL = "https://travlio.in";
  API_BASE_URL = "https://travliobackend.vercel.app";
 }
+
+export const MOBILE_VIEW_WIDTH = 639;
