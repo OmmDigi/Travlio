@@ -17,7 +17,7 @@ function HomeInfo() {
             The Best Travel Agency in Kolkata
           </p>
           <p className="w-full text-justify text-[#202020] font-light text-[16px] pt-8 sm:text-[14px] sm:text-left">
-            Explore the world hassle-free with Travlio, Kolkata's best travel
+            Explore the world hassle-free with Travlio, Kolkata&apos;s best travel
             agent. Book now and make your travel dreams a reality. Our services
             include:
           </p>

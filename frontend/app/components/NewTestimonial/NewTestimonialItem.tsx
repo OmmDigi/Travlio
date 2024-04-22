@@ -20,7 +20,7 @@ function NewTestimonialItem({ info }: IProps) {
   return (
     <Carousel datasLength={info.length}>
       {info.map((item) => (
-        <li className="relative flex items-center flex-col">
+        <li key={item.name} className="relative flex items-center flex-col">
           <div className="size-20 shadow-lg rounded-full translate-y-10 bg-white flex items-center justify-center">
             <ImQuotesLeft size={30} color="#000" />
           </div>

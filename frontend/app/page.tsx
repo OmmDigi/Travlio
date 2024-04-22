@@ -18,7 +18,7 @@ export default async function Home() {
       <BannerImage />
       <HomeInfo />
       <div className="w-full">
-        {/* <TourPackages
+        <TourPackages
           tourType="Trending Tour"
           title="Trending Tour Packages"
           subtitle="Discover the best offers on trending international tour packages from Kolkata with us."
@@ -38,7 +38,7 @@ export default async function Home() {
           subtitle="Embark on seamless adventures with our diverse array of domestic tour packages from Kolkata."
           linktxt="View All Domestic Tour Packages"
           link="tour-packages/domestic-tour"
-        /> */}
+        />
         <div className={`${GLOBAL_X_PADDING} pt-10`}>
           <h2 className="font-semibold text-2xl text-gray-700 w-full text-center leading-none">WHY TRAVLIO</h2>
           <div
