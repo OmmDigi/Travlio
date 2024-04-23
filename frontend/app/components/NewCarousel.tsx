@@ -50,8 +50,8 @@ function NewCarousel({ children, dataLength, datas }: IProps) {
         ref={swiperRef}
         spaceBetween={50}
         slidesPerView={sliderPreviewView}
-        onSlideChange={() => console.log("slide change")}
-        onSwiper={(swiper: any) => console.log(swiper)}
+        // onSlideChange={() => console.log("slide change")}
+        // onSwiper={(swiper: any) => console.log(swiper)}
         centeredSlides={true}
         effect={"coverflow"}
         // grabCursor={true}

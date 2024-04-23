@@ -1,57 +1,246 @@
 import Image from "next/image";
 import React from "react";
-import { GLOBAL_X_PADDING } from "../constant";
+import { BASE_URL, GLOBAL_X_PADDING } from "../constant";
 import PageIntroBanner from "../components/PageIntroBanner";
+import { IoMdAirplane } from "react-icons/io";
+import AboutServiceItem from "./AboutServiceItem";
+import { MdAirportShuttle } from "react-icons/md";
+import { SiAirbyte } from "react-icons/si";
+import { SiBoost } from "react-icons/si";
+import { VscDebugBreakpointLog } from "react-icons/vsc";
+import ContactMenuBtn from "../components/ContactMenuBtn";
+import { FaRegAddressCard } from "react-icons/fa";
+import { MdSupportAgent } from "react-icons/md";
+import { MdOutlineEmojiTransportation } from "react-icons/md";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "About Us | Travlio",
+  description:
+    "Travlio is an authorized gold partner of Thomas Cook India. Learn more about us, our services, and our top destinations.",
+  alternates: {
+    canonical: BASE_URL + "/about-us",
+  },
+};
 
 function page() {
-  return (
-    <section className={`${GLOBAL_X_PADDING}`}>
-      <PageIntroBanner src="/About-us.jpg" text="ABOUT US" />
-      <div className={`w-full grid grid-cols-2 py-10 sm:grid-cols-1 sm:gap-10`}>
-        <Image
-          className="w-[35rem] h-full"
-          src="/thumbnail_thomas-cook-chinarpark.jpg"
-          alt="thumbnail_thomas-cook-chinarpark"
-          height={720}
-          width={1280}
-        />
+  const topDestinationsList = [
+    {
+      image: "/himachal.webp",
+    },
+    {
+      title: "EUROPE",
+      subtitle:
+        "Unravel Europe's timeless allure. From the romantic streets of Paris to the historic sites of Rome, each destination is a tapestry of culture and beauty. Explore diverse landscapes, savor exquisite cuisines, and immerse yourself in centuries of history. Embark on a journey that promises endless discovery and enchantment.",
+    },
 
-        <div>
-          <h2 className="text-2xl font-bold">
-            ABOUT TRAVLIO(Partner of ThomasCook)
-          </h2>
-          <p className="mt-4 text-slate-500 text-justify font-[500]">
-            We as a travel agency are a part of your tour planning as we offer
-            you packages that are reliable, safe, and affordable, making your
-            experience more memorable with us. Our services for diverse tour
-            packages with exciting offers have made us the best travel agency in
-            Kolkata. As we provide International tour packages from Kolkata,
-            guiding you through the plans makes your tour more exciting. Our
-            services and packages for international or domestic tours make our
-            offers affordable while giving you the best consultancy. Our tour
-            packages make you more inclined towards the customization offers,
-            being more curious about us. As our packages can be customized with
-            your preferences, we provide offers for lodging and food in our
-            family tour packages from Kolkata. We also offer Europe tour
-            packages from Kolkata in affordable ranges while giving you an
-            exotic experience in foreign lands. <br />
-            <br /> We offer cheap international tour packages from Kolkata that
-            help you explore your dream destinations with ease. As we are the
-            best travel agency in Kolkata, collaborated with Thomas Cook India,
-            the offers and exclusive tour packages provide you with a clear
-            conception about us, while making your tours budget-friendly. Being
-            a travel agency in Kolkata, our packages provide extensive rewards,
-            allowing you to explore exotic international destinations like the
-            Northern Lights. With our tour travel agency, you gain the chance to
-            explore world destinations with better strategic planning while
-            keeping your budget safe. Our tour packages give you the best ideas
-            for both, international and domestic destinations while making it
-            affordable and safe for you. With our travel agency, the approach of
-            destination planning for long tours becomes more susceptible since
-            we focus on every possible aspect that needs to be evaluated with
-            proper planning for you.{" "}
+    {
+      image: "/greece.webp",
+    },
+
+    {
+      title: "HIMACHAL",
+      subtitle:
+        "Discover the enchanting beauty of Himachal Pradesh, India's northern gem. Himachal Tourism offers a haven for nature lovers, adventure seekers, and spiritual wanderers alike. From the majestic peaks of the Himalayas to lush valleys and serene lakes, explore a land brimming with vibrant culture, warm hospitality, and unforgettable experiences.",
+    },
+
+    {
+      image: "/europe.webp",
+    },
+
+    {
+      title: "GREECE",
+      subtitle:
+        "Experience the allure of Greece, where ancient history meets breathtaking landscapes and vibrant culture. Explore iconic sites like the Acropolis in Athens, relax on picturesque islands like Santorini and Mykonos, and indulge in delicious Mediterranean cuisine. With sun-soaked beaches and historic ruins, Greece promises an unforgettable adventure.",
+    },
+  ];
+
+  return (
+    <section className="w-full relative">
+      <Image
+        className="w-full"
+        src="/about-banner.webp"
+        alt=""
+        height={1200}
+        width={1200}
+      />
+      <div className="w-full absolute top-0 flex items-center justify-start h-[550px] flex-col pt-60">
+        <h2 className="font-bebas text-[90px] tracking-[15px] text-gray-50">
+          TRAVLIO
+        </h2>
+        <p className="text-white w-[650px] text-center text-lg">
+          Best Travel Agency in Kolkata for your domestic & International tours.
+        </p>
+        {/* <button className="w-40 py-2 border-2 border-white font-bebas text-white mt-10 tracking-widest hover:bg-white text-sm hover:text-black transition-all duration-500 pt-2">
+          CONTACT US
+        </button> */}
+        <ContactMenuBtn className="font-normal w-40 py-2 border-2 border-white font-bebas text-white mt-10 tracking-widest hover:bg-white text-sm hover:text-black transition-all duration-500 pt-2" />
+
+        <div className="w-full flex items-center justify-start flex-col mt-44">
+          <h1 className="source-sans-3-600 text-gray-800 text-3xl">ABOUT US</h1>
+          <p className="w-[850px] text-center text-sm source-sans-3-400 mt-4">
+            Explore the world with Travlio (Authorised Gold Partner of Thomas
+            Cook Kolkata). We specialize in crafting personalized journeys that
+            exceed your expectations. Let us be your guide to unforgettable
+            adventures.
           </p>
+
+          <ul className="grid grid-cols-2 w-[70%] gap-8 py-10">
+            <AboutServiceItem
+              subtext="Our international and domestic tours offer unforgettable experiences for every traveler."
+              text="International & Domestic Tours"
+              itemsDirection="right"
+              icon={
+                <div className="size-14 flex items-center justify-center bg-cyan-600">
+                  <IoMdAirplane size={28} color="#fff" />
+                </div>
+              }
+            />
+
+            <AboutServiceItem
+              text="Forex Card Services"
+              subtext="Experience hassle-free spending abroad with our convenient Forex card services."
+              itemsDirection="left"
+              icon={
+                <div className="size-14 flex items-center justify-center bg-green-600">
+                  <FaRegAddressCard size={28} color="#fff" />
+                </div>
+              }
+            />
+
+            <AboutServiceItem
+              text="24/7 Support"
+              subtext="Round-the-clock assistance ensures peace of mind at every step of your journey."
+              itemsDirection="right"
+              icon={
+                <div className="size-14 flex items-center justify-center bg-blue-600">
+                  <MdSupportAgent size={28} color="#fff" />
+                </div>
+              }
+            />
+            <AboutServiceItem
+              text="Seamless Logistics"
+              subtext="Coordinated transportation, accommodations, and activities for a stress-free travel experience."
+              itemsDirection="left"
+              icon={
+                <div className="size-14 flex items-center justify-center bg-red-600">
+                  <MdOutlineEmojiTransportation size={28} color="#fff" />
+                </div>
+              }
+            />
+          </ul>
         </div>
+      </div>
+      <div className="w-full flex items-center justify-start flex-col mt-36">
+        <h2 className="source-sans-3-600 text-gray-800 text-lg tracking-wider">
+          TOP DESTINATIONS
+        </h2>
+        <ul className="w-[70%] grid grid-cols-3 mt-9">
+          {topDestinationsList.map((item, index) => (
+            <li key={index} className="w-full h-64">
+              {item.image ? (
+                <Image
+                  className="w-full h-full"
+                  src={item.image}
+                  alt=""
+                  height={1024}
+                  width={1024}
+                />
+              ) : null}
+
+              {!item.image ? (
+                <div className="w-full flex items-center justify-start flex-col p-10">
+                  <h2 className="text-center source-sans-3-700 text-gray-800 text-[15px]">
+                    {item.title}
+                  </h2>
+                  <p className="text-center text-xs pt-1">{item.subtitle}</p>
+                </div>
+              ) : null}
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      <div className="grid grid-cols-2 mt-7 aboutBottomBanner">
+        <div className="p-10 px-20">
+          <h2 className="font-semibold text-2xl tracking-widest">
+            WHY CHOOSE US ?
+          </h2>
+          <div className="w-full source-sans-3-200 text-justify mt-3 bg-[#0000008f] p-5">
+            <p className="source-sans-3-200 text-white">
+              With a passion for crafting bespoke experiences, we tailor each
+              journey to your unique desires. Our expert advisors provide
+              insider insights and seamless logistics, ensuring every moment
+              exceeds expectations. From serene escapes to adrenaline-fueled
+              adventures, we specialize in curating unforgettable memories.
+            </p>
+            <p className="mt-3 source-sans-3-200 text-white">
+              With 24/7 support and a commitment to excellence, your peace of
+              mind is our priority. Choose us for unrivaled expertise,
+              personalized service, and a world of possibilities waiting to be
+              explored. Let us be your guide as you embark on the journey of a
+              lifetime, leaving no dream unfulfilled.
+            </p>
+
+            {/* <p className="mt-4 source-sans-3-600 tracking-widest text-gray-800">
+              POINTS
+            </p>
+            <p className="text-justify source-sans-3-200 mt-2">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio eos
+              perspiciatis reprehenderit placeat neque vitae accusamus nihil.
+              Sapiente accusamus minus cum fugit veritatis voluptates, nobis
+              illum distinctio excepturi porro in.
+            </p>
+
+            <ul className="text-sm space-y-2 mt-3">
+              <li className="flex items-center gap-1">
+                <VscDebugBreakpointLog />
+                <span>
+                  This is point one do you know that what is the point ?
+                </span>
+              </li>
+              <li className="flex items-center gap-1">
+                <VscDebugBreakpointLog />
+                <span>
+                  This is point one do you know that what is the point ?
+                </span>
+              </li>
+              <li className="flex items-center gap-1">
+                <VscDebugBreakpointLog />
+                <span>
+                  This is point one do you know that what is the point ?
+                </span>
+              </li>
+            </ul> */}
+          </div>
+        </div>
+        <form className="w-full p-10 px-40 mt-5 space-y-3">
+          <input
+            className="px-2 bg-slate-100 outline-none border-2 py-[0.45rem] text-gray-700 text-sm w-full"
+            type="text"
+            placeholder="Full Name"
+          />
+          <input
+            className="px-2 bg-slate-100 outline-none border py-[0.45rem] text-gray-700 text-sm w-full"
+            type="text"
+            placeholder="Phone Number"
+          />
+          <input
+            className="px-2 bg-slate-100 outline-none border-2 py-[0.45rem] text-gray-700 text-sm w-full"
+            type="text"
+            placeholder="Email Address"
+          />
+
+          <textarea
+            rows={5}
+            className="px-2 bg-slate-100 outline-none border-2 py-[0.45rem] text-gray-700 text-sm w-full"
+            placeholder="Email Address"
+          ></textarea>
+
+          <button className="w-full text-sm source-sans-3-400 tracking-widest border-2 bg-cyan-500 text-white font py-[0.45rem]">
+            SUBMIT
+          </button>
+        </form>
       </div>
     </section>
   );

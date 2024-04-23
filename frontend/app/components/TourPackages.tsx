@@ -21,8 +21,7 @@ async function TourPackages(props: IProps) {
   const response = await fetch(
     URL
   );
-  const tours = await response.json() as IResponse<ITours[]>;
-
+  const result = await response.json() as IResponse<{tours : ITours[], total_page : number}>;
 
   return (
     <div
@@ -38,7 +37,7 @@ async function TourPackages(props: IProps) {
         <FaLongArrowAltRight size={20} />
       </Link>
 
-      <TourPackagesList datas={tours.data}/>
+      <TourPackagesList datas={result.data.tours}/>
     </div>
   );
 }

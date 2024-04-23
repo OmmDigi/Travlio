@@ -11,6 +11,7 @@ import CollapsibleMenu from "./components/CollapsibleMenu";
 import Service from "./components/Service";
 import NewCarousel from "./components/NewCarousel";
 import NewTestimonial from "./components/NewTestimonial/NewTestimonial";
+import Blogs from "./components/blogs/Blogs";
 
 export default async function Home() {
   return (
@@ -73,7 +74,8 @@ export default async function Home() {
         <Deal />
         {/* <Testimonial /> */}
         <NewTestimonial />
-        <RecentBlogs />
+        {/* <RecentBlogs /> */}
+        <Blogs />
         <div className="w-full mb-10">
           <CollapsibleMenu heading="More About Us">
             <p>

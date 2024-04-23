@@ -21,6 +21,8 @@ async function page({ params, searchParams }: IProps) {
   const catname = params.slugs?.[0] ? generateFirstLetterUpper(decodeURI(params.slugs[0])) : undefined;
   const current_page = !params.slugs?.[1] ? undefined : decodeURI(params.slugs[1]);
 
+  console.log(searchParams.search)
+
   let URL = `${API_BASE_URL}/tours?catname=${catname}&page=${current_page}`;
 
   if(!current_page) {
@@ -35,8 +37,13 @@ async function page({ params, searchParams }: IProps) {
     URL = `${API_BASE_URL}/tours?page=1`;
   }
 
+  if(searchParams.search) {
+    URL = `${API_BASE_URL}/search?q=${searchParams.search}`
+  }
+
   const response = await fetch(URL);
   const tours = await response.json() as IResponse<{tours : ITours[], total_page : number}>;
+
 
   return (
     <div>

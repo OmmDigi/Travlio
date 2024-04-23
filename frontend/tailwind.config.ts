@@ -16,7 +16,10 @@ const config: Config = {
 
       fontFamily: {
         arca: ['ArcaMajora'],
-        montserrat : ["Montserrat", "sans-serif"]
+        montserrat : ["Montserrat", "sans-serif"],
+        sourcesanspro : ["Source Sans Pro", "sans-serif"],
+        bebasneueregular : ["Bebas Neue", "sans-serif"],
+        bebas : ["Bebas", "sans-serif"]
       },
     },
 

@@ -7,6 +7,8 @@ const { sendMail } = require("./utils/sendMail");
 const cors = require("cors");
 const multer = require("multer");
 const { upload } = require("./multer/multer");
+const cheerio = require("cheerio");
+const request = require("request");
 
 const totalPagesCache = new Map();
 
@@ -56,7 +58,12 @@ app.get("/query", async (req, res) => {
     `SELECT * FROM ${table_name} WHERE TOUR_TYPE = '${tour_type}' LIMIT 12 OFFSET 0`
   );
 
-  res.status(200).json(new ApiResponse(200, "Success", result));
+  res.status(200).json(
+    new ApiResponse(200, "Success", {
+      tours: result,
+      total_page: 1,
+    })
+  );
 });
 
 app.get("/search", async (req, res) => {
@@ -78,17 +85,24 @@ app.get("/search", async (req, res) => {
   // const totalPages = Math.ceil(totalDocuments[0]?.total_rows / limit);
   // const skip = (page - 1) * limit;
 
-  // sql = `SELECT * FROM tour WHERE tour.TITLE LIKE '${searchtxt}' LIMIT 10 OFFSET 0`;
+  // sql = `SELECT * FROM tour WHERE tour.TITLE LIKE '${searchtxt}'`;
 
   const result = await query(sql, [`%${searchtxt}%`]);
-  res.status(200).json(new ApiResponse(200, "Success", result));
+  // const result = await query(sql, []);
+  res.status(200).json(
+    new ApiResponse(200, "Success", {
+      tours: result,
+      total_page: 1,
+    })
+  );
 });
 
 app.get("/tour/:ID", async (req, res) => {
   const tour_id = req.params.ID;
   const table_name = req.query.tableName || "tourinfo";
 
-  if(!tour_id) return res.status(400).json(new ApiResponse(400, "ID is required"));
+  if (!tour_id)
+    return res.status(400).json(new ApiResponse(400, "ID is required"));
 
   let sql = `SELECT * FROM ${table_name} WHERE ${table_name}.ID = ?`;
 
@@ -110,14 +124,16 @@ app.post("/sendemail", upload.single("reward-image"), async (req, res) => {
   if (!type || type === "tour") {
     try {
       await sendMail(type, {
-        name : req.body.name,
+        name: req.body.name,
         destination: req.body.destination,
         duration: req.body.duration,
         number: req.body.number,
         toEmail: req.body.email,
       });
     } catch (error) {
-      return res.status(400).json(new ApiResponse(200, "Something went wrong while sending email"));
+      return res
+        .status(400)
+        .json(new ApiResponse(200, "Something went wrong while sending email"));
     }
   }
 
@@ -130,7 +146,9 @@ app.post("/sendemail", upload.single("reward-image"), async (req, res) => {
         toEmail: req.body.email,
       });
     } catch (error) {
-      return res.status(400).json(new ApiResponse(200, "Something went wrong while sending email"));
+      return res
+        .status(400)
+        .json(new ApiResponse(200, "Something went wrong while sending email"));
     }
   }
 
@@ -155,11 +173,17 @@ app.post("/sendemail", upload.single("reward-image"), async (req, res) => {
         enquiry: req.body.enquiry,
       });
     } catch (error) {
-      return res.status(400).json(new ApiResponse(200, "Something went wrong while sending email"));
+      return res
+        .status(400)
+        .json(new ApiResponse(200, "Something went wrong while sending email"));
     }
   }
 
   res.status(200).json(new ApiResponse(200, "Email Has Sended Successfully"));
+});
+
+app.get("/usd", (req, res) => {
+  "https://www.google.com/search?q=1+usd+in+rupees";
 });
 
 // app.post("/upload", upload.single("reward-image"), (req, res) => {

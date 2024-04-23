@@ -15,10 +15,7 @@ interface IProps {
 
 function TourPackagesList({ datas }: IProps) {
   return (
-    // <ul className={`grid grid-cols-3 gap-10 py-10 sm:grid-cols-1`}>
-    // <div className="w-full">
-    // <Carousel className="py-5" datasLength={10}>
-    <NewCarousel dataLength = {datas.length} datas = {datas}>
+    <NewCarousel dataLength={datas.length} datas={datas}>
       {/* {datas.map((item, index) => (
         <SwiperSlide key={item.ID}>
           <li className="toupPackagesShdow min-w-[365px] min-h-[365px] sm:min-w-full border border-[#e1e1e1] cursor-pointer">
@@ -50,9 +47,6 @@ function TourPackagesList({ datas }: IProps) {
       ))} */}
       asdf
     </NewCarousel>
-    // </Carousel>
-    // </div>
-    // </ul>
   );
 }
 

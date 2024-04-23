@@ -14,6 +14,14 @@
     url("/arca-majora-3-cufonfonts/ArcaMajora3-Bold.otf") format("otf");
 }
 
+@font-face {
+  font-family: "Bebas";
+  font-style: normal;
+  font-weight: 900;
+  src: local(""),
+    url("../public/fonts//Bebas-Regular.otf") format("otf");
+}
+
 .testimonialScroll::-webkit-scrollbar {
   width: 2px; /* width of the entire scrollbar */
 }
@@ -76,7 +84,7 @@ h4 {
 .inner:after {
   position: absolute;
   top: 0;
-  width: 250px;
+  width: 110px;
   height: 100%;
   content: "";
   z-index: 2;
@@ -114,4 +122,72 @@ h4 {
     rgba(232, 161, 15, 1) 44%,
     rgba(249, 87, 198, 1) 97%
   );
+}
+
+.source-sans-3-200 {
+  font-family: "Source Sans 3", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.source-sans-3-300 {
+  font-family: "Source Sans 3", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.source-sans-3-400 {
+  font-family: "Source Sans 3", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.source-sans-3-500 {
+  font-family: "Source Sans 3", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.source-sans-3-600 {
+  font-family: "Source Sans 3", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.source-sans-3-700 {
+  font-family: "Source Sans 3", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.source-sans-3-800 {
+  font-family: "Source Sans 3", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.source-sans-3-900 {
+  font-family: "Source Sans 3", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.bebas-neue-regular {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.aboutBottomBanner {
+  background-image: url("/aboutBottomImage.webp");
+  background-position: center;
+  background-size: cover;
 }
