@@ -58,34 +58,34 @@ function page() {
   return (
     <section className="w-full relative">
       <Image
-        className="w-full"
+        className="w-full sm:h-[720px] sm:object-cover"
         src="/about-banner.webp"
         alt=""
         height={1200}
         width={1200}
       />
-      <div className="w-full absolute top-0 flex items-center justify-start h-[550px] flex-col pt-60">
-        <h2 className="font-bebas text-[90px] tracking-[15px] text-gray-50">
+      <div className="w-full absolute top-0 flex items-center justify-start h-[550px] flex-col pt-60 sm:pt-52">
+        <h2 className="font-bebas text-[90px] tracking-[15px] text-gray-50 sm:text-[50px] sm:tracking-[5px]">
           TRAVLIO
         </h2>
-        <p className="text-white w-[650px] text-center text-lg">
+        <p className="text-white w-[650px] text-center text-lg sm:text-sm sm:w-full">
           Best Travel Agency in Kolkata for your domestic & International tours.
         </p>
         {/* <button className="w-40 py-2 border-2 border-white font-bebas text-white mt-10 tracking-widest hover:bg-white text-sm hover:text-black transition-all duration-500 pt-2">
           CONTACT US
         </button> */}
-        <ContactMenuBtn className="font-normal w-40 py-2 border-2 border-white font-bebas text-white mt-10 tracking-widest hover:bg-white text-sm hover:text-black transition-all duration-500 pt-2" />
+        <ContactMenuBtn className="font-normal w-40 py-2 border-2 border-white font-bebas text-white mt-10 sm:mt-5 tracking-widest hover:bg-white text-sm hover:text-black transition-all duration-500 pt-2" />
 
-        <div className="w-full flex items-center justify-start flex-col mt-44">
+        <div className="w-full flex items-center justify-start flex-col mt-44 sm:mt-36 sm:px-9">
           <h1 className="source-sans-3-600 text-gray-800 text-3xl">ABOUT US</h1>
-          <p className="w-[850px] text-center text-sm source-sans-3-400 mt-4">
+          <p className="w-[850px] text-center text-sm source-sans-3-400 mt-4 sm:w-full">
             Explore the world with Travlio (Authorised Gold Partner of Thomas
             Cook Kolkata). We specialize in crafting personalized journeys that
             exceed your expectations. Let us be your guide to unforgettable
             adventures.
           </p>
 
-          <ul className="grid grid-cols-2 w-[70%] gap-8 py-10">
+          <ul className="grid grid-cols-2 w-[70%] gap-8 py-10 sm:w-full sm:grid-cols-1">
             <AboutServiceItem
               subtext="Our international and domestic tours offer unforgettable experiences for every traveler."
               text="International & Domestic Tours"
@@ -131,13 +131,13 @@ function page() {
           </ul>
         </div>
       </div>
-      <div className="w-full flex items-center justify-start flex-col mt-36">
+      <div className="w-full flex items-center justify-start flex-col mt-36 sm:mt-[30rem]">
         <h2 className="source-sans-3-600 text-gray-800 text-lg tracking-wider">
           TOP DESTINATIONS
         </h2>
-        <ul className="w-[70%] grid grid-cols-3 mt-9">
+        <ul className="w-[70%] grid grid-cols-3 mt-9 sm:grid-cols-1 sm:gap-6">
           {topDestinationsList.map((item, index) => (
-            <li key={index} className="w-full h-64">
+            <li key={index} className="w-full h-64 sm:h-auto">
               {item.image ? (
                 <Image
                   className="w-full h-full"
@@ -149,11 +149,11 @@ function page() {
               ) : null}
 
               {!item.image ? (
-                <div className="w-full flex items-center justify-start flex-col p-10">
+                <div className="w-full flex items-center justify-start flex-col p-10 sm:p-0 sm:items-start">
                   <h2 className="text-center source-sans-3-700 text-gray-800 text-[15px]">
                     {item.title}
                   </h2>
-                  <p className="text-center text-xs pt-1">{item.subtitle}</p>
+                  <p className="text-center text-xs pt-1 sm:text-justify">{item.subtitle}</p>
                 </div>
               ) : null}
             </li>
@@ -161,8 +161,9 @@ function page() {
         </ul>
       </div>
 
-      <div className="grid grid-cols-2 mt-7 aboutBottomBanner">
-        <div className="p-10 px-20">
+ 
+      <div className="grid grid-cols-2 mt-7 aboutBottomBanner sm:grid-cols-1">
+        <div className="p-10 px-20 sm:px-5">
           <h2 className="font-semibold text-2xl tracking-widest">
             WHY CHOOSE US ?
           </h2>
@@ -181,40 +182,9 @@ function page() {
               explored. Let us be your guide as you embark on the journey of a
               lifetime, leaving no dream unfulfilled.
             </p>
-
-            {/* <p className="mt-4 source-sans-3-600 tracking-widest text-gray-800">
-              POINTS
-            </p>
-            <p className="text-justify source-sans-3-200 mt-2">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio eos
-              perspiciatis reprehenderit placeat neque vitae accusamus nihil.
-              Sapiente accusamus minus cum fugit veritatis voluptates, nobis
-              illum distinctio excepturi porro in.
-            </p>
-
-            <ul className="text-sm space-y-2 mt-3">
-              <li className="flex items-center gap-1">
-                <VscDebugBreakpointLog />
-                <span>
-                  This is point one do you know that what is the point ?
-                </span>
-              </li>
-              <li className="flex items-center gap-1">
-                <VscDebugBreakpointLog />
-                <span>
-                  This is point one do you know that what is the point ?
-                </span>
-              </li>
-              <li className="flex items-center gap-1">
-                <VscDebugBreakpointLog />
-                <span>
-                  This is point one do you know that what is the point ?
-                </span>
-              </li>
-            </ul> */}
           </div>
         </div>
-        <form className="w-full p-10 px-40 mt-5 space-y-3">
+        <form className="w-full p-10 px-40 mt-5 space-y-3 sm:px-5 sm:mt-0">
           <input
             className="px-2 bg-slate-100 outline-none border-2 py-[0.45rem] text-gray-700 text-sm w-full"
             type="text"
