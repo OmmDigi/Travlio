@@ -8,7 +8,7 @@ function page() {
     {
       title: "Travel During the Off-Season",
       subtitle:
-        "One of the simplest ways to save money on your European adventure is by traveling during the off-season. Not only will you encounter fewer crowds, but you'll also benefit from lower prices on accommodation, transportation, and attractions. Shoulder seasons, typically in the spring and fall, offer the perfect balance of pleasant weather and reduced costs.",
+        "One of the simplest ways to save money on your European adventure is by traveling during the off-season. Not only will you encounter fewer crowds, but you&apos;ll also benefit from lower prices on accommodation, transportation, and attractions. Shoulder seasons, typically in the spring and fall, offer the perfect balance of pleasant weather and reduced costs.",
     },
     {
       title: "Embrace Alternative Accommodation",
@@ -23,12 +23,12 @@ function page() {
     {
       title: "Dine Like a Local",
       subtitle:
-        "Eating out can quickly become one of the biggest expenses while traveling. To save money without sacrificing flavor, seek out local eateries and street food vendors frequented by residents. Not only will you enjoy authentic cuisine, but you'll also pay a fraction of the price compared to tourist hotspots. Additionally, consider visiting markets and grocery stores to stock up on budget-friendly snacks and picnic supplies.",
+        "Eating out can quickly become one of the biggest expenses while traveling. To save money without sacrificing flavor, seek out local eateries and street food vendors frequented by residents. Not only will you enjoy authentic cuisine, but you&apos;ll also pay a fraction of the price compared to tourist hotspots. Additionally, consider visiting markets and grocery stores to stock up on budget-friendly snacks and picnic supplies.",
     },
     {
       title: "Take Advantage of Free Attractions",
       subtitle:
-        "Europe is home to an abundance of museums, galleries, and landmarks, many of which offer free admission or discounted entry on certain days. Research your destination's free attractions in advance and plan your itinerary accordingly. From iconic landmarks like the Eiffel Tower to world-class museums like the British Museum, there's no shortage of budget-friendly sights to explore.",
+        "Europe is home to an abundance of museums, galleries, and landmarks, many of which offer free admission or discounted entry on certain days. Research your destination&apos;s free attractions in advance and plan your itinerary accordingly. From iconic landmarks like the Eiffel Tower to world-class museums like the British Museum, there&apos;s no shortage of budget-friendly sights to explore.",
     },
     {
       title: "Be Flexible with Your Itinerary",
@@ -43,7 +43,7 @@ function page() {
     {
       title: "Take Advantage of Student and Youth Discounts",
       subtitle:
-        "If you're a student or under a certain age, take advantage of the numerous discounts available throughout Europe. From discounted museum tickets to special youth travel cards, there are plenty of savings to be had for young travelers. Be sure to carry your student ID or proof of age to unlock these exclusive deals.",
+        "If you&apos;re a student or under a certain age, take advantage of the numerous discounts available throughout Europe. From discounted museum tickets to special youth travel cards, there are plenty of savings to be had for young travelers. Be sure to carry your student ID or proof of age to unlock these exclusive deals.",
     },
   ];
 
@@ -62,8 +62,8 @@ function page() {
           Europe offers a plethora of experiences for travelers. However, for
           many, the prospect of exploring Europe comes with a hefty price tag.
           But fear not, for with some savvy planning and a dash of creativity,
-          it's entirely possible to experience the wonders of Europe without
-          breaking the bank. In this guide, we'll uncover some tried and tested
+          it&apos;s entirely possible to experience the wonders of Europe without
+          breaking the bank. In this guide, we&apos;ll uncover some tried and tested
           tips and tricks for enjoying Europe on a budget.
         </p>
         <ul className="w-full py-10 space-y-8">
