@@ -18,3 +18,35 @@ else if (env == "production"){
 }
 
 export const MOBILE_VIEW_WIDTH = 639;
+
+export const BLOGS_LIST_DATA = [
+  {
+    id: "1",
+    title: "Hidden Gems: Exploring Europe's Off-the-Beaten-Path Destinations",
+    date: "24th April’24",
+    author: "Admin",
+    img: "/blogs/blog1.jpeg",
+    link: "/blogs/hidden-gems-europe-destinations",
+    description : "Europe is a continent teeming with iconic landmarks, bustling cities, and well-trodden tourist trails.",
+  },
+
+  {
+    id: "2",
+    title: "A Culinary Tour of Europe: Must-Try Dishes and Foodie Hotspots",
+    date: "24th April’24",
+    author: "Admin",
+    img: "/blogs/blog2.webp",
+    link: "/blogs/must-try-dishes-europe",
+    description : "Europe's rich tapestry of cultures, landscapes, and traditions is beautifully reflected in its diverse culinary scene.",
+  },
+
+  {
+    id: "3",
+    title: "Europe on a Budget: Tips and Tricks for Affordable Travel",
+    date: "24th April’24",
+    author: "Admin",
+    img: "/blogs/blog3.jpeg",
+    link: "/blogs/tips-tricks-budget-europe-travel",
+    description : "Europe: a continent steeped in history, culture, and charm. From the picturesque streets of Paris to the stunning coastlines of Croatia, Europe offers a plethora of experiences for travelers.",
+  },
+];

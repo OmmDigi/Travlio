@@ -3,36 +3,10 @@ import React from "react";
 import { CiCalendarDate } from "react-icons/ci";
 import NewCarousel from "../NewCarousel";
 import Link from "next/link";
+import { BLOGS_LIST_DATA } from "@/app/constant";
+
 
 function Blogs() {
-  const blogsdatas = [
-    {
-      id: "1",
-      title: "Hidden Gems: Exploring Europe's Off-the-Beaten-Path Destinations",
-      date: "24th April’24",
-      author: "Admin",
-      img: "/blogs/blog1.jpeg",
-      link: "/blogs/hidden-gems-europe-destinations",
-    },
-
-    {
-      id: "2",
-      title: "A Culinary Tour of Europe: Must-Try Dishes and Foodie Hotspots",
-      date: "24th April’24",
-      author: "Admin",
-      img: "/blogs/blog2.webp",
-      link: "/blogs/must-try-dishes-europe",
-    },
-
-    {
-      id: "3",
-      title: "Europe on a Budget: Tips and Tricks for Affordable Travel",
-      date: "24th April’24",
-      author: "Admin",
-      img: "/blogs/blog3.jpeg",
-      link: "/blogs/tips-tricks-budget-europe-travel",
-    },
-  ];
   return (
     <section className="w-full py-20">
       <div className="w-full flex items-center justify-center flex-col gap-3">
@@ -45,7 +19,7 @@ function Blogs() {
       </div>
 
       <ul className="w-full flex items-start justify-center gap-10">
-        {blogsdatas.map((item, index) => (
+        {BLOGS_LIST_DATA.map((item, index) => (
           <li key={index} className="w-[290px] overflow-hidden">
             <Link href={item.link || ""}>
               <div className="h-[11rem] w-full overflow-hidden bg-black">

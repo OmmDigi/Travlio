@@ -177,8 +177,8 @@ async function page({ params, searchParams }: IProps) {
           /> */}
         </div>
         <div className="w-full">
-          <div className="w-full flex items-center justify-between py-4 pl-10">
-            <h1 className="font-semibold tracking-widest text-2xl text-gray-700">
+          <div className="w-full flex items-center justify-between py-4 pl-10 sm:flex-col sm:pl-0">
+            <h1 className="font-semibold tracking-widest text-2xl text-gray-700 sm:text-center sm:pb-3">
               TOUR PACKAGES FROM KOLKATA
             </h1>
             <SearchLayout />
