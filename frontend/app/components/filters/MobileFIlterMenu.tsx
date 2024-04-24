@@ -19,9 +19,9 @@ function MobileFIlterMenu() {
       <div className=" w-[60%] bg-white absolute bottom-0 top-0 right-0 px-3 py-4">
         <div className="w-full flex items-center justify-between border-b pb-2 px-2">
           <span className="font-semibold">FILTERS</span>
-          <span className="text-[13px] text-gray-600 cursor-pointer">
+          {/* <span className="text-[13px] text-gray-600 cursor-pointer">
             Reset
-          </span>
+          </span> */}
         </div>
         <Filter name="Duration" filters={duration} />
         <Filter name="Month" filters={tourType} />
