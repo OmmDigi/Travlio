@@ -45,9 +45,9 @@ function TourForm() {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
         type: "tour",
-        name : formData.get("name"),
+        name: formData.get("name"),
         destination: formData.get("destination"),
-        duration: formData.get("duration"),
+        duration: formData.get("number-of-people"),
         number: formData.get("mobile-number"),
         email: formData.get("email-id"),
       }),
@@ -63,8 +63,8 @@ function TourForm() {
       className="text-gray-600 font-medium w-full my-16 sm:my-0 space-y-5"
     >
       <div className="w-full flex items-center justify-center flex-col">
-      <h2 className="font-semibold tracking-widest">LEAVE US YOUR INFO</h2>
-      <span className="text-xs">and we will get back to you!!</span>
+        <h2 className="font-semibold tracking-widest">LEAVE US YOUR INFO</h2>
+        <span className="text-xs">and we will get back to you!!</span>
       </div>
       <input
         required
@@ -93,12 +93,22 @@ function TourForm() {
         title="Destination"
         options={destinationOptions}
       />
-      <Select
+      {/* <Select
         name="duration"
         className="w-full rounded-sm py-[0.60rem] border"
         title="Duration"
         options={durationOptions}
+      /> */}
+
+      <input
+        required
+        name="number-of-people"
+        type="number"
+        defaultValue={1}
+        placeholder="Number Of People"
+        className="text-sm rounded-sm w-full px-3 py-[0.60rem] outline-none border"
       />
+
       <button
         disabled={isMailSending}
         title="submit button"

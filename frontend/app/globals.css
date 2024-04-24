@@ -191,3 +191,40 @@ h4 {
   background-position: center;
   background-size: cover;
 }
+
+/* Hide the original checkbox */
+input[type="checkbox"] {
+  appearance: none;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #00aeff;
+  border-radius: 5px;
+}
+
+/* Custom checkbox design */
+input[type="checkbox"]::before {
+  content: "✔";
+  color: white;
+  display: block;
+  width: 15px;
+  height: 15px;
+  display: flex;
+  padding-top: 1px;
+  align-items: center;
+  justify-content: center;
+  background-color: #00aeff;
+  border-radius: 2px;
+  /* clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); */
+  transform: scale(0);
+  transition: transform 0.3s;
+}
+
+/* Show the checkmark when checkbox is checked */
+input[type="checkbox"]:checked::before {
+  transform: scale(1);
+}
+

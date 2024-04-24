@@ -182,8 +182,46 @@ app.post("/sendemail", upload.single("reward-image"), async (req, res) => {
   res.status(200).json(new ApiResponse(200, "Email Has Sended Successfully"));
 });
 
-app.get("/usd", (req, res) => {
-  "https://www.google.com/search?q=1+usd+in+rupees";
+app.get("/filter", async (req, res) => {
+  const urlSearchParams = new URLSearchParams(req.query);
+
+  const dur = urlSearchParams.getAll("duration");
+  const tt = urlSearchParams.getAll("tour-type");
+
+  const filters = {
+    duration : !Array.isArray(dur) ? dur.split(",") : dur,
+    "tour-type" : !Array.isArray(tt) ? tt.split(",") : tt
+  }
+
+  const filtersKeys = {
+    duration : "TIME",
+    "tour-type" : "TOUR_TYPE",
+    // price : "PRICE"
+  };
+
+  let sql_condition = null;
+
+  Object.entries(filters).forEach(([key, value]) => {
+    value.forEach((eachElement) => {
+      if(!sql_condition) {
+        sql_condition = `WHERE ${filtersKeys[key]} = '${eachElement}'`;
+      } else {
+        sql_condition += ` OR ${filtersKeys[key]} = '${eachElement}'`
+      }
+    })
+  }) 
+
+  
+  console.log(sql_condition);
+
+  const table_name = "tour";
+  const sql = `SELECT * FROM ${table_name} ${sql_condition}`;
+
+  const result = await query(sql);
+  res.status(200).json(new ApiResponse(200, "Success", {
+    tours : result,
+    total_page : 1
+  }));
 });
 
 // app.post("/upload", upload.single("reward-image"), (req, res) => {

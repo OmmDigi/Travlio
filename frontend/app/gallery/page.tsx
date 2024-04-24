@@ -1,15 +1,31 @@
+"use client";
+
 import Image from "next/image";
 import React from "react";
 import { GLOBAL_X_PADDING } from "../constant";
 import PageIntroBanner from "../components/PageIntroBanner";
+import { setGalleryDialgo } from "../redux/slice/galleryDialogSlice";
+import { useDispatch } from "react-redux";
 
 function page() {
-  const gallery = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+  const galleryImg = [
+    "/galleryimgs/WhatsApp Image 2023-06-03 at 9.59.20 AM (1).jpeg",
+    "/galleryimgs/WhatsApp Image 2023-06-03 at 9.59.20 AM.jpeg",
+    "/galleryimgs/WhatsApp Image 2023-06-03 at 9.59.23 AM (1).jpeg",
+    "/galleryimgs/WhatsApp Image 2023-06-03 at 9.59.23 AM (2).jpeg",
+    "/galleryimgs/WhatsApp Image 2023-06-03 at 9.59.23 AM.jpeg",
+    "/galleryimgs/WhatsApp Image 2023-06-03 at 9.59.24 AM (1).jpeg",
+    "/galleryimgs/WhatsApp Image 2023-06-03 at 9.59.24 AM (2).jpeg",
+    "/galleryimgs/WhatsApp Image 2023-06-03 at 9.59.24 AM.jpeg",
+  ]
+
+  const dispatch = useDispatch();
+
   return (
     <div className={`${GLOBAL_X_PADDING} sm:mt-3`}>
-      <PageIntroBanner src="/gallery.jpg" text="GALLERY"/>
+      <PageIntroBanner src="/gallery.jpg" text="GALLERY" />
 
-      <h2 className="w-full text-center pt-10 text-lg">Comming Soon..</h2>
+      {/* <h2 className="w-full text-center pt-10 text-lg">Comming Soon..</h2> */}
 
       {/* <ul className="w-full grid grid-cols-3 gap-10 my-10 sm:grid-cols-2">
         {gallery.map((item, index) => (
@@ -26,6 +42,20 @@ function page() {
           </li>
         ))}
       </ul> */}
+
+      <ul className="w-full grid grid-cols-4 gap-5 py-6">
+        {galleryImg.map((item, index) => (
+          <li onClick={() => dispatch(setGalleryDialgo({visibility : true, img : item}))} key={index} className="h-[153px] bg-black overflow-hidden">
+            <Image
+              src={item}
+              className="object-cover cursor-pointe h-full w-fullr"
+              alt=""
+              height={1280}
+              width={1200}
+            />
+          </li>
+        ))}
+      </ul>
     </div>
   );
 }

@@ -13,7 +13,7 @@ interface IProps {
 function PackagesLI({ info }: IProps) {
   const URL = `/tour/${info.ID}`;
   return (
-    <li className="w-full toupPackagesShdow relative">
+    <li className="w-full toupPackagesShdow relative hover:scale-105 transition-all duration-500">
       <Link href={URL}>
         <Image src={info.IMG} alt="img" width={1200} height={1200} />
         <div className="text-[10px] tracking-widest px-3 py-2 bg-[#00000091] text-white absolute top-5 right-5 font-semibold rounded-full">

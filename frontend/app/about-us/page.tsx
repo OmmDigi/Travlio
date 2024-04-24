@@ -71,9 +71,6 @@ function page() {
         <p className="text-white w-[650px] text-center text-lg sm:text-sm sm:w-full">
           Best Travel Agency in Kolkata for your domestic & International tours.
         </p>
-        {/* <button className="w-40 py-2 border-2 border-white font-bebas text-white mt-10 tracking-widest hover:bg-white text-sm hover:text-black transition-all duration-500 pt-2">
-          CONTACT US
-        </button> */}
         <ContactMenuBtn className="font-normal w-40 py-2 border-2 border-white font-bebas text-white mt-10 sm:mt-5 tracking-widest hover:bg-white text-sm hover:text-black transition-all duration-500 pt-2" />
 
         <div className="w-full flex items-center justify-start flex-col mt-44 sm:mt-36 sm:px-9">

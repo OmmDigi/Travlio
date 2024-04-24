@@ -17,14 +17,13 @@ function SearchInput({ className }: IProps) {
       className={`w-[30%] border-2 py-2 pl-4 flex items-center relative sm:w-[90%] ${className}`}
     >
       <input
-        ref = {searchInputRef}
+        ref={searchInputRef}
         className="outline-none text-sm flex-grow"
         type="text"
-        placeholder="Search.."
+        placeholder="Search..."
       />
       <button
         onClick={() => router.push(`?search=${searchInputRef.current?.value}`)}
-        // href={`?search=${searchInputRef.current?.value}`}
         className="px-3 h-[95%] mr-[2px] flex items-center justify-center cursor-pointer"
       >
         <IoSearchOutline />

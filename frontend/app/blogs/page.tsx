@@ -8,7 +8,17 @@ import { GrNext } from "react-icons/gr";
 import SearchInput from "../components/SearchInput";
 
 function page() {
-  const blogs = [1, 2, 3, 4, 5];
+  const blogs = [
+    {
+      id: "1",
+      title: "Hidden Gems: Exploring Europe's Off-the-Beaten-Path Destinations",
+      desctipton:
+        "Europe is a continent teeming with iconic landmarks, bustling cities, and well-trodden tourist trails. From the Eiffel Tower in Paris to the Colosseum in Rome, these famous attractions draw millions of visitors each year. However, beyond the well-known tourist hotspots lie hidden gems waiting to be discovered by intrepid travelers.",
+      date: "24th April’24",
+      author: "admin",
+      img: "/blogs/blog1.webp",
+    },
+  ];
   return (
     <section className={`w-full ${GLOBAL_X_PADDING} py-5`}>
       <PageIntroBanner src="/gallery.jpg" text="BLOGS" />
@@ -16,31 +26,22 @@ function page() {
         <SearchInput />
       </div> */}
 
-      <h2 className="w-full text-center pt-10 text-lg">Comming Soon..</h2>
+      {/* <h2 className="w-full text-center pt-10 text-lg">Comming Soon..</h2> */}
 
-      {/* <ul className="w-full grid grid-cols-3 gap-6 sm:grid-cols-1">
+      <ul className="w-full grid grid-cols-3 gap-6 sm:grid-cols-1 mt-8">
         {blogs.map((item, index) => (
           <li
-            key={index}
+            key={item.id}
             className="w-full blogItemShdow overflow-hidden rounded-md"
           >
-            <Image
-              src="https://wallpapersmug.com/download/1280x720/e9f357/high-skies-pixel-art-4k.jpg"
-              alt=""
-              height={1200}
-              width={1200}
-            />
+            <Image className="h-60 object-cover" src={item.img} alt="" height={1200} width={1200} />
             <div className="w-full px-5 py-3">
               <span className="font-semibold text-red-500 text-xs">
-                26 JANUARY 2024
+                {item.date}
               </span>
-              <h2 className="font-semibold text-gray-600">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              </h2>
+              <h2 className="font-semibold text-gray-600">{item.title}</h2>
               <p className="text-xs pt-1 line-clamp-2">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
-                voluptas omnis deserunt, doloribus voluptatem, at recusandae
-                soluta delectus eius reprehenderit laborum perferendis.
+               {item.desctipton}
               </p>
 
               <Link
@@ -53,7 +54,7 @@ function page() {
             </div>
           </li>
         ))}
-      </ul> */}
+      </ul>
     </section>
   );
 }

@@ -1,9 +1,11 @@
 import { configureStore } from "@reduxjs/toolkit";
 import dialogReducer from "./slice/dialogSlice";
+import galleryDialogSlice from "./slice/galleryDialogSlice";
 
 export const store = configureStore({
     reducer : {
-        dialog : dialogReducer
+        dialog : dialogReducer,
+        galleryDialog : galleryDialogSlice
     }
 });
 

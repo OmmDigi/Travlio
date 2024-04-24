@@ -4,9 +4,9 @@ import MobileFilterBtn from "./filters/MobileFilterBtn";
 
 function SearchLayout() {
   return (
-    <div className="w-full flex items-center justify-between mb-6">
+    <div className="flex items-center justify-between w-[40%]">
       <div className="sm:hidden"></div>
-      <SearchInput className="w-[40%] sm:w-[100%]" />
+      <SearchInput className="w-full sm:w-[100%]" />
       <MobileFilterBtn />
     </div>
   );
