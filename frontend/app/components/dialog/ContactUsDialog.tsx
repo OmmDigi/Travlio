@@ -60,7 +60,7 @@ function ContactUsDialog() {
   return (
     <div
       onClick={(e) => e.stopPropagation()}
-      className={`w-[60%] h-[28rem] bg-[#d8d8d8] overflow-hidden overflow-y-auto rounded-sm shadow grid grid-cols-2 transition-all duration-300`}
+      className={`w-[60%] h-[28rem] bg-[#d8d8d8] overflow-hidden overflow-y-auto rounded-sm shadow grid grid-cols-2 transition-all duration-300 sm:w-full sm:mx-3 sm:grid-cols-1`}
     >
       <div className="text-black px-10 py-10">
         <h2 className="font-semibold tracking-widest">LEAVE US YOUR INFO</h2>

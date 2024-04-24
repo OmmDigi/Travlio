@@ -9,16 +9,16 @@ import { BLOGS_LIST_DATA } from "@/app/constant";
 function Blogs() {
   return (
     <section className="w-full py-20">
-      <div className="w-full flex items-center justify-center flex-col gap-3">
+      <div className="w-full flex items-center justify-center flex-col gap-3 sm:px-4">
         <h2 className="text-2xl">Blogs</h2>
-        <span className="text-[15px]">
+        <span className="text-[15px] sm:w-full sm:text-center">
           Stay tuned and updated by the latest updates from our blog.
         </span>
 
         <div className="w-[15rem] h-[1px] mt-4 bg-slate-200"></div>
       </div>
 
-      <ul className="w-full flex items-start justify-center gap-10">
+      <ul className="w-full flex items-start justify-center gap-10 sm:flex-col sm:items-center">
         {BLOGS_LIST_DATA.map((item, index) => (
           <li key={index} className="w-[290px] overflow-hidden">
             <Link href={item.link || ""}>

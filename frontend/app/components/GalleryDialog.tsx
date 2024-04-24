@@ -20,7 +20,7 @@ function GalleryDialog() {
       <div className={`w-full h-full flex items-center justify-center relative`}>
         <IoCloseOutline
           onClick={closeDialog}
-          className="border border-white cursor-pointer absolute top-16 right-16"
+          className="border border-white cursor-pointer absolute top-16 right-16 sm:right-6"
           color="#fff"
           size={28}
         />
