@@ -6,7 +6,6 @@ import { BASE_URL } from "./constant";
 
 const popins = Poppins({ subsets: ["latin"], weight: "300" });
 
-
 export const metadata: Metadata = {
   title: "Travel Agency in Kolkata | Travlio (Thomas Cook)",
   description:

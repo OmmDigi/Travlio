@@ -104,7 +104,6 @@ function TourForm() {
         required
         name="number-of-people"
         type="number"
-        defaultValue={1}
         placeholder="Number Of People"
         className="text-sm rounded-sm w-full px-3 py-[0.60rem] outline-none border"
       />
