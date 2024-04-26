@@ -111,9 +111,7 @@ app.get("/tour/:ID", async (req, res) => {
   res.status(200).json(result[0]);
 });
 
-app.post("/sendemail", upload.single("reward-image"), async (req, res) => {
-  const file = req.file;
-  console.log(file.size);
+app.post("/sendemail", async (req, res) => {
   const type = req.body.type;
 
   if (!type)
@@ -183,49 +181,71 @@ app.post("/sendemail", upload.single("reward-image"), async (req, res) => {
 });
 
 app.get("/filter", async (req, res) => {
-  const urlSearchParams = new URLSearchParams(req.query);
-
-  const dur = urlSearchParams.getAll("duration");
-  const tt = urlSearchParams.getAll("tour-type");
-
-  const filters = {
-    duration : !Array.isArray(dur) ? dur.split(",") : dur,
-    "tour-type" : !Array.isArray(tt) ? tt.split(",") : tt
-  }
-
-  const filtersKeys = {
-    duration : "TIME",
-    "tour-type" : "TOUR_TYPE",
-    // price : "PRICE"
-  };
-
-  let sql_condition = null;
-
-  Object.entries(filters).forEach(([key, value]) => {
-    value.forEach((eachElement) => {
-      if(!sql_condition) {
-        sql_condition = `WHERE ${filtersKeys[key]} = '${eachElement}'`;
-      } else {
-        sql_condition += ` OR ${filtersKeys[key]} = '${eachElement}'`
-      }
-    })
-  }) 
-
-  
-  console.log(sql_condition);
-
   const table_name = "tour";
-  const sql = `SELECT * FROM ${table_name} ${sql_condition}`;
+  const LIMIT = 5;
+  const durations = Array.isArray(req.query.duration || []) ? req.query.duration : [req.query.duration];
+  const tourTypes = Array.isArray(req.query["tour-type"] || []) ? req.query["tour-type"] : [req.query["tour-type"]];
 
-  const result = await query(sql);
+  let tourTypesTxt = null;
+  tourTypes.forEach((element) => {
+    if(!tourTypesTxt) {
+      tourTypesTxt = `'${element}'`
+    }else {
+      tourTypesTxt += `,'${element}'`
+    }
+  })
+
+  let durationTxt = null;
+  durations?.forEach((element) => {
+    if(!durationTxt) {
+      durationTxt = `'${element}'`
+    }else {
+      durationTxt += `,'${element}'`
+    }
+  })
+
+  let newSql = `SELECT * FROM ${table_name} WHERE TOUR_TYPE IN (${tourTypesTxt}) ${durationTxt ? `AND TIME IN (${durationTxt})` : ""}`;
+
+  // const totalDocuments = await query(newSql);
+
+  // const totalPages = Math.ceil(totalDocuments?.[0].total_rows / LIMIT);
+
+  // const SKIP = (1 - 1) * LIMIT;
+  
+  // newSql += ` LIMIT ${LIMIT} OFFSET ${SKIP}`;
+
+  // console.log(newSql)
+
+  // const filters = {
+  //   duration : durations,
+  //   "tour-type" : tourTypes
+  // }
+
+  // const filtersKeys = {
+  //   duration : "TIME",
+  //   "tour-type" : "TOUR_TYPE",
+  // };
+
+  // let sql_condition = null;
+
+  // Object.entries(filters).forEach(([key, value]) => {
+  //   value?.forEach((eachElement) => {
+  //     if(!sql_condition) {
+  //       sql_condition = `WHERE ${filtersKeys[key]} = '${eachElement}'`;
+  //     } else {
+  //       sql_condition += ` AND ${filtersKeys[key]} = '${eachElement}'`
+  //     }
+  //   })
+  // }) 
+
+  // const sql = `SELECT * FROM ${table_name} ${sql_condition}`;
+
+  const result = await query(newSql);
   res.status(200).json(new ApiResponse(200, "Success", {
     tours : result,
     total_page : 1
   }));
 });
 
-// app.post("/upload", upload.single("reward-image"), (req, res) => {
-//   res.status(200).json({message : "Image uploaded successfully"})
-// })
 
 app.listen(8080, console.log("http://localhost:8080"));

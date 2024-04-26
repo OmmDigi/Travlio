@@ -67,15 +67,13 @@ async function page({ params, searchParams }: IProps) {
     URL = `${API_BASE_URL}/search?q=${searchParams.search}`;
   }
 
-
-
-  let queryText : string | null = null;
+  let queryText: string | null = null;
 
   const setDurationCheckBoxDone = (textToCheck: string) => {
-    if(queryText === null) {
-      queryText = `?duration=${textToCheck}`
+    if (queryText === null) {
+      queryText = `?duration=${textToCheck}`;
     } else {
-      queryText += `&duration=${textToCheck}`
+      queryText += `&duration=${textToCheck}`;
     }
 
     let indexOfDuration = -1;
@@ -105,15 +103,15 @@ async function page({ params, searchParams }: IProps) {
     } else {
       resetDurationCheckBox();
     }
-  }
+  };
 
   checkDurationChecbox();
 
   const setTourTypeCheckBoxDone = (textToCheck: string) => {
-    if(queryText === null) {
-      queryText = `?tour-type=${textToCheck}`
+    if (queryText === null) {
+      queryText = `?tour-type=${textToCheck}`;
     } else {
-      queryText += `&tour-type=${textToCheck}`
+      queryText += `&tour-type=${textToCheck}`;
     }
 
     let indexOfDuration = -1;
@@ -143,7 +141,7 @@ async function page({ params, searchParams }: IProps) {
     } else {
       resetTourTypeCheckBox();
     }
-  }
+  };
 
   checkTourTypeChecbox();
 
@@ -156,6 +154,8 @@ async function page({ params, searchParams }: IProps) {
     tours: ITours[];
     total_page: number;
   }>;
+  const isNoTours = tours?.data?.tours?.length === 0;
+  console.log(tours);
 
   return (
     <div>
@@ -183,12 +183,17 @@ async function page({ params, searchParams }: IProps) {
             </h1>
             <SearchLayout />
           </div>
-          <ul className="grid w-full grid-cols-3 mx-10 gap-10 justify-center sm:grid-cols-1 sm:mx-0">
-            {tours.data.tours.map((item) => (
-              <PackagesLI key={item.ID} info={item} />
-            ))}
-          </ul>
-          <div className="w-full flex items-center justify-center gap-10 py-10">
+          {isNoTours ? (
+            <h2 className="w-full text-center text-2xl font-semibold mt-10 text-gray-700">Currently No Tours Are Available</h2>
+          ) : (
+            <ul className="grid w-full grid-cols-3 mx-10 gap-10 justify-center sm:grid-cols-1 sm:mx-0">
+              {tours.data.tours.map((item) => (
+                <PackagesLI key={item.ID} info={item} />
+              ))}
+            </ul>
+          )}
+
+          <div className={`w-full flex items-center justify-center gap-10 py-10 ${isNoTours ? "hidden" : "flex"}`}>
             <Link
               href={`${BASE_URL}/tours/${
                 catname ? catname?.toLowerCase().replaceAll(" ", "-") : "all"

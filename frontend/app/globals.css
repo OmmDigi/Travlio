@@ -228,3 +228,23 @@ input[type="checkbox"]:checked::before {
   transform: scale(1);
 }
 
+.blinkAnimation {
+  animation: blinkAnimation 2.1s linear infinite;
+}
+
+@keyframes blinkAnimation { 
+  0% { 
+      opacity: 0;
+      /* color: rgb(219, 91, 91); */
+  } 
+
+  50% { 
+      opacity: 1; 
+      /* color: rgb(98, 60, 202); */
+  } 
+
+  100% { 
+      opacity: 0; 
+  } 
+} 
+

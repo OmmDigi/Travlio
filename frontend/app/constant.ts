@@ -49,4 +49,14 @@ export const BLOGS_LIST_DATA = [
     link: "/blogs/tips-tricks-budget-europe-travel",
     description : "Europe: a continent steeped in history, culture, and charm. From the picturesque streets of Paris to the stunning coastlines of Croatia, Europe offers a plethora of experiences for travelers.",
   },
+
+  {
+    id: "4",
+    title: "The Ultimate Guide: Best Places to See the Northern Lights, from Iceland to Alaska",
+    date: "26th April’24",
+    author: "Admin",
+    img: "/blogs/blog4.webp",
+    link: "/blogs/ultimate-guide-best-places-to-see-northern-lights",
+    description : "The dancing colors of the Northern Lights, also known as the Aurora Borealis, have captivated humanity for centuries.",
+  },
 ];

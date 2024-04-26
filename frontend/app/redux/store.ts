@@ -1,11 +1,13 @@
 import { configureStore } from "@reduxjs/toolkit";
 import dialogReducer from "./slice/dialogSlice";
 import galleryDialogSlice from "./slice/galleryDialogSlice";
+import newContactUsDialog from "./slice/newContactUsDialgo";
 
 export const store = configureStore({
     reducer : {
         dialog : dialogReducer,
-        galleryDialog : galleryDialogSlice
+        galleryDialog : galleryDialogSlice,
+        contactDialog : newContactUsDialog
     }
 });
 

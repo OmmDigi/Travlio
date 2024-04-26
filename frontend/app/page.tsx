@@ -26,6 +26,7 @@ export default async function Home() {
           linktxt="View All Tour Packages"
           link="/tour-packages/all"
         />
+        <Deal />
         <TourPackages
           tourType="International Tour"
           title="International Tour Packages"
@@ -71,7 +72,6 @@ export default async function Home() {
             />
           </div>
         </div>
-        <Deal />
         {/* <Testimonial /> */}
         <NewTestimonial />
         {/* <RecentBlogs /> */}
