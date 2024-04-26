@@ -155,7 +155,6 @@ async function page({ params, searchParams }: IProps) {
     total_page: number;
   }>;
   const isNoTours = tours?.data?.tours?.length === 0;
-  console.log(tours);
 
   return (
     <div>

@@ -187,7 +187,7 @@ app.get("/filter", async (req, res) => {
   const tourTypes = Array.isArray(req.query["tour-type"] || []) ? req.query["tour-type"] : [req.query["tour-type"]];
 
   let tourTypesTxt = null;
-  tourTypes.forEach((element) => {
+  tourTypes?.forEach((element) => {
     if(!tourTypesTxt) {
       tourTypesTxt = `'${element}'`
     }else {
@@ -205,6 +205,24 @@ app.get("/filter", async (req, res) => {
   })
 
   let newSql = `SELECT * FROM ${table_name} WHERE TOUR_TYPE IN (${tourTypesTxt}) ${durationTxt ? `AND TIME IN (${durationTxt})` : ""}`;
+  // console.log(newSql);
+
+  let sql = `SELECT * FROM ${table_name}`;
+
+  if(!tourTypesTxt && durationTxt) {
+    sql += ` WHERE TIME IN (${durationTxt})`;
+  }
+
+  if(tourTypesTxt && !durationTxt) {
+    sql += ` WHERE TOUR_TYPE IN (${tourTypesTxt})`;
+  }
+
+  if(tourTypesTxt && durationTxt) {
+    sql += ` WHERE TOUR_TYPE IN (${tourTypesTxt}) AND TIME IN (${durationTxt})`;
+  }
+
+  // console.log(sql);
+
 
   // const totalDocuments = await query(newSql);
 
@@ -240,7 +258,7 @@ app.get("/filter", async (req, res) => {
 
   // const sql = `SELECT * FROM ${table_name} ${sql_condition}`;
 
-  const result = await query(newSql);
+  const result = await query(sql);
   res.status(200).json(new ApiResponse(200, "Success", {
     tours : result,
     total_page : 1

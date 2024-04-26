@@ -24,7 +24,6 @@ function Navbar() {
     { name: "BLOGS", path: "/blogs" },
   ];
 
-  console.log(pathname.includes(""))
   return (
     <>
       <NavUpper />
