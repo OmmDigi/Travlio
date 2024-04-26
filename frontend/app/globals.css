@@ -248,3 +248,9 @@ input[type="checkbox"]:checked::before {
   } 
 } 
 
+.messageShape {
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+

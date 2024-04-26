@@ -3,7 +3,7 @@ const sendMail = async (type, info) => {
 
     //subrata.ash@gmail
     //appwalama@gmail.com
-    const toEmail = "appwalama@gmail.com";
+    const toEmail = "subrata.ash@gmail";
   
     let url =
       script +
