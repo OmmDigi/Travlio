@@ -33,7 +33,7 @@ function page() {
   ];
 
   return (
-    <section className="w-[1300px] text-justify">
+    <section className="w-[1300px] text-justify sm:w-full">
       <ReadBlogLayout
         bannerimage="/blogs/blog1.jpeg"
         heading="Hidden Gems: Exploring Europe&apos;s Off-the-Beaten-Path Destinations"

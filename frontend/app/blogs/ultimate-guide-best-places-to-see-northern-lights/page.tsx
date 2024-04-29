@@ -31,7 +31,7 @@ function page() {
     },
   ];
   return (
-    <section className="w-[1300px] text-justify">
+    <section className="w-[1300px] text-justify sm:w-full">
       <ReadBlogLayout
         bannerimage="/blogs/blog4.webp"
         heading="The Ultimate Guide: Best Places to See the Northern Lights, from Iceland to Alaska"

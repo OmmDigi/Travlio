@@ -254,3 +254,16 @@ input[type="checkbox"]:checked::before {
   border-bottom-left-radius: 30px;
 }
 
+.popupAnimation {
+  animation: popupAnimaion 600ms ease-in-out;
+}
+
+@keyframes popupAnimaion {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+

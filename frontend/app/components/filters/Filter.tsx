@@ -25,7 +25,6 @@ function Filter(props: IProps) {
   const filterKeys: any = {
     Duration: "duration",
     "Tour Type": "tour-type",
-    "Price Range": "price",
   };
 
   const handelRange = (event: React.ChangeEvent<HTMLInputElement>) => {

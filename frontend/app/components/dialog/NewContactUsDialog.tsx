@@ -57,7 +57,7 @@ function NewContactUsDialog() {
         newContactUsDialgoVisibility ? "flex" : "hidden"
       } items-center justify-center`}
     >
-      <div className="flex items-center justify-center relative">
+      <div className={`flex items-center justify-center relative ${newContactUsDialgoVisibility ? "popupAnimaion" : ""}`}>
         <div
           onClick={(e) => e.stopPropagation()}
           className="w-[25rem] sm:w-full bg-[#104465] sm:mx-3 rounded-2xl flex items-center flex-col py-8 px-12 pb-8 z-10 sm:px-7"

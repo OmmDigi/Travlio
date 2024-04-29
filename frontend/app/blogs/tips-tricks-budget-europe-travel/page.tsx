@@ -48,7 +48,7 @@ function page() {
   ];
 
   return (
-    <section className="w-[1300px] text-justify">
+    <section className="w-[1300px] text-justify sm:w-full">
       <ReadBlogLayout
         bannerimage="/blogs/blog3.jpeg"
         heading="Europe on a Budget: Tips and Tricks for Affordable Travel"

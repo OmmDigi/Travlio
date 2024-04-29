@@ -33,7 +33,7 @@ function page() {
   ];
 
   return (
-    <section className="w-[1300px] text-justify">
+    <section className="w-[1300px] text-justify sm:w-full">
       <ReadBlogLayout
         bannerimage="/blogs/blog2.webp"
         heading="A Culinary Tour of Europe: Must-Try Dishes and Foodie Hotspots"

@@ -24,7 +24,7 @@ function MobileFIlterMenu() {
           </span> */}
         </div>
         <Filter name="Duration" filters={duration} />
-        <Filter name="Month" filters={tourType} />
+        <Filter name="Tour Type" filters={tourType} />
       </div>
     </div>
   );
