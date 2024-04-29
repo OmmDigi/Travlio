@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import NavUpper from "./NavUpper";
 import Image from "next/image";
 import { GLOBAL_X_PADDING } from "../constant";
@@ -39,10 +39,16 @@ function Navbar() {
           />
         </Link>
 
-        <nav
+        {/* <nav
           className={`flex items-center sm:w-44 gap-10 sm:absolute sm:flex-col ${
             isNavMenuVisiable ? "sm:flex" : "sm:hidden"
           } sm:right-0 sm:gap-3 sm:bg-white sm:top-16 z-10 sm:items-start sm:py-2 sm:px-4 sm:border sm:shadow`}
+        > */}
+          <nav
+            onClick={() => setIsNavMenuVisiale(false)}
+            className={`flex items-center sm:w-full gap-10 sm:absolute sm:flex-col sm:overflow-hidden ${
+            isNavMenuVisiable ? "sm:flex h-auto" : "sm:hidden h-0"
+          } sm:right-0 sm:gap-3 sm:bg-white sm:top-16 z-10 sm:items-start sm:py-2 sm:px-4 sm:border sm:shadow transition-all duration-500`}
         >
           {navOptions.map((item, index) => (
             <Link
