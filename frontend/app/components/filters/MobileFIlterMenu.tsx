@@ -1,5 +1,6 @@
 import React from "react";
 import Filter from "./Filter";
+import { useSearchParams } from "next/navigation";
 
 const duration = [
   { text: "15 Days 14 Nights", isChecked: false },
@@ -14,6 +15,82 @@ const tourType = [
 ];
 
 function MobileFIlterMenu() {
+  const searchParams = useSearchParams();
+
+  let queryText: string | null = null;
+
+  const setDurationCheckBoxDone = (textToCheck: string) => {
+    if (queryText === null) {
+      queryText = `?duration=${textToCheck}`;
+    } else {
+      queryText += `&duration=${textToCheck}`;
+    }
+
+    let indexOfDuration = -1;
+    for (var i = 0; i < duration.length; i++) {
+      if (duration[i].text === textToCheck) {
+        indexOfDuration = i;
+      }
+    }
+    duration[indexOfDuration].isChecked = true;
+  };
+
+  const resetDurationCheckBox = () => {
+    duration.forEach((item, index) => {
+      duration[index].isChecked = false;
+    });
+  };
+
+  const checkDurationChecbox = () => {
+    const durationsParams = searchParams.getAll("duration");
+
+    if (durationsParams.length !== 0) {
+      durationsParams.map((item) => {
+        setDurationCheckBoxDone(item);
+      });
+    } else {
+      resetDurationCheckBox();
+    }
+  };
+
+  checkDurationChecbox();
+
+  const setTourTypeCheckBoxDone = (textToCheck: string) => {
+    if (queryText === null) {
+      queryText = `?tour-type=${textToCheck}`;
+    } else {
+      queryText += `&tour-type=${textToCheck}`;
+    }
+
+    let indexOfDuration = -1;
+    for (var i = 0; i < tourType.length; i++) {
+      if (tourType[i].text === textToCheck) {
+        indexOfDuration = i;
+      }
+    }
+    tourType[indexOfDuration].isChecked = true;
+  };
+
+  const resetTourTypeCheckBox = () => {
+    tourType.forEach((item, index) => {
+      tourType[index].isChecked = false;
+    });
+  };
+
+  const checkTourTypeChecbox = () => {
+    const durationsParams = searchParams.getAll("tour-type");
+
+    if (durationsParams.length !== 0) {
+      durationsParams.map((item) => {
+        setTourTypeCheckBoxDone(item);
+      });
+    } else {
+      resetTourTypeCheckBox();
+    }
+  };
+
+  checkTourTypeChecbox();
+
   return (
     <div className="w-full h-full relative">
       <div className=" w-[60%] bg-white absolute bottom-0 top-0 right-0 px-3 py-4">
