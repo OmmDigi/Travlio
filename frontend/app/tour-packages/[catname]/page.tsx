@@ -48,10 +48,10 @@ async function page({ params }: { params: { catname: string } }) {
             {tours.data.tours.map((item) => <PackagesLI key={item.ID} info={item} />)}
           </ul>
           <div className="w-full flex items-center justify-center gap-10 py-10">
-            <button className={`px-3 py-3 bg-[#c9c9c9d3] invisible`}>
+            <button title="Go To Next Page Button" className={`px-3 py-3 bg-[#c9c9c9d3] invisible`}>
               <GrPrevious />
             </button>
-            <Link href={`${BASE_URL}/tour-packages/${catname.toLowerCase().replaceAll(" ", "-")}/${2}`} className="px-3 py-3 bg-[#c9c9c9d3]">
+            <Link title="Go To Previous Page Button" href={`${BASE_URL}/tour-packages/${catname.toLowerCase().replaceAll(" ", "-")}/${2}`} className="px-3 py-3 bg-[#c9c9c9d3]">
               <GrNext />
             </Link>
           </div>

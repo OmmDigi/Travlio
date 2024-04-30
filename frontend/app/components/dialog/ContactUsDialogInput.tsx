@@ -10,7 +10,7 @@ function ContactUsDialogInput(props : IProps) {
   return (
     <div className="w-full">
       <span className="text-sm text-white">{props.text}</span>
-      <input {...props} className="w-full bg-white outline-none text-sm px-3 py-1 mt-1" type="text" />
+      <input aria-label={props.text + " Text Field"} {...props} className="w-full bg-white outline-none text-sm px-3 py-1 mt-1" type="text" />
     </div>
   );
 }

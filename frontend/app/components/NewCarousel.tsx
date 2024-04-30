@@ -65,7 +65,7 @@ function NewCarousel({ children, dataLength, datas }: IProps) {
       >
         {datas.map((item, index) => (
           <SwiperSlide key={item.ID}>
-            <li
+            <div
               className={`toupPackagesShdow min-w-[365px] min-h-[365px] sm:min-w-full border border-[#e1e1e1] cursor-pointer ${
                 currentIndex === index ? "scale-100" : "scale-75"
               } transition-all duration-1000`}
@@ -93,12 +93,13 @@ function NewCarousel({ children, dataLength, datas }: IProps) {
                   </div>
                 </div>
               </Link>
-            </li>
+            </div>
           </SwiperSlide>
         ))}
       </Swiper>
 
       <button
+        title="Go Previous Button"
         className={`absolute top-1/2 left-4 z-20 transform -translate-y-1/2 homeInfoSection bg-white bg-opacity-80 text-gray-800 p-3 rounded-full focus:outline-none ${
           currentIndex <= 0 ? "hidden" : "block"
         }`}
@@ -107,6 +108,7 @@ function NewCarousel({ children, dataLength, datas }: IProps) {
         <GrPrevious />
       </button>
       <button
+       title="Go Next Button"
         className={`absolute top-1/2 right-4 z-20 transform -translate-y-1/2 bg-white homeInfoSection bg-opacity-80 text-gray-800 p-3 rounded-full focus:outline-none ${
           currentIndex >= dataLength - 1 ? "hidden" : "block"
         }`}

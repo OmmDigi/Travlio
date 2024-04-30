@@ -12,7 +12,7 @@ interface IProps {
 function ContactMenuBtn({ text, className }: IProps) {
   const dispatch = useDispatch();
   return (
-    <button onClick={() => dispatch(setDialog({dialog : "contact-us-dialog"}))} className={`font-[800] text-[14px] hover:text-black text-[#94999F] transition-all duration-300 ${className}`}>{!text ? "CONTACT US" : text}</button>
+    <button title="Show Contact Us Dialog Button" onClick={() => dispatch(setDialog({dialog : "contact-us-dialog"}))} className={`font-[800] text-[14px] hover:text-black text-[#94999F] transition-all duration-300 ${className}`}>{!text ? "CONTACT US" : text}</button>
   );
 }
 

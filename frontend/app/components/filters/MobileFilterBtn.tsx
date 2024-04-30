@@ -8,7 +8,7 @@ import { useDispatch } from "react-redux";
 function MobileFilterBtn() {
   const dispatch = useDispatch();
   return (
-    <button className="hidden sm:block">
+    <button title="Mobile Filter Menu Button" className="hidden sm:block">
       <LuFilter
         onClick={() => dispatch(setDialog({ dialog: "mobile-filter-menu" }))}
         size={20}

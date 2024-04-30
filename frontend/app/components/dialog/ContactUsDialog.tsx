@@ -94,7 +94,7 @@ function ContactUsDialog() {
             className="text-sm rounded-sm w-full px-3 py-[0.35rem] outline-none"
             rows={4}
           ></textarea>
-          <button disabled = {isMailSending} className={`w-full text-sm font-semibold py-2 text-gray-200 ${isMailSending ? "bg-blue-300" : "bg-blue-400"}`}>
+          <button title="Form Submit Button" disabled = {isMailSending} className={`w-full text-sm font-semibold py-2 text-gray-200 ${isMailSending ? "bg-blue-300" : "bg-blue-400"}`}>
             SUBMIT
           </button>
           <span className={`text-sm text-green-600`}>{message}</span>

@@ -204,7 +204,7 @@ function page() {
             placeholder="Email Address"
           ></textarea>
 
-          <button className="w-full text-sm source-sans-3-400 tracking-widest border-2 bg-cyan-500 text-white font py-[0.45rem]">
+          <button title="Form Submit Button" className="w-full text-sm source-sans-3-400 tracking-widest border-2 bg-cyan-500 text-white font py-[0.45rem]">
             SUBMIT
           </button>
         </form>

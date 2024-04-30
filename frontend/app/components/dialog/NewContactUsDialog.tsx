@@ -79,6 +79,7 @@ function NewContactUsDialog() {
               <div className="w-full mt-2">
                 <span className="text-sm text-white">Your Message</span>
                 <textarea
+                  aria-label="Add Message Text Field"
                   name="message"
                   rows={4}
                   className="w-full text-sm outline-none px-3 py-2"

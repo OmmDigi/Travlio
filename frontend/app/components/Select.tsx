@@ -12,6 +12,7 @@ function Select(props: IProps) {
   return (
     <div className={`py-1 px-2 font-[600] text-sm  ${props.className}`}>
       <select
+        title={props.name + " Drop Down Menu"}
         name={props.name}
         className={`outline-none w-full cursor-pointer ${props.selectClassName}`}
       >

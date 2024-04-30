@@ -84,7 +84,7 @@ const Carousel = ({ children, datasLength, className }: IProps) => {
     // alert(window.innerWidth);
 
     //this is for mobile devices
-    if(window.innerWidth <= 639) {
+    if (window.innerWidth <= 639) {
       numberToScroll = 365;
     }
   }, []);
@@ -118,18 +118,25 @@ const Carousel = ({ children, datasLength, className }: IProps) => {
           }}
         >
           {children}
-          <IntersectionObserverComponent onIntersect={onIntersect} onNotIntersect={onNotIntersect}>
-            <li></li>
-          </IntersectionObserverComponent>
+          <li>
+            <IntersectionObserverComponent
+              onIntersect={onIntersect}
+              onNotIntersect={onNotIntersect}
+            >
+              <div></div>
+            </IntersectionObserverComponent>
+          </li>
         </ul>
       </div>
       <button
+        title="Go Previous Button"
         className="absolute top-1/2 left-4 transform -translate-y-1/2 bg-gray-400 bg-opacity-80 text-gray-800 p-3 rounded-full focus:outline-none"
         onClick={onPrevBtnClicked}
       >
         <GrPrevious />
       </button>
       <button
+        title="Go Next Button"
         className="absolute top-1/2 right-4 transform -translate-y-1/2 bg-gray-400 bg-opacity-80 text-gray-800 p-3 rounded-full focus:outline-none"
         onClick={onNextBtnClicked}
       >

@@ -107,7 +107,7 @@ async function page({params} : {params : { ID : number }}) {
                 Privacy Statement.
               </div>
 
-              <button className="bg-[#275B8B] font-semibold text-sm text-white py-4 hover:bg-[#3d71a1] transition-all duration-500">
+              <button title="Submit Enquiry Button" className="bg-[#275B8B] font-semibold text-sm text-white py-4 hover:bg-[#3d71a1] transition-all duration-500">
                 SUBMIT ENQUIRY
               </button>
             </form>

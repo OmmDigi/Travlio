@@ -83,7 +83,7 @@ function Footer() {
               type="text"
               placeholder="Email id"
             />
-            <button className="h-full bg-[#093F88] text-white font-semibold px-6 text-sm sm:w-full sm:py-8">
+            <button title="Form Submit Button" className="h-full bg-[#093F88] text-white font-semibold px-6 text-sm sm:w-full sm:py-8">
               SUBMIT
             </button>
           </div>
