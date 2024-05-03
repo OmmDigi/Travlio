@@ -22,6 +22,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <meta
+          name="google-site-verification"
+          content="s-9GCCA6Jp6qLihIFxw1m1Md4VxgsAKxyedRySvV1CE"
+        />
+      </head>
       <body className={popins.className + " bg-[#FFFFFF]"}>
         <MyProvider child={children} />
       </body>
