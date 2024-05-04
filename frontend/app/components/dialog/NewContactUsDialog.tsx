@@ -10,7 +10,7 @@ import { IoCloseOutline } from "react-icons/io5";
 import Link from "next/link";
 import { MdCall } from "react-icons/md";
 import { MdOutlineMailOutline } from "react-icons/md";
-import { SEND_EMAIL_API } from "@/app/constant";
+import { DIALOG_TIMER_STATE, SEND_EMAIL_API } from "@/app/constant";
 import { IResponse } from "@/app/types";
 
 function NewContactUsDialog() {
@@ -21,11 +21,16 @@ function NewContactUsDialog() {
     (state: RootState) => state.contactDialog
   );
   const dispatch = useDispatch();
+
   const closeDialgo = () => {
     dispatch(setNewContactUsDialog(false));
-    setTimeout(() => {
-      dispatch(setNewContactUsDialog(true));
-    }, 30 * 1000)
+    if (!DIALOG_TIMER_STATE.has("25000")) {
+      const TIMER_ID = setTimeout(() => {
+        dispatch(setNewContactUsDialog(true));
+        clearTimeout(TIMER_ID);
+        DIALOG_TIMER_STATE.set("25000", true);
+      }, 25 * 1000);
+    }
   };
   const onFormSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
@@ -57,7 +62,11 @@ function NewContactUsDialog() {
         newContactUsDialgoVisibility ? "flex" : "hidden"
       } items-center justify-center`}
     >
-      <div className={`flex items-center justify-center relative ${newContactUsDialgoVisibility ? "popupAnimaion" : ""}`}>
+      <div
+        className={`flex items-center justify-center relative ${
+          newContactUsDialgoVisibility ? "popupAnimaion" : ""
+        }`}
+      >
         <div
           onClick={(e) => e.stopPropagation()}
           className="w-[25rem] sm:w-full bg-[#104465] sm:mx-3 rounded-2xl flex items-center flex-col py-8 px-12 pb-8 z-10 sm:px-7"
@@ -75,7 +84,11 @@ function NewContactUsDialog() {
             <div className="w-full space-y-4">
               <ContactUsDialogInput required name="name" text="Full Name" />
               <ContactUsDialogInput required name="email" text="Email ID" />
-              <ContactUsDialogInput required name="number" text="Contact Number" />
+              <ContactUsDialogInput
+                required
+                name="number"
+                text="Contact Number"
+              />
               <div className="w-full mt-2">
                 <span className="text-sm text-white">Your Message</span>
                 <textarea
@@ -87,13 +100,19 @@ function NewContactUsDialog() {
               </div>
             </div>
             <button
-              disabled = {isMailSending}
+              disabled={isMailSending}
               type="submit"
               className="bg-[#FED346] font-semibold w-full h-8 mt-3 text-sm"
             >
               SUBMIT
             </button>
-            <p className={`w-full text-center text-xs pt-1 text-green-300 ${message === "" ? "hidden" : "block"}`}>Successfully sended</p>
+            <p
+              className={`w-full text-center text-xs pt-1 text-green-300 ${
+                message === "" ? "hidden" : "block"
+              }`}
+            >
+              Successfully sended
+            </p>
             <div className="w-full flex items-center justify-center flex-col gap-2 pt-1">
               <Link
                 href="tel:9831234910"

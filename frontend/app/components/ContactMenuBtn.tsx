@@ -2,17 +2,23 @@
 
 import React from "react";
 import { useDispatch } from "react-redux";
-import { setDialog } from "../redux/slice/dialogSlice";
+import { setNewContactUsDialog } from "../redux/slice/newContactUsDialgo";
 
 interface IProps {
-  text? : string;
+  text?: string;
   className?: string;
 }
 
 function ContactMenuBtn({ text, className }: IProps) {
   const dispatch = useDispatch();
   return (
-    <button title="Show Contact Us Dialog Button" onClick={() => dispatch(setDialog({dialog : "contact-us-dialog"}))} className={`font-[800] text-[14px] hover:text-black text-[#94999F] transition-all duration-300 ${className}`}>{!text ? "CONTACT US" : text}</button>
+    <button
+      title="Show Contact Us Dialog Button"
+      onClick={() => dispatch(setNewContactUsDialog(true))}
+      className={`font-[800] text-[14px] hover:text-black text-[#94999F] transition-all duration-300 ${className}`}
+    >
+      {!text ? "CONTACT US" : text}
+    </button>
   );
 }
 

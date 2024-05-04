@@ -60,3 +60,5 @@ export const BLOGS_LIST_DATA = [
     description : "The dancing colors of the Northern Lights, also known as the Aurora Borealis, have captivated humanity for centuries.",
   },
 ];
+
+export const DIALOG_TIMER_STATE = new Map<string, boolean>();
