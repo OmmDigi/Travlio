@@ -12,6 +12,7 @@ import { MdCall } from "react-icons/md";
 import { MdOutlineMailOutline } from "react-icons/md";
 import { DIALOG_TIMER_STATE, SEND_EMAIL_API } from "@/app/constant";
 import { IResponse } from "@/app/types";
+import SpinnerSvg from "../SpinnerSvg";
 
 function NewContactUsDialog() {
   const [isMailSending, setIsMailSending] = useState(false);
@@ -82,16 +83,28 @@ function NewContactUsDialog() {
           />
           <form onSubmit={onFormSubmit} className="w-full">
             <div className="w-full space-y-4">
-              <ContactUsDialogInput required name="name" text="Full Name" />
-              <ContactUsDialogInput required name="email" text="Email ID" />
               <ContactUsDialogInput
+                key={"fullname"}
+                required
+                name="name"
+                text="Full Name *"
+              />
+              <ContactUsDialogInput
+                key={"email"}
+                required
+                name="email"
+                text="Email ID *"
+              />
+              <ContactUsDialogInput
+                key={"number"}
                 required
                 name="number"
-                text="Contact Number"
+                text="Contact Number *"
               />
               <div className="w-full mt-2">
                 <span className="text-sm text-white">Your Message</span>
                 <textarea
+                  key={"message"}
                   aria-label="Add Message Text Field"
                   name="message"
                   rows={4}
@@ -102,9 +115,9 @@ function NewContactUsDialog() {
             <button
               disabled={isMailSending}
               type="submit"
-              className="bg-[#FED346] font-semibold w-full h-8 mt-3 text-sm"
+              className="bg-[#FED346] font-semibold w-full h-8 mt-3 text-sm flex items-center justify-center"
             >
-              SUBMIT
+              {isMailSending ? <SpinnerSvg size="1rem" /> : <span>SUBMIT</span>}
             </button>
             <p
               className={`w-full text-center text-xs pt-1 text-green-300 ${
