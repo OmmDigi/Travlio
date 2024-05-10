@@ -181,7 +181,7 @@ function page() {
             </p>
           </div>
         </div>
-        <form className="w-full p-10 px-40 mt-5 space-y-3 sm:px-5 sm:mt-0">
+        {/* <form className="w-full p-10 px-40 mt-5 space-y-3 sm:px-5 sm:mt-0">
           <input
             className="px-2 bg-slate-100 outline-none border-2 py-[0.45rem] text-gray-700 text-sm w-full"
             type="text"
@@ -207,7 +207,7 @@ function page() {
           <button title="Form Submit Button" className="w-full text-sm source-sans-3-400 tracking-widest border-2 bg-cyan-500 text-white font py-[0.45rem]">
             SUBMIT
           </button>
-        </form>
+        </form> */}
       </div>
     </section>
   );
