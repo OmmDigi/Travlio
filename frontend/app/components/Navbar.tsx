@@ -22,6 +22,7 @@ function Navbar() {
     { name: "TOUR PACKAGES", path: "/tours" },
     { name: "GALLERY", path: "/gallery" },
     { name: "BLOGS", path: "/blogs" },
+    { name: "CONTACT US", path: "/contact-us" },
   ];
 
   return (
@@ -59,7 +60,7 @@ function Navbar() {
               {item.name}
             </Link>
           ))}
-          <ContactMenuBtn />
+          {/* <ContactMenuBtn /> */}
           {/* <IoSearch /> */}
         </nav>
 

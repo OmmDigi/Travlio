@@ -18,8 +18,7 @@
   font-family: "Bebas";
   font-style: normal;
   font-weight: 900;
-  src: local(""),
-    url("../public/fonts//Bebas-Regular.otf") format("otf");
+  src: local(""), url("../public/fonts//Bebas-Regular.otf") format("otf");
 }
 
 .testimonialScroll::-webkit-scrollbar {
@@ -232,21 +231,21 @@ input[type="checkbox"]:checked::before {
   animation: blinkAnimation 2.1s linear infinite;
 }
 
-@keyframes blinkAnimation { 
-  0% { 
-      opacity: 0;
-      /* color: rgb(219, 91, 91); */
-  } 
+@keyframes blinkAnimation {
+  0% {
+    opacity: 0;
+    /* color: rgb(219, 91, 91); */
+  }
 
-  50% { 
-      opacity: 1; 
-      /* color: rgb(98, 60, 202); */
-  } 
+  50% {
+    opacity: 1;
+    /* color: rgb(98, 60, 202); */
+  }
 
-  100% { 
-      opacity: 0; 
-  } 
-} 
+  100% {
+    opacity: 0;
+  }
+}
 
 .messageShape {
   border-top-left-radius: 30px;
@@ -267,3 +266,11 @@ input[type="checkbox"]:checked::before {
   }
 }
 
+.formInputShdow {
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+.gridRes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}

@@ -27,8 +27,6 @@ function Footer() {
         <div className="text-white pt-12 w-96 text-justify">
           <h2 className="font-extrabold">Quick Links</h2>
           <div className="w-full grid grid-cols-2 gap-3 mt-4 sm:grid-cols-1">
-  
-
             <Link
               href="/"
               className="text-[14px] text-[#94999F] hover:text-red-300 transition-all duration-300"
@@ -36,37 +34,31 @@ function Footer() {
               Home
             </Link>
             <Link
-              href="/"
+              href="/about-us"
               className="text-[14px] text-[#94999F] hover:text-red-300 transition-all duration-300"
             >
               About Us
             </Link>
             <Link
-              href="/"
+              href="/tours"
               className="text-[14px] hover:text-red-300 text-[#94999F] transition-all duration-300"
             >
               Tour Packages
             </Link>
             <Link
-              href="/"
-              className="text-[14px] hover:text-red-300 text-[#94999F] transition-all duration-300"
-            >
-              Rewards
-            </Link>
-            <Link
-              href="/"
+              href="/gallery"
               className="text-[14px] hover:text-red-300 text-[#94999F] transition-all duration-300"
             >
               Gallery
             </Link>
             <Link
-              href="/"
+              href="/contact-us"
               className="text-[14px] hover:text-red-300 text-[#94999F] transition-all duration-300"
             >
               Contact Us
             </Link>
             <Link
-              href="/"
+              href="/blogs"
               className="text-[14px] hover:text-red-300 text-[#94999F] transition-all duration-300"
             >
               Blogs
@@ -74,8 +66,8 @@ function Footer() {
           </div>
         </div>
 
-        <div className="pt-12 w-96 text-justify sm:hidden">
-          <h2 className="font-extrabold text-white">Newsletter</h2>
+        <div className="pt-12 w-96 text-justify sm:pr-10">
+          {/* <h2 className="font-extrabold text-white">Newsletter</h2>
 
           <div className="h-8 flex items-center mt-4 sm:flex-col sm:items-start">
             <input
@@ -86,7 +78,23 @@ function Footer() {
             <button title="Form Submit Button" className="h-full bg-[#093F88] text-white font-semibold px-6 text-sm sm:w-full sm:py-8">
               SUBMIT
             </button>
+          </div> */}
+          <h2 className="font-extrabold text-white">Office Locations</h2>
+          <div className="w-full text-sm text-gray-300 mt-3 flex flex-col gap-5">
+          <Link href="https://maps.app.goo.gl/TZ9vQRj6UHAaL6iXA">
+            Shop No 9/38, Jhautala, near Aminia Restaurant, Chinar Park,
+            Kolkata, West Bengal 700157
+          </Link>
+          <Link href="https://maps.app.goo.gl/cHrSCpa4BDMKzC138">
+            AD 77, Sector 1, Saltalke, Kolkata - 700064, Kolkata, West Bengal
+            700064
+          </Link>
+          <Link href="https://maps.app.goo.gl/H1W3N4YDjSf1Lv2AA">
+            55, Gariahat Rd, Dover Terrace, Ballygunge, Kolkata, West Bengal
+            700019
+          </Link>
           </div>
+          
         </div>
       </footer>
 
@@ -109,7 +117,6 @@ function Footer() {
           </span>
         </div>
       </div> */}
-
     </>
   );
 }

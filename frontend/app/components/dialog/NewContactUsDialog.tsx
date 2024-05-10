@@ -25,13 +25,13 @@ function NewContactUsDialog() {
 
   const closeDialgo = () => {
     dispatch(setNewContactUsDialog(false));
-    if (!DIALOG_TIMER_STATE.has("25000")) {
-      const TIMER_ID = setTimeout(() => {
-        dispatch(setNewContactUsDialog(true));
-        clearTimeout(TIMER_ID);
-        DIALOG_TIMER_STATE.set("25000", true);
-      }, 25 * 1000);
-    }
+    // if (!DIALOG_TIMER_STATE.has("25000")) {
+    //   const TIMER_ID = setTimeout(() => {
+    //     dispatch(setNewContactUsDialog(true));
+    //     clearTimeout(TIMER_ID);
+    //     DIALOG_TIMER_STATE.set("25000", true);
+    //   }, 25 * 1000);
+    // }
   };
   const onFormSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
@@ -94,8 +94,11 @@ function NewContactUsDialog() {
                 required
                 name="email"
                 text="Email ID *"
+                type="email"
               />
               <ContactUsDialogInput
+                pattern="[0-9]{10}"
+                title="Please Enter A Valid Mobile Number"
                 key={"number"}
                 required
                 name="number"

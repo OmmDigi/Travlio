@@ -19,7 +19,7 @@ function Blogs() {
       </div>
 
       <ul className="w-full flex items-start justify-center gap-10 sm:flex-col sm:items-center">
-        {BLOGS_LIST_DATA.map((item, index) => (
+        {BLOGS_LIST_DATA.slice(0, 3).map((item, index) => (
           <li key={index} className="w-[290px] overflow-hidden">
             <Link href={item.link || ""}>
               <div className="h-[11rem] w-full overflow-hidden bg-black">

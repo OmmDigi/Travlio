@@ -75,6 +75,8 @@ function TourForm() {
       />
       <input
         required
+        pattern="[0-9]{10}"
+        title="Please Enter A Valid Mobile Number"
         name="mobile-number"
         type="text"
         placeholder="Mobile Number"
