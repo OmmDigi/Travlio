@@ -124,7 +124,7 @@ function NewContactUsDialog() {
                 message === "" ? "hidden" : "block"
               }`}
             >
-              Successfully sended
+              Successfully Submitted
             </p>
             <div className="w-full flex items-center justify-center flex-col gap-2 pt-1">
               <Link
