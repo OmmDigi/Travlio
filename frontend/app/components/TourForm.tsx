@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import Select from "./Select";
 import { SEND_EMAIL_API } from "../constant";
 import { IResponse } from "../types";
+import SpinnerSvg from "./SpinnerSvg";
 
 const destinationOptions = [
   "Europe",
@@ -32,14 +33,14 @@ const durationOptions = [
 
 function TourForm() {
   const [isMailSending, setIsMailSending] = useState(false);
-  const [message, setMessage] = useState("");
+  const [message, setMessage] = useState<string | null>(null);
 
   const onFormSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     const formData = new FormData(event.currentTarget);
 
     setIsMailSending(true);
-    setMessage("");
+    setMessage(null);
     const response = await fetch(SEND_EMAIL_API, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
@@ -113,12 +114,13 @@ function TourForm() {
       <button
         disabled={isMailSending}
         title="submit button"
-        className={`w-full text-white py-2 text-sm transition-all duration-300 ${
+        className={`w-full text-white flex items-center justify-center py-2 text-sm transition-all duration-300 ${
           isMailSending ? "bg-[#4379c0]" : "bg-[#093F88] hover:bg-[#32598d]"
         }`}
       >
-        SUBMIT
+        {isMailSending ? <SpinnerSvg size="1rem" className="text-white"/> : <span>SUBMIT</span>}
       </button>
+      <p className={`text-sm text-green-700 text-center ${message ? "block" : "hidden"}`}>Successfully Submitted</p>
     </form>
   );
 }
