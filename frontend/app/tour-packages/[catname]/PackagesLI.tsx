@@ -11,7 +11,7 @@ interface IProps {
 }
 
 function PackagesLI({ info }: IProps) {
-  const URL = `/tour/${info.ID}`;
+  const URL = `/tour/${info.TITLE}`;
   return (
     <li className="w-full toupPackagesShdow relative hover:scale-105 transition-all duration-500">
       <Link href={URL}>

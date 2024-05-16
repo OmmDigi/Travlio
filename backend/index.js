@@ -97,18 +97,23 @@ app.get("/search", async (req, res) => {
   );
 });
 
-app.get("/tour/:ID", async (req, res) => {
-  const tour_id = req.params.ID;
+app.get("/tour/:TITLE", async (req, res) => {
+  const tour_title = req.params.TITLE;
   const table_name = req.query.tableName || "tourinfo";
 
-  if (!tour_id)
-    return res.status(400).json(new ApiResponse(400, "ID is required"));
+  if (!tour_title)
+    return res.status(400).json(new ApiResponse(400, "TITLE is required"));
 
-  let sql = `SELECT * FROM ${table_name} WHERE ${table_name}.ID = ?`;
+  const sql = `SELECT * FROM ${table_name} WHERE ${table_name}.TITLE = ?`;
 
-  const result = await query(sql, [tour_id]);
+  try {
+    const result = await query(sql, [tour_title]);
+    res.status(200).json(result[0]);
+  } catch (error) {
+    res.status(200).json([]);
+  }
 
-  res.status(200).json(result[0]);
+  
 });
 
 app.post("/sendemail", async (req, res) => {
