@@ -15,7 +15,7 @@ interface IProps {
 
 function TourPackagesList({ datas }: IProps) {
   return (
-    <NewCarousel dataLength={datas.length} datas={datas}>
+    <NewCarousel dataLength={datas?.length} datas={datas}>
       {/* {datas.map((item, index) => (
         <SwiperSlide key={item.ID}>
           <li className="toupPackagesShdow min-w-[365px] min-h-[365px] sm:min-w-full border border-[#e1e1e1] cursor-pointer">

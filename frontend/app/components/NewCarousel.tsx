@@ -63,7 +63,7 @@ function NewCarousel({ children, dataLength, datas }: IProps) {
         //   sliderShadows: true,
         // }}
       >
-        {datas.map((item, index) => (
+        {datas?.map((item, index) => (
           <SwiperSlide key={item.ID}>
             <div
               className={`toupPackagesShdow min-w-[365px] min-h-[365px] sm:min-w-full border border-[#e1e1e1] cursor-pointer ${

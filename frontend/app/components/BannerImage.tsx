@@ -1,10 +1,11 @@
-"use client"
+"use client";
 
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
 
 function BannerImage() {
   const bannerList = ["/home-page-1.jpg", "/home-page-2.jpg"];
+  const mobilebannerlist = ["/mobile-banner1.webp", "/mobile-banner2.webp"];
   const [currentIndex, setCurrentIndex] = useState(0);
   const [loaded, setLoaded] = useState(false);
 
@@ -40,12 +41,12 @@ function BannerImage() {
     //   ))}
     // </div>
     <div
-    className={`overflow-hidden h-[400px] w-full relative banner ${
-      loaded ? "loaded" : ""
-    }`}
-  >
-    <div>
-      {bannerList.map((imageUrl, index) => (
+      className={`overflow-hidden h-[400px] w-full relative banner ${
+        loaded ? "loaded" : ""
+      }`}
+    >
+      <div className="sm:hidden">
+        {bannerList.map((imageUrl, index) => (
           <Image
             key={index}
             height={1500}
@@ -56,9 +57,24 @@ function BannerImage() {
               index === currentIndex ? "active" : ""
             } sm:h-[350px] sm:object-cover`}
           />
-      ))}
+        ))}
+      </div>
+
+      <div className="hidden sm:block">
+        {mobilebannerlist.map((imageUrl, index) => (
+          <Image
+            key={index}
+            height={1500}
+            width={1500}
+            src={imageUrl}
+            alt={`Banner ${index + 1}`}
+            className={`img ${
+              index === currentIndex ? "active" : ""
+            } sm:h-[350px] sm:object-cover`}
+          />
+        ))}
+      </div>
     </div>
-  </div>
   );
 }
 
