@@ -59,6 +59,24 @@ export const BLOGS_LIST_DATA = [
     link: "/blogs/ultimate-guide-best-places-to-see-northern-lights",
     description : "The dancing colors of the Northern Lights, also known as the Aurora Borealis, have captivated humanity for centuries.",
   },
+  {
+    id: "5",
+    title: "Andaman tour package from Kolkata",
+    date: "18th May’24",
+    author: "Admin",
+    img: "/blogs/blog5.webp",
+    link: "/blogs/andaman-tour-package-from-kolkata",
+    description : "Why are sea destinations so lucrative among travelers? Well, firstly, they offer a diverse range of attractions, from pristine beaches to vibrant marine life, making them appealing to a wide range of travelers",
+  },
+  {
+    id: "6",
+    title: "Best International Tour Packages From Kolkata",
+    date: "18th May’24",
+    author: "Admin",
+    img: "/blogs/blog6.webp",
+    link: "/blogs/best-international-tour-packages-from-kolkata",
+    description : "Traveling abroad from Kolkata, India offers a myriad of enriching experiences that blend history, culture, and adventure.",
+  },
 ];
 
 export const DIALOG_TIMER_STATE = new Map<string, boolean>();

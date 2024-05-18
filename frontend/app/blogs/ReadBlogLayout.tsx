@@ -24,12 +24,12 @@ function ReadBlogLayout(props: IProps) {
           <span className="text-xs text-gray-600">{props.date}</span>
         </div>
 
-        <h1 className="text-2xl josefin-sans-568 text-emerald-700 pt-4">
+        <h1 className="text-3xl uppercase josefin-sans-568 text-emerald-700 font-semibold pt-4">
           {props.heading}
         </h1>
-        <p className="josefin-sans-350 text-justify text-[14px] w-[80%] sm:w-full">
+        {/* <p className="josefin-sans-350 text-justify text-[14px] w-[80%] sm:w-full mt-3">
           {props.shortdescription}
-        </p>
+        </p> */}
 
         <Image
           src={props.bannerimage}

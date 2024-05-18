@@ -274,3 +274,12 @@ input[type="checkbox"]:checked::before {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
+
+table, tr, th, td {
+  border: 1px solid gray;
+}
+
+th, td {
+  padding: 12px;
+  text-align: center;
+}
