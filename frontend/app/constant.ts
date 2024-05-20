@@ -77,6 +77,15 @@ export const BLOGS_LIST_DATA = [
     link: "/blogs/best-international-tour-packages-from-kolkata",
     description : "Traveling abroad from Kolkata, India offers a myriad of enriching experiences that blend history, culture, and adventure.",
   },
+  {
+    id: "7",
+    title: "INTERNATIONAL TOUR AND TRAVEL AGENCY IN KOLKATA",
+    date: "20th May’24",
+    author: "Admin",
+    img: "/blogs/blog7.webp",
+    link: "/blogs/international-tour-and-travel-agency-in-kolkata",
+    description : "Embarking on a foreign tour from Kolkata offers a unique experience, blending the cultural richness of Kolkata with the adventure of exploring a new country. Plus, Kolkata's international",
+  },
 ];
 
 export const DIALOG_TIMER_STATE = new Map<string, boolean>();
