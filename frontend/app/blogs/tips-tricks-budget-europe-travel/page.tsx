@@ -2,6 +2,17 @@ import Image from "next/image";
 import React from "react";
 import ReadBlogLayout from "../ReadBlogLayout";
 import Point from "../Point";
+import { Metadata } from "next";
+import { BASE_URL } from "@/app/constant";
+
+export const metadata: Metadata = {
+  title: "Andaman Tour Package from Kolkata |Travlio",
+  description:
+    "Discover Travlio&apos;s exclusive Andaman tour package from Kolkata. Read this blog to learn about the beaches, adventure activities, and rich cultural heritage.",
+  alternates: {
+    canonical: BASE_URL + "/blogs/tips-tricks-budget-europe-travel",
+  },
+};
 
 function page() {
   const datas = [

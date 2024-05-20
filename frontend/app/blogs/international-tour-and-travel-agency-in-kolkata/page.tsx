@@ -4,6 +4,18 @@ import P from "../P";
 import Point from "../Point";
 import { title } from "process";
 import Heading from "../Heading";
+import { Metadata } from "next";
+import { BASE_URL } from "@/app/constant";
+
+export const metadata: Metadata = {
+  title: "Andaman Tour Package from Kolkata |Travlio",
+  description:
+    "Discover Travlio&apos;s exclusive Andaman tour package from Kolkata. Read this blog to learn about the beaches, adventure activities, and rich cultural heritage.",
+  alternates: {
+    canonical: BASE_URL + "/blogs/international-tour-and-travel-agency-in-kolkata",
+  },
+};
+
 
 const points1 = [
   {
