@@ -22,7 +22,7 @@ export default function page() {
       shortdescription=""
     >
       <Heading type="H1">
-        WHY IS MALDIVES A TOURIST HOTSPOT? LET'S EXPLORE!
+        WHY IS MALDIVES A TOURIST HOTSPOT? LET&apos;S EXPLORE!
       </Heading>
       <PointList
         points={[
@@ -79,7 +79,7 @@ export default function page() {
       </P>
       <P>Got your long leave application approved? Congratulations! </P>
       <Heading type="H2">
-        HERE'S A COMPREHENSIVE 5-DAY ITINERARY FOR A TRIP TO THE MALDIVES FROM
+        HERE&apos;S A COMPREHENSIVE 5-DAY ITINERARY FOR A TRIP TO THE MALDIVES FROM
         KOLKATA
       </Heading>
       <PointList
@@ -102,7 +102,7 @@ export default function page() {
           {
             title: "Day 4",
             subtitle:
-              "Cultural Excursion across the Maldives' cultural heritage with a visit to Malé city. Discover landmarks such as the Old Friday Mosque, Sultan Park, and the National Museum. Shop for souvenirs at local markets and boutiques, and sample traditional Maldivian cuisine at a local restaurant. Alternatively, embark on an adventure excursion such as island hopping, fishing, or a submarine tour to explore the underwater.",
+              "Cultural Excursion across the Maldives&apos; cultural heritage with a visit to Malé city. Discover landmarks such as the Old Friday Mosque, Sultan Park, and the National Museum. Shop for souvenirs at local markets and boutiques, and sample traditional Maldivian cuisine at a local restaurant. Alternatively, embark on an adventure excursion such as island hopping, fishing, or a submarine tour to explore the underwater.",
           },
           {
             title: "Day 5",
@@ -164,7 +164,7 @@ export default function page() {
           },
           {
             title:
-              "Traditional Maldivian Costume such as a libaas (women's dress) or a mundu (men's sarong) ",
+              "Traditional Maldivian Costume such as a libaas (women&apos;s dress) or a mundu (men&apos;s sarong) ",
             subtitle: "",
           },
           {

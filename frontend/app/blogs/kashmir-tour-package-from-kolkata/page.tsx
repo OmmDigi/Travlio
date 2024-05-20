@@ -44,7 +44,7 @@ export default function page() {
       </P>
 
       <Heading type="H2">
-        Here's a comprehensive 4-day itinerary for a trip to Kashmir from
+        Here&apos;s a comprehensive 4-day itinerary for a trip to Kashmir from
         Kolkata:
       </Heading>
       <PointList
@@ -67,7 +67,7 @@ export default function page() {
           {
             title: "Day 4:",
             subtitle:
-              'Take a day trip to Pahalgam, a picturesque town known for its lush greenery and serene ambiance. Visit Betaab Valley, named after the Bollywood film "Betaab" which was shot here, and Aru Valley, famous for its meadows and adventure activities. Optionally, you can go for a pony ride or explore the local markets. Return to Srinagar in the evening. Depart from Srinagar for Kolkata or extend your stay if you have more time.',
+              `&apos;Take a day trip to Pahalgam, a picturesque town known for its lush greenery and serene ambiance. Visit Betaab Valley, named after the Bollywood film "Betaab" which was shot here, and Aru Valley, famous for its meadows and adventure activities. Optionally, you can go for a pony ride or explore the local markets. Return to Srinagar in the evening. Depart from Srinagar for Kolkata or extend your stay if you have more time.&apos;`,
           },
         ]}
       />
@@ -79,7 +79,7 @@ export default function page() {
       <Heading type="H2">
         For a 10-day trip to Kashmir from Kolkata, you can explore more
         destinations and immerse yourself deeper into the beauty and culture of
-        the region. Here's a suggested itinerary:
+        the region. Here&apos;s a suggested itinerary:
       </Heading>
       <PointList
         points={[
@@ -101,7 +101,7 @@ export default function page() {
           {
             title: "Day 7-8:",
             subtitle:
-              'Head to Sonamarg, known as the "Meadow of Gold," famous for its beautiful landscapes and adventure activities. Spend two days in Sonamarg exploring Thajiwas Glacier, and Zoji La Pass, and enjoying activities like trekking and horse riding. Stay overnight in Sonamarg.',
+              `&apos;Head to Sonamarg, known as the "Meadow of Gold," famous for its beautiful landscapes and adventure activities. Spend two days in Sonamarg exploring Thajiwas Glacier, and Zoji La Pass, and enjoying activities like trekking and horse riding. Stay overnight in Sonamarg.&apos;`,
           },
           {
             title: "Day 9-10:",

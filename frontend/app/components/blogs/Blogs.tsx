@@ -4,6 +4,7 @@ import { CiCalendarDate } from "react-icons/ci";
 import NewCarousel from "../NewCarousel";
 import Link from "next/link";
 import { BLOGS_LIST_DATA } from "@/app/constant";
+import ShimmerImage from "../ShimmerImage";
 
 
 function Blogs() {
@@ -23,7 +24,7 @@ function Blogs() {
           <li key={index} className="w-[290px] overflow-hidden">
             <Link href={item.link || ""}>
               <div className="h-[11rem] w-full overflow-hidden bg-black">
-                <Image
+                <ShimmerImage
                   className="w-full h-full hover:scale-105 cursor-pointer transition-all duration-500"
                   src={item.img}
                   alt=""

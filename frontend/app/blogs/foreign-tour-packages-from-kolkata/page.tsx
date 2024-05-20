@@ -30,8 +30,8 @@ export default function page() {
         Secondly, they provide opportunities for unique experiences not easily
         found domestically, such as visiting iconic landmarks or indulging in
         adventure sports. Additionally, foreign travel symbolizes status and
-        prestige, reflecting an individual's cosmopolitan outlook. For Bengalis
-        specifically, there's a historical connection due to the region's rich
+        prestige, reflecting an individual&apos;s cosmopolitan outlook. For Bengalis
+        specifically, there&apos;s a historical connection due to the region&apos;s rich
         literary and intellectual heritage, sparking curiosity about other
         cultures. Moreover, globalization and increased disposable incomes have
         made overseas travel more accessible and desirable for many Indians,
@@ -117,7 +117,7 @@ export default function page() {
         of Rome would surely remind us of our tedious History book pages. One
         cannot leave behind Italy, to marvel at iconic landmarks like the
         Colosseum and Vatican City. Savoring a croissant and coffee at a quaint
-        Parisian café while admiring the Eiffel Tower's grandeur is a must.
+        Parisian café while admiring the Eiffel Tower&apos;s grandeur is a must.
         Embarking on a scenic train journey through the Swiss Alps, taking in
         breathtaking vistas of snow-capped peaks and picturesque villages is
         another highlight. Cruising along the canals of Venice, Italy, in a
@@ -273,7 +273,7 @@ export default function page() {
       <P>
         foreign tour packages from Kolkata on our website Travlio also a gold
         partner of Thomas Cook in India... For Bengalis, in particular, foreign
-        destinations offer a bridge to their region's intellectual legacy and a
+        destinations offer a bridge to their region&apos;s intellectual legacy and a
         gateway to the wider world. With globalization and rising affluence, the
         allure of overseas travel continues to grow, becoming a symbol of
         cosmopolitanism and personal enrichment. Before investing in the best

@@ -1,6 +1,6 @@
-import Image from "next/image";
 import React from "react";
 import { GoDotFill } from "react-icons/go";
+import ShimmerImage from "../components/ShimmerImage";
 
 interface IProps {
   children: React.ReactNode;
@@ -31,14 +31,14 @@ function ReadBlogLayout(props: IProps) {
           {props.shortdescription}
         </p> */}
 
-        <Image
+        <ShimmerImage
           src={props.bannerimage}
           alt="blog-img"
           width={1280}
           height={1280}
-          className="w-[70%] mt-4 sm:w-full"
+          className="w-[70%] mt-4 sm:w-full rounded-3xl"
         />
-        {props.children}
+        <div className="w-[70%] h-full sm:w-full">{props.children}</div>
       </div>
     </div>
   );
