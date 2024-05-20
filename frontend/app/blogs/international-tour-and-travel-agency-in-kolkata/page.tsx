@@ -109,7 +109,7 @@ const points6 = [
   {
     title: "",
     subtitle:
-      "Exploring the historic streets of Rome would surely remind us of our tedious History book pages. One cannot leave behind Italy, to marvel at iconic landmarks like the Colosseum and Vatican City. Savoring a croissant and coffee at a quaint Parisian café while admiring the Eiffel Tower's grandeur is a must.",
+      "Exploring the historic streets of Rome would surely remind us of our tedious History book pages. One cannot leave behind Italy, to marvel at iconic landmarks like the Colosseum and Vatican City. Savoring a croissant and coffee at a quaint Parisian café while admiring the Eiffel Tower&apos;s grandeur is a must.",
   },
   {
     title: "",
@@ -140,7 +140,7 @@ export default function page() {
       <P>
         Embarking on a foreign tour from Kolkata offers a unique experience,
         blending the cultural richness of Kolkata with the adventure of
-        exploring a new country. Plus, Kolkata's international cosmopolitan
+        exploring a new country. Plus, Kolkata&apos;s international cosmopolitan
         outlook provides convenient access to various destinations worldwide,
         making it easier to embark on your travel adventures. What are people
         particularly seeking, In a foreign tour package from Kolkata?{" "}
