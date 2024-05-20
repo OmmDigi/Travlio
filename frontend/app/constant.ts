@@ -3,7 +3,7 @@ export const GLOBAL_X_PADDING = "px-24 sm:px-3";
 export let BASE_URL = "https://travlio.in";
 export let API_BASE_URL = "https://travliobackend.vercel.app";
 
-export const SEND_EMAIL_API = `${API_BASE_URL}/sendemail`
+export const SEND_EMAIL_API = `${API_BASE_URL}/sendemail`;
 
 // const env = process.env.NODE_ENV;
 // if(env == "development"){
@@ -27,7 +27,8 @@ export const BLOGS_LIST_DATA = [
     author: "Admin",
     img: "/blogs/blog1.jpeg",
     link: "/blogs/hidden-gems-europe-destinations",
-    description : "Europe is a continent teeming with iconic landmarks, bustling cities, and well-trodden tourist trails.",
+    description:
+      "Europe is a continent teeming with iconic landmarks, bustling cities, and well-trodden tourist trails.",
   },
 
   {
@@ -37,7 +38,8 @@ export const BLOGS_LIST_DATA = [
     author: "Admin",
     img: "/blogs/blog2.webp",
     link: "/blogs/must-try-dishes-europe",
-    description : "Europe's rich tapestry of cultures, landscapes, and traditions is beautifully reflected in its diverse culinary scene.",
+    description:
+      "Europe's rich tapestry of cultures, landscapes, and traditions is beautifully reflected in its diverse culinary scene.",
   },
 
   {
@@ -47,17 +49,20 @@ export const BLOGS_LIST_DATA = [
     author: "Admin",
     img: "/blogs/blog3.jpeg",
     link: "/blogs/tips-tricks-budget-europe-travel",
-    description : "Europe: a continent steeped in history, culture, and charm. From the picturesque streets of Paris to the stunning coastlines of Croatia, Europe offers a plethora of experiences for travelers.",
+    description:
+      "Europe: a continent steeped in history, culture, and charm. From the picturesque streets of Paris to the stunning coastlines of Croatia, Europe offers a plethora of experiences for travelers.",
   },
 
   {
     id: "4",
-    title: "The Ultimate Guide: Best Places to See the Northern Lights, from Iceland to Alaska",
+    title:
+      "The Ultimate Guide: Best Places to See the Northern Lights, from Iceland to Alaska",
     date: "26th April’24",
     author: "Admin",
     img: "/blogs/blog4.webp",
     link: "/blogs/ultimate-guide-best-places-to-see-northern-lights",
-    description : "The dancing colors of the Northern Lights, also known as the Aurora Borealis, have captivated humanity for centuries.",
+    description:
+      "The dancing colors of the Northern Lights, also known as the Aurora Borealis, have captivated humanity for centuries.",
   },
   {
     id: "5",
@@ -66,7 +71,8 @@ export const BLOGS_LIST_DATA = [
     author: "Admin",
     img: "/blogs/blog5.webp",
     link: "/blogs/andaman-tour-package-from-kolkata",
-    description : "Why are sea destinations so lucrative among travelers? Well, firstly, they offer a diverse range of attractions, from pristine beaches to vibrant marine life, making them appealing to a wide range of travelers",
+    description:
+      "Why are sea destinations so lucrative among travelers? Well, firstly, they offer a diverse range of attractions, from pristine beaches to vibrant marine life, making them appealing to a wide range of travelers",
   },
   {
     id: "6",
@@ -75,7 +81,8 @@ export const BLOGS_LIST_DATA = [
     author: "Admin",
     img: "/blogs/blog6.webp",
     link: "/blogs/best-international-tour-packages-from-kolkata",
-    description : "Traveling abroad from Kolkata, India offers a myriad of enriching experiences that blend history, culture, and adventure.",
+    description:
+      "Traveling abroad from Kolkata, India offers a myriad of enriching experiences that blend history, culture, and adventure.",
   },
   {
     id: "7",
@@ -84,7 +91,38 @@ export const BLOGS_LIST_DATA = [
     author: "Admin",
     img: "/blogs/blog7.webp",
     link: "/blogs/international-tour-and-travel-agency-in-kolkata",
-    description : "Embarking on a foreign tour from Kolkata offers a unique experience, blending the cultural richness of Kolkata with the adventure of exploring a new country. Plus, Kolkata's international",
+    description:
+      "Embarking on a foreign tour from Kolkata offers a unique experience, blending the cultural richness of Kolkata with the adventure of exploring a new country. Plus, Kolkata's international",
+  },
+  {
+    id: "8",
+    title: "FOREIGN TOUR PACKAGES FROM KOLKATA",
+    date: "20th May’24",
+    author: "Admin",
+    img: "/blogs/blog8.webp",
+    link: "/blogs/foreign-tour-packages-from-kolkata",
+    description:
+      "Embarking on a foreign tour from Kolkata offers a unique experience, blending the cultural richness of Kolkata with the adventure of exploring a new country. Plus, Kolkata's international",
+  },
+  {
+    id: "9",
+    title: "KASHMIR TOUR PACKAGE FROM KOLKATA",
+    date: "20th May’24",
+    author: "Admin",
+    img: "/blogs/blog9.webp",
+    link: "/blogs/kashmir-tour-package-from-kolkata",
+    description:
+      "Embarking on a foreign tour from Kolkata offers a unique experience, blending the cultural richness of Kolkata with the adventure of exploring a new country. Plus, Kolkata's international",
+  },
+  {
+    id: "10",
+    title: "KASHMIR TOUR PACKAGE FROM KOLKATA",
+    date: "20th May’24",
+    author: "Admin",
+    img: "/blogs/blog10.webp",
+    link: "/blogs/maldives-tour-packages-from-kolkata",
+    description:
+      "Embarking on a foreign tour from Kolkata offers a unique experience, blending the cultural richness of Kolkata with the adventure of exploring a new country. Plus, Kolkata's international",
   },
 ];
 
