@@ -194,6 +194,60 @@ export default function page() {
         ))}
       </ul>
 
+      <table className="w-full">
+        <tr>
+          <th>Inclusions</th>
+          <th>Exclusions </th>
+          <th>Document Checklist</th>
+          <th>Things to keep in mind </th>
+        </tr>
+        <tr>
+          <td>multilingual Tour Manager or a local Representative</td>
+          <td>
+            Tipping is expected from anyone providing your service e.g., Coach
+            Driver, Local Guides, Hotel & Restaurant staff etc. It is mandatory
+            to tip a nominal amount of EUR 3 per person/per day.{" "}
+          </td>
+          <td>Multiple entry Schengen & UK visa</td>
+          <td>Check visas and passport validity.</td>
+        </tr>
+        <tr>
+          <td>Continental breakfast buffet</td>
+          <td>
+            The cost of the Basic Travel Quota is equivalent to USD 250,000
+          </td>
+          <td>documentation, processing and consulate fees.</td>
+          <td>Exchange currency and manage finances</td>
+        </tr>
+        <tr>
+          <td>Indian veg/non-veg, Jain food options for lunch and dinner</td>
+          <td>
+            Any increase in the airfare charged by the airline on your air
+            ticket{" "}
+          </td>
+          <td>local taxes and services </td>
+          <td>Research health precautions and insurance</td>
+        </tr>
+        <tr>
+          <td>guided city tour, hotel stays</td>
+          <td>
+            The tour cost does not include POE charges and passport charges. No
+            porterage included
+          </td>
+          <td>All transfers and extensive excursions with entrance fees</td>
+          <td>Respect local customs and etiquette.</td>
+        </tr>
+        <tr>
+          <td>Flights ( round trips)</td>
+          <td>
+            Government Taxes as applicable are extra. sPrivate airport
+            transfers, Cost of Suggested / Optional Excursions
+          </td>
+          <td>Cost of Visa and Medical Insurance</td>
+          <td>Plan transportation and accommodation ahead.</td>
+        </tr>
+      </table>
+
       <Heading type="H2">
         LET’S EXPLORE SOME COMPREHENSIVE EUROPE PACKAGES WE OFFER:
       </Heading>
