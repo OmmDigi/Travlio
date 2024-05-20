@@ -8,12 +8,12 @@ import { DIALOG_TIMER_STATE } from "../constant";
 function OpenDialogAutomaticly() {
   const dispatch = useDispatch();
   useEffect(() => {
-    if(!DIALOG_TIMER_STATE.has("5000")) {
+    if(!DIALOG_TIMER_STATE.has("15000")) {
       const TIMER_ID = setTimeout(() => {
         clearTimeout(TIMER_ID);
         dispatch(setNewContactUsDialog(true));
-        DIALOG_TIMER_STATE.set("5000", true);
-      }, 5000);
+        DIALOG_TIMER_STATE.set("15000", true);
+      }, 15 * 1000);
     }
   }, []);
 
