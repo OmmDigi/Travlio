@@ -36,7 +36,7 @@ function page() {
                   <span className="font-semibold text-red-500 text-xs">
                     {BLOGS_LIST_DATA[currentIndex].date}
                   </span>
-                  <h2 className="font-semibold text-gray-600">
+                  <h2 className="font-semibold text-gray-600 uppercase">
                     {BLOGS_LIST_DATA[currentIndex].title}
                   </h2>
                   <p className="text-xs pt-1 line-clamp-2">
