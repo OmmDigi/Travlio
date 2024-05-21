@@ -116,7 +116,7 @@ export const BLOGS_LIST_DATA = [
   {
     id: "10",
     title: "MALDIVES TOUR PACKAGES FROM KOLKATA",
-    date: "20th May’24",
+    date: "21th May’24",
     author: "Admin",
     img: "/blogs/blog10.webp",
     link: "/blogs/maldives-tour-packages-from-kolkata",
