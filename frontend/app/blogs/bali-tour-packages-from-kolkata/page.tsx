@@ -80,7 +80,7 @@ export default function page() {
           {
             title: "Dining",
             subtitle:
-              "Explore the local cuisine at traditional warungs (eateries) and restaurants, and don't forget to try Balinese specialties like Nasi Goreng (fried rice) and Babi Guling (suckling pig).",
+              "Explore the local cuisine at traditional warungs (eateries) and restaurants, and don&apos;t forget to try Balinese specialties like Nasi Goreng (fried rice) and Babi Guling (suckling pig).",
           },
           {
             title: "Respectful Attire",
@@ -90,7 +90,7 @@ export default function page() {
         ]}
       />
       <P>
-        By checking off these items, you'll be well-prepared for an enjoyable
+        By checking off these items, you&apos;ll be well-prepared for an enjoyable
         and memorable trip to Bali!
       </P>
       <Heading type="H2">
@@ -131,7 +131,7 @@ export default function page() {
           {
             title: "Environmental Awareness",
             subtitle:
-              "Help preserve Bali's natural beauty by minimizing plastic usage, supporting eco-friendly businesses, and participating in responsible tourism practices.",
+              "Help preserve Bali&apos;s natural beauty by minimizing plastic usage, supporting eco-friendly businesses, and participating in responsible tourism practices.",
           },
           {
             title: "Communication",
@@ -159,7 +159,7 @@ export default function page() {
         ]}
       />
 
-      <Heading>HERE'S A SUGGESTED 7-DAY ITINERARY FOR EXPLORING BALI:</Heading>
+      <Heading>HERE&apos;S A SUGGESTED 7-DAY ITINERARY FOR EXPLORING BALI:</Heading>
       <PointList
         points={[
           {
@@ -170,7 +170,7 @@ export default function page() {
           {
             title: "Day 2",
             subtitle:
-              "Ubud Exploration leading to Bali's cultural heart, and visit attractions such as the Ubud Monkey Forest, Ubud Palace, and Ubud Art Market. Explore the lush rice terraces of Tegalalang and take in the stunning scenery. Visit local art galleries and workshops to learn about traditional Balinese crafts. Enjoy dinner at a restaurant in Ubud town.",
+              "Ubud Exploration leading to Bali&apos;s cultural heart, and visit attractions such as the Ubud Monkey Forest, Ubud Palace, and Ubud Art Market. Explore the lush rice terraces of Tegalalang and take in the stunning scenery. Visit local art galleries and workshops to learn about traditional Balinese crafts. Enjoy dinner at a restaurant in Ubud town.",
           },
           {
             title: "Day 3",
@@ -201,7 +201,7 @@ export default function page() {
       />
 
       <P>
-        Adjust this itinerary based on your interests and preferences, and don't
+        Adjust this itinerary based on your interests and preferences, and don&apos;t
         forget to leave some time for spontaneous exploration and relaxation!
         With Travlio you are getting the best international tour packages from
         Kolkata since we are a gold partner of Thomas Cook In India.{" "}
@@ -211,7 +211,7 @@ export default function page() {
         packages offer an immersive experience in some of the most enchanting
         destinations in the world like Bali! From stunning beaches and lush rice
         terraces to vibrant culture and rich history, Bali has something to
-        offer every traveler. Whether you're seeking adventure, relaxation, or
+        offer every traveler. Whether you&apos;re seeking adventure, relaxation, or
         cultural exploration, the best and cheap international tour packages
         cater to diverse interests and preferences within your allocated travel
         budget. With carefully curated itineraries, knowledgeable guides, and
