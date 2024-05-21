@@ -116,7 +116,7 @@ export const BLOGS_LIST_DATA = [
   {
     id: "10",
     title: "MALDIVES TOUR PACKAGES FROM KOLKATA",
-    date: "21th May’24",
+    date: "21st May’24",
     author: "Admin",
     img: "/blogs/blog10.webp",
     link: "/blogs/maldives-tour-packages-from-kolkata",
@@ -126,7 +126,7 @@ export const BLOGS_LIST_DATA = [
   {
     id: "11",
     title: "THAILAND TOUR PACKAGE FROM KOLKATA",
-    date: "21th May’24",
+    date: "21st May’24",
     author: "Admin",
     img: "/blogs/blog11.webp",
     link: "/blogs/thailand-tour-package-from-kolkata",
@@ -136,7 +136,7 @@ export const BLOGS_LIST_DATA = [
   {
     id: "12",
     title: "BALI TOUR PACKAGES FROM KOLKATA",
-    date: "21th May’24",
+    date: "21st May’24",
     author: "Admin",
     img: "/blogs/blog12.webp",
     link: "/blogs/bali-tour-packages-from-kolkata",
