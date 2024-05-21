@@ -7,6 +7,9 @@ import Heading from "../Heading";
 import PointList from "../PointList";
 
 export const metadata: Metadata = {
+  title : "Kashmir Tour Package from Kolkata | Travlio",
+  description : "Discover the wonders of Kashmir with Travlio's tour package from Kolkata. Read this blog to learn about the best destinations for an unforgettable journey!",
+  authors : [{name : "Travlio"}],
   alternates: {
     canonical: BASE_URL + "/blogs/kashmir-tour-package-from-kolkata",
   },

@@ -6,6 +6,10 @@ import { Metadata } from "next";
 import { BASE_URL } from "@/app/constant";
 
 export const metadata: Metadata = {
+  title: "Europe on a Budget: Tips and Tricks for Affordable Travel",
+  description:
+    "Explore Europe on a Budget: Tips and Tricks for Affordable Travel by Travlio Kolkata. Read this blog to learn how to enjoy Europe without overspending.",
+  authors: [{ name: "Travlio" }],
   alternates: {
     canonical: BASE_URL + "/blogs/tips-tricks-budget-europe-travel",
   },
@@ -70,9 +74,9 @@ function page() {
           Europe offers a plethora of experiences for travelers. However, for
           many, the prospect of exploring Europe comes with a hefty price tag.
           But fear not, for with some savvy planning and a dash of creativity,
-          it&apos;s entirely possible to experience the wonders of Europe without
-          breaking the bank. In this guide, we&apos;ll uncover some tried and tested
-          tips and tricks for enjoying Europe on a budget.
+          it&apos;s entirely possible to experience the wonders of Europe
+          without breaking the bank. In this guide, we&apos;ll uncover some
+          tried and tested tips and tricks for enjoying Europe on a budget.
         </p>
         <ul className="w-full py-10 space-y-8">
           {datas.map((item, index) => (

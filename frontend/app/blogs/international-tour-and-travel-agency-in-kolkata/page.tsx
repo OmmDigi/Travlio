@@ -8,6 +8,9 @@ import { Metadata } from "next";
 import { BASE_URL } from "@/app/constant";
 
 export const metadata: Metadata = {
+  title : "International Tour and Travel Agency in Kolkata | Travlio",
+  description : "Discover Travlio, your premier international tour and travel agency in Kolkata. Explore exciting destinations worldwide. Read this blog for more information!",
+  authors : [{name : "Travlio"}],
   alternates: {
     canonical: BASE_URL + "/blogs/international-tour-and-travel-agency-in-kolkata",
   },

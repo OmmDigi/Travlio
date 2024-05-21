@@ -36,7 +36,7 @@ function ReadBlogLayout(props: IProps) {
           alt="blog-img"
           width={1280}
           height={1280}
-          className="w-[70%] mt-4 sm:w-full rounded-3xl"
+          className="w-[70%] mt-4 sm:w-full rounded-3xl aspect-video"
         />
         <div className="w-[70%] h-full sm:w-full">{props.children}</div>
       </div>

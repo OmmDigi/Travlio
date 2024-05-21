@@ -123,6 +123,26 @@ export const BLOGS_LIST_DATA = [
     description:
       "Embarking on a foreign tour from Kolkata offers a unique experience, blending the cultural richness of Kolkata with the adventure of exploring a new country. Plus, Kolkata's international",
   },
+  {
+    id: "11",
+    title: "THAILAND TOUR PACKAGE FROM KOLKATA",
+    date: "21th May’24",
+    author: "Admin",
+    img: "/blogs/blog11.webp",
+    link: "/blogs/thailand-tour-package-from-kolkata",
+    description:
+      "Why, Thailand? Well, why not? Thailand has been increasingly popular as a sea destination among Indian tourists for several reasons. From elephant sanctuaries to snorkeling and from island hopping to Muay Thai training let’s delve into Thailand’s surging demand across tourists.",
+  },
+  {
+    id: "12",
+    title: "BALI TOUR PACKAGES FROM KOLKATA",
+    date: "21th May’24",
+    author: "Admin",
+    img: "/blogs/blog12.webp",
+    link: "/blogs/bali-tour-packages-from-kolkata",
+    description:
+      "Bali is popular for its stunning beaches, vibrant culture, lush landscapes, and rich history. It offers a diverse range of activities",
+  },
 ];
 
 export const DIALOG_TIMER_STATE = new Map<string, boolean>();

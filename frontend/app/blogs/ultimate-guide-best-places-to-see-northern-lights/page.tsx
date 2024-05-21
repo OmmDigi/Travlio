@@ -5,14 +5,17 @@ import { Metadata } from "next";
 import { BASE_URL } from "@/app/constant";
 
 export const metadata: Metadata = {
+  title: "The Ultimate Guide: Best Places to See the Northern Lights",
+  description:
+    "Explore the ultimate guide: best places to see the northern lights by travlio. Read this blog to discover the best spots for an aurora experience.",
+  authors: [{ name: "Travlio" }],
   alternates: {
-    canonical: BASE_URL + "/blogs/ultimate-guide-best-places-to-see-northern-lights",
+    canonical:
+      BASE_URL + "/blogs/ultimate-guide-best-places-to-see-northern-lights",
   },
 };
 
-
 function page() {
-
   const datas = [
     {
       title: "Iceland",

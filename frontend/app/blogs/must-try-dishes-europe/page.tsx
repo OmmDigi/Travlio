@@ -6,6 +6,9 @@ import { Metadata } from "next";
 import { BASE_URL } from "@/app/constant";
 
 export const metadata: Metadata = {
+  title : "A Culinary Tour of Europe: Must-Try Dishes and Foodie Hotspots",
+  description : "Discover Travlio's guide on a culinary tour of Europe. Explore must-try dishes and foodie hotspots from Kolkata's leading travel agency. Read this blog now!",
+  authors : [{name : "Travlio"}],
   alternates: {
     canonical: BASE_URL + "/blogs/must-try-dishes-europe",
   },

@@ -1,4 +1,3 @@
-import Image from "next/image";
 import React from "react";
 import ReadBlogLayout from "../ReadBlogLayout";
 import Point from "../Point";
@@ -6,6 +5,9 @@ import { Metadata } from "next";
 import { BASE_URL } from "@/app/constant";
 
 export const metadata: Metadata = {
+  title : "Hidden Gems: Exploring Europe's Off-The-Beaten-Path Destinations",
+  description : "Discover hidden gems: exploring Europe's off-the-beaten-path destinations with Travlio Kolkata. Read this blog to uncover the secrets of Europe.",
+  authors : [{name : "Travlio"}],
   alternates: {
     canonical: BASE_URL + "/blogs/hidden-gems-europe-destinations",
   },

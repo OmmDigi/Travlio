@@ -55,7 +55,8 @@ const datas = [
 export const metadata: Metadata = {
   title: "Best International Tour Packages from Kolkata | Travlio",
   description:
-    "Read this blog on the best international tour packages from Kolkata with Travlio. Explore top destinations and enjoy unforgettable experiences.",
+    "Discover the best international tour packages from Kolkata with Travlio. Read this blog to plan your dream vacation today. Unforgettable adventures await! ",
+  authors: [{ name: "Travlio" }],
   alternates: {
     canonical:
       BASE_URL + "/blogs/best-international-tour-packages-from-kolkata",
