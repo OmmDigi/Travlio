@@ -6,17 +6,14 @@ export let API_BASE_URL = "https://travliobackend.vercel.app";
 export const SEND_EMAIL_API = `${API_BASE_URL}/sendemail`;
 
 const env = process.env.NODE_ENV;
-if(env == "development"){
+if (env == "development") {
   // do something
   BASE_URL = "http://localhost:3000";
   API_BASE_URL = "http://localhost:8080";
-  console.log(env);
-}
-else if (env == "production"){
- // do something
- BASE_URL = "https://travlio.in";
- API_BASE_URL = "https://travliobackend.vercel.app";
- console.log(env);
+} else {
+  // do something
+  BASE_URL = "https://travlio.in";
+  API_BASE_URL = "https://travliobackend.vercel.app";
 }
 
 export const MOBILE_VIEW_WIDTH = 639;
@@ -118,7 +115,7 @@ export const BLOGS_LIST_DATA = [
   },
   {
     id: "10",
-    title: "KASHMIR TOUR PACKAGE FROM KOLKATA",
+    title: "MALDIVES TOUR PACKAGES FROM KOLKATA",
     date: "20th May’24",
     author: "Admin",
     img: "/blogs/blog10.webp",
