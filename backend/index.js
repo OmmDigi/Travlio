@@ -97,8 +97,8 @@ app.get("/search", async (req, res) => {
   );
 });
 
-app.get("/tour/:TITLE", async (req, res) => {
-  const tour_title = req.params.TITLE;
+app.get("/tour/:URL", async (req, res) => {
+  const tour_title = req.params.URL;
   const table_name = req.query.tableName || "tourinfo";
 
   if (!tour_title)
