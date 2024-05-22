@@ -3,13 +3,11 @@ import { API_BASE_URL, BASE_URL, GLOBAL_X_PADDING } from "../../constant";
 import Filter from "../../components/filters/Filter";
 import { GrNext } from "react-icons/gr";
 import { GrPrevious } from "react-icons/gr";
-import SearchInput from "../../components/SearchInput";
-import MobileFilterBtn from "../../components/filters/MobileFilterBtn";
 import { generateFirstLetterUpper } from "@/app/utils/generateFirstLetterUpper";
 import { IResponse, ITours } from "@/app/types";
 import Link from "next/link";
-import PackagesLI from "@/app/tour-packages/[catname]/PackagesLI";
 import SearchLayout from "@/app/components/SearchLayout";
+import PackagesLI from "../PackagesLI";
 
 interface IProps {
   params: { slugs: string[] };

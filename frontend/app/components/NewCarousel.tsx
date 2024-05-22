@@ -70,7 +70,7 @@ function NewCarousel({ children, dataLength, datas }: IProps) {
                 currentIndex === index ? "scale-100" : "scale-75"
               } transition-all duration-1000`}
             >
-              <Link href={`/tour/${item.TITLE}`}>
+              <Link href={`/tour/${item.URL}`}>
                 <Image
                   className="w-full h-48 hover:scale-105 transition-all duration-500"
                   src={decodeURI(item.IMG)}

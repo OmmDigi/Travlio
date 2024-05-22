@@ -104,7 +104,7 @@ app.get("/tour/:TITLE", async (req, res) => {
   if (!tour_title)
     return res.status(400).json(new ApiResponse(400, "TITLE is required"));
 
-  const sql = `SELECT * FROM ${table_name} WHERE ${table_name}.TITLE = ?`;
+  const sql = `SELECT * FROM ${table_name} WHERE ${table_name}.URL = ?`;
 
   try {
     const result = await query(sql, [tour_title]);

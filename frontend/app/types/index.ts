@@ -7,6 +7,7 @@ export interface ITours {
   DATE: string;
   TIME: string;
   TOUR_TYPE: string;
+  URL : string;
 }
 
 export interface IResponse<T> {
