@@ -28,7 +28,7 @@ export default function RootLayout({
           content="s-9GCCA6Jp6qLihIFxw1m1Md4VxgsAKxyedRySvV1CE"
         />
       </head>
-      <body className={popins.className + " bg-[#FFFFFF]"}>
+      <body className={popins.className + " bg-[#FFFFFF] max-w-[1500px] mx-auto"}>
         <MyProvider child={children} />
       </body>
     </html>

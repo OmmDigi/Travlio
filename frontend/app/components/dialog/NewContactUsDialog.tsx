@@ -97,8 +97,10 @@ function NewContactUsDialog() {
                 type="email"
               />
               <ContactUsDialogInput
-                pattern="[0-9]{10}"
-                title="Please Enter A Valid Mobile Number"
+                type="text"
+                inputMode="numeric"
+                pattern="[0-9\s]{13,19}"
+                title="Please Enter A Valid 10 Digit Mobile Number"
                 key={"number"}
                 required
                 name="number"

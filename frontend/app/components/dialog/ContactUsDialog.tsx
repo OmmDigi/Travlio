@@ -41,20 +41,19 @@ function ContactUsDialog() {
     const response = await fetch(API, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body : JSON.stringify({
-        type : "contact",
-        name : formData.get("name"),
-        number : formData.get("number"),
-        email : formData.get("email"),
-        message : formData.get("message")
-      })
+      body: JSON.stringify({
+        type: "contact",
+        name: formData.get("name"),
+        number: formData.get("number"),
+        email: formData.get("email"),
+        message: formData.get("message"),
+      }),
     });
 
-    const results = await response.json() as IResponse<any>;
+    const results = (await response.json()) as IResponse<any>;
 
     setIsMailSending(false);
     setMessage(results.message);
-    
   };
 
   return (
@@ -78,8 +77,11 @@ function ContactUsDialog() {
           />
           <input
             name="number"
-            type="text"
             placeholder="Mobile number"
+            type="text"
+            title="Please enter a valid 10 Digit Mobile Number"
+            inputMode="numeric"
+            pattern="[0-9\s]{13,19}"
             className="text-sm rounded-sm w-full px-3 py-[0.35rem] outline-none"
           />
           <input
@@ -94,7 +96,13 @@ function ContactUsDialog() {
             className="text-sm rounded-sm w-full px-3 py-[0.35rem] outline-none"
             rows={4}
           ></textarea>
-          <button title="Form Submit Button" disabled = {isMailSending} className={`w-full text-sm font-semibold py-2 text-gray-200 ${isMailSending ? "bg-blue-300" : "bg-blue-400"}`}>
+          <button
+            title="Form Submit Button"
+            disabled={isMailSending}
+            className={`w-full text-sm font-semibold py-2 text-gray-200 ${
+              isMailSending ? "bg-blue-300" : "bg-blue-400"
+            }`}
+          >
             SUBMIT
           </button>
           <span className={`text-sm text-green-600`}>{message}</span>

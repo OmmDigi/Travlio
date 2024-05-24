@@ -49,11 +49,12 @@ function ContactPageForm() {
       />
       <input
         required
-        pattern="[0-9]{10}"
-        title="Please Enter A Valid Mobile Number"
+        title="Please enter a valid 10 Digit Mobile Number"
         name="number"
         className="outline-none w-full px-3 py-[0.7rem] text-sm bg-gray-100 rounded-md border-2"
         type="text"
+        inputMode="numeric"
+        pattern="[0-9\s]{13,19}"
         placeholder="Mobile Number"
       />
       <textarea

@@ -76,10 +76,11 @@ function TourForm() {
       />
       <input
         required
-        pattern="[0-9]{10}"
-        title="Please Enter A Valid Mobile Number"
+        title="Please enter a valid 10 Digit Mobile Number"
         name="mobile-number"
         type="text"
+        inputMode="numeric"
+        pattern="[0-9\s]{13,19}"
         placeholder="Mobile Number"
         className="text-sm rounded-sm w-full px-3 py-[0.60rem] outline-none border"
       />
@@ -118,9 +119,19 @@ function TourForm() {
           isMailSending ? "bg-[#4379c0]" : "bg-[#093F88] hover:bg-[#32598d]"
         }`}
       >
-        {isMailSending ? <SpinnerSvg size="1rem" className="text-white"/> : <span>SUBMIT</span>}
+        {isMailSending ? (
+          <SpinnerSvg size="1rem" className="text-white" />
+        ) : (
+          <span>SUBMIT</span>
+        )}
       </button>
-      <p className={`text-sm text-green-700 text-center ${message ? "block" : "hidden"}`}>Successfully Submitted</p>
+      <p
+        className={`text-sm text-green-700 text-center ${
+          message ? "block" : "hidden"
+        }`}
+      >
+        Successfully Submitted
+      </p>
     </form>
   );
 }
