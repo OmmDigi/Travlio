@@ -32,7 +32,7 @@ export default function page() {
         The souvenir shops and generic tourist traps hold little appeal. You
         crave experiences that ignite your senses, broaden your horizons, and
         leave you with memories etched in gold. This is where{" "}
-        <Link className="linkStyle" href={"/"}>
+        <Link className="linkStyle" href={"/tours"}>
           international travel agents in Kolkata
         </Link>
         , specifically one catering to discerning travelers, becomes your
@@ -43,7 +43,7 @@ export default function page() {
       <P>
         Gone are the days of following rigid itineraries from travel brochures.
         An{" "}
-        <Link className="linkStyle" href={"/"}>
+        <Link className="linkStyle" href={"/tours"}>
           international travel agent in Kolkata
         </Link>{" "}
         takes the time to understand your unique desires. They delve into your
