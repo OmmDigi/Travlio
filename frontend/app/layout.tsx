@@ -3,6 +3,7 @@ import { Poppins } from "next/font/google";
 import "./globals.css";
 import { MyProvider } from "./redux/provider";
 import { BASE_URL } from "./constant";
+import Script from "next/script";
 
 const popins = Poppins({ subsets: ["latin"], weight: "300" });
 
@@ -27,8 +28,25 @@ export default function RootLayout({
           name="google-site-verification"
           content="s-9GCCA6Jp6qLihIFxw1m1Md4VxgsAKxyedRySvV1CE"
         />
+
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-YQ1NB78HK4"
+        />
+        <Script>
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){
+              dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+            gtag('config', 'G-YQ1NB78HK4');
+        `}
+        </Script>
       </head>
-      <body className={popins.className + " bg-[#FFFFFF] max-w-[1500px] mx-auto"}>
+      <body
+        className={popins.className + " bg-[#FFFFFF] max-w-[1500px] mx-auto"}
+      >
         <MyProvider child={children} />
       </body>
     </html>

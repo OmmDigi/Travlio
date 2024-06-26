@@ -9,6 +9,8 @@ import GalleryDialog from "../components/GalleryDialog";
 import NewContactUsDialog from "../components/dialog/NewContactUsDialog";
 import FloatingBtns from "../components/FloatingBtns";
 import OpenDialogAutomaticly from "../components/OpenDialogAutomaticly";
+import Head from "next/head";
+import Script from "next/script";
 
 export function MyProvider({ child }: { child: React.ReactNode }) {
   return (
