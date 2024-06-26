@@ -167,5 +167,7 @@
   </url>
   <url>
     <loc>https://travlio.in/blogs/exclusive-adventures-for-the-discerning-traveler-with-international-travel-agents-in-kolkata</loc>
+    <changefreq>always</changefreq>
+    <priority>1.0</priority>
   </url>
 </urlset>
