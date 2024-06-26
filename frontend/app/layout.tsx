@@ -7,6 +7,7 @@ import Script from "next/script";
 
 const popins = Poppins({ subsets: ["latin"], weight: "300" });
 
+
 export const metadata: Metadata = {
   title: "Travel Agency in Kolkata | Travlio (Thomas Cook)",
   description:
@@ -15,7 +16,7 @@ export const metadata: Metadata = {
     canonical: BASE_URL,
   },
 };
-
+//adsf
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -33,7 +34,7 @@ export default function RootLayout({
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-YQ1NB78HK4"
         />
-        <Script>
+        <Script id="googletagmanager">
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){
