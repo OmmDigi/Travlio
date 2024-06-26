@@ -275,11 +275,20 @@ input[type="checkbox"]:checked::before {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
-table, tr, th, td {
+table,
+tr,
+th,
+td {
   border: 1px solid gray;
 }
 
-th, td {
+th,
+td {
   padding: 12px;
   text-align: center;
+}
+
+.linkStyle {
+  color: #0066ff;
+  font-weight: 600;
 }

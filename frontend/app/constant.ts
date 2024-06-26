@@ -143,6 +143,16 @@ export const BLOGS_LIST_DATA = [
     description:
       "Bali is popular for its stunning beaches, vibrant culture, lush landscapes, and rich history. It offers a diverse range of activities",
   },
+  {
+    id: "13",
+    title: "EXCLUSIVE ADVENTURES FOR THE DISCERNING TRAVELER WITH INTERNATIONAL TRAVEL AGENTS IN KOLKATA",
+    date: "26st Jun’24",
+    author: "Admin",
+    img: "/blogs/blog13.avif",
+    link: "/blogs/exclusive-adventures-for-the-discerning-traveler-with-international-travel-agents-in-kolkata",
+    description:
+      "For the seasoned traveler, the allure of the ordinary has long faded. The souvenir shops and generic tourist traps hold little appeal. You crave experiences that ignite your senses, broaden your horizons, and leave you with",
+  },
 ];
 
 export const DIALOG_TIMER_STATE = new Map<string, boolean>();
