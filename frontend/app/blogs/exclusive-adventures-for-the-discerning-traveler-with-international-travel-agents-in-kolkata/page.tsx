@@ -5,6 +5,7 @@ import P from "../P";
 import Link from "next/link";
 import Heading from "../Heading";
 import PointList from "../PointList";
+import LinkToTourPackage from "@/app/components/LinkToTourPackage";
 
 export const metadata: Metadata = {
   title:
@@ -53,6 +54,8 @@ export default function page() {
         that weave together unique experiences, hidden gems, and exclusive
         access that would be impossible to replicate on your own.
       </P>
+
+      <LinkToTourPackage />
 
       <Heading>Unlocking Doors: VIP Access and Special Arrangements</Heading>
       <P>
@@ -141,6 +144,8 @@ export default function page() {
         experiences, curate personalized adventures, and ensure seamless travel
         arrangements every step of the way.
       </P>
+
+      <LinkToTourPackage />
 
       <Heading>
         Contact Travlio Today and Start Planning Your Dream Adventure!

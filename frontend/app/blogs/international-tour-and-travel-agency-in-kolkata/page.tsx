@@ -2,20 +2,21 @@ import React from "react";
 import ReadBlogLayout from "../ReadBlogLayout";
 import P from "../P";
 import Point from "../Point";
-import { title } from "process";
+import Link from "next/link";
 import Heading from "../Heading";
 import { Metadata } from "next";
 import { BASE_URL } from "@/app/constant";
 
 export const metadata: Metadata = {
-  title : "International Tour and Travel Agency in Kolkata | Travlio",
-  description : "Discover Travlio, your premier international tour and travel agency in Kolkata. Explore exciting destinations worldwide. Read this blog for more information!",
-  authors : [{name : "Travlio"}],
+  title: "International Tour and Travel Agency in Kolkata | Travlio",
+  description:
+    "Discover Travlio, your premier international tour and travel agency in Kolkata. Explore exciting destinations worldwide. Read this blog for more information!",
+  authors: [{ name: "Travlio" }],
   alternates: {
-    canonical: BASE_URL + "/blogs/international-tour-and-travel-agency-in-kolkata",
+    canonical:
+      BASE_URL + "/blogs/international-tour-and-travel-agency-in-kolkata",
   },
 };
-
 
 const points1 = [
   {
@@ -150,12 +151,16 @@ export default function page() {
       shortdescription=""
     >
       <P>
-        Embarking on a foreign tour from Kolkata offers a unique experience,
-        blending the cultural richness of Kolkata with the adventure of
-        exploring a new country. Plus, Kolkata&apos;s international cosmopolitan
-        outlook provides convenient access to various destinations worldwide,
-        making it easier to embark on your travel adventures. What are people
-        particularly seeking, In a foreign tour package from Kolkata?{" "}
+        Embarking on a{" "}
+        <Link className="linkStyle" href={"/contact-us"}>
+          foreign tour from Kolkata
+        </Link>{" "}
+        offers a unique experience, blending the cultural richness of Kolkata
+        with the adventure of exploring a new country. Plus, Kolkata&apos;s
+        international cosmopolitan outlook provides convenient access to various
+        destinations worldwide, making it easier to embark on your travel
+        adventures. What are people particularly seeking, In a foreign tour
+        package from Kolkata?{" "}
       </P>
       <P>
         People typically seek a seamless travel experience that combines
@@ -185,11 +190,13 @@ export default function page() {
         and leisure time, adds to the appeal of a foreign tour package from
         Kolkata, ensuring each traveler can tailor their experience to meet
         their desires and interests. This is exactly why it is of utmost
-        importance to connect with the best-suited international tour and travel
-        agency in Kolkata to explore the destination of your dreams. Travlio is
-        a gold partner of Thomas Cook in India and hence happens to be the best
-        travel agency for international travel in Kolkata and across India as
-        well.
+        importance to connect with the best-suited{" "}
+        <Link className="linkStyle" href={"/tours"}>
+          international tour and travel agency in Kolkata{" "}
+        </Link>{" "}
+        to explore the destination of your dreams. Travlio is a gold partner of
+        Thomas Cook in India and hence happens to be the best travel agency for
+        international travel in Kolkata and across India as well.
       </P>
       <P>
         Let’s delve into the lucrative and most sought-after foreign tour
@@ -372,9 +379,11 @@ export default function page() {
         diverse cultures, and indulge in unique adventures. Foreign tour
         packages from Kolkata with us are comprehensive and panoptic too. To
         avoid burning a hole in your pocket you could check out the cheapest
-        foreign tour packages from Kolkata on our website. To find an
-        international tour and travel agency in Kolkata is no more a hassle when
-        our streamlined guidance abroad is here.
+        foreign tour packages from Kolkata on our website. To find an{" "}
+        <Link className="linkStyle" href={"/tours"}>
+          international tour and travel agency in Kolkata
+        </Link>{" "}
+        is no more a hassle when our streamlined guidance abroad is here.
       </P>
     </ReadBlogLayout>
   );
