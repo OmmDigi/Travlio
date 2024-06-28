@@ -6,6 +6,7 @@ import Link from "next/link";
 import Heading from "../Heading";
 import { Metadata } from "next";
 import { BASE_URL } from "@/app/constant";
+import LinkToTourPackage from "@/app/components/LinkToTourPackage";
 
 export const metadata: Metadata = {
   title: "International Tour and Travel Agency in Kolkata | Travlio",
@@ -171,6 +172,8 @@ export default function page() {
         attractions while also allowing for some off-the-beaten-path
         exploration.
       </P>
+
+      <LinkToTourPackage />
       <P>
         Comfortable accommodations, reliable transportation, and knowledgeable
         guides are essential for a stress-free journey.
@@ -372,6 +375,8 @@ export default function page() {
         The starting price per adult would be around 3.5 lakhs; might further
         alter and depend upon credentials put by clients.
       </P>
+
+      <LinkToTourPackage />
 
       <Heading type="H2">CONCLUSION</Heading>
       <P>

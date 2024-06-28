@@ -3,6 +3,7 @@ import ReadBlogLayout from "../ReadBlogLayout";
 import Point from "../Point";
 import { Metadata } from "next";
 import { BASE_URL } from "@/app/constant";
+import LinkToTourPackage from "@/app/components/LinkToTourPackage";
 
 const datas = [
   {
@@ -114,6 +115,8 @@ export default function page() {
           by clients. The best tours and travels for international packages on
           our website are comprehensive to fit your schedule too.
         </p>
+
+        <LinkToTourPackage />
 
         <table className="mt-10">
           <tr>
@@ -246,6 +249,7 @@ export default function page() {
           springs, glaciers, volcanoes to smoked salmon, rye bread, skyr,
           fermented shark, kleinur and ástarpungar.
         </p>
+        <LinkToTourPackage />
         <h2 className="mt-6 font-semibold">Conclusion</h2>
         <p>
           Embarking on a scenic train journey through the Swiss Alps, taking in

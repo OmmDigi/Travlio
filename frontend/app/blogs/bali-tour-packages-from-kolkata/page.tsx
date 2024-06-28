@@ -5,11 +5,13 @@ import Heading from "../Heading";
 import PointList from "../PointList";
 import { Metadata } from "next";
 import { BASE_URL } from "@/app/constant";
+import LinkToTourPackage from "@/app/components/LinkToTourPackage";
 
 export const metadata: Metadata = {
-  title : "Bali Tour Package from Kolkata | Travlio",
-  description : "Explore Bali with our exclusive tour packages from Kolkata. Discover stunning landscapes and cultural delights. Read this blog to learn more.",
-  authors : [{name : "Travlio"}],
+  title: "Bali Tour Package from Kolkata | Travlio",
+  description:
+    "Explore Bali with our exclusive tour packages from Kolkata. Discover stunning landscapes and cultural delights. Read this blog to learn more.",
+  authors: [{ name: "Travlio" }],
   alternates: {
     canonical: BASE_URL + "/blogs/bali-tour-packages-from-kolkata",
   },
@@ -90,9 +92,12 @@ export default function page() {
         ]}
       />
       <P>
-        By checking off these items, you&apos;ll be well-prepared for an enjoyable
-        and memorable trip to Bali!
+        By checking off these items, you&apos;ll be well-prepared for an
+        enjoyable and memorable trip to Bali!
       </P>
+
+      <LinkToTourPackage />
+
       <Heading type="H2">
         BEFORE SEARCHING FOR THE BEST FAMILY TOUR PACKAGES INTERNATIONAL,
         ESPECIALLY IN BALI, KEEP THESE IMPORTANT POINTS IN MIND:{" "}
@@ -159,7 +164,9 @@ export default function page() {
         ]}
       />
 
-      <Heading>HERE&apos;S A SUGGESTED 7-DAY ITINERARY FOR EXPLORING BALI:</Heading>
+      <Heading>
+        HERE&apos;S A SUGGESTED 7-DAY ITINERARY FOR EXPLORING BALI:
+      </Heading>
       <PointList
         points={[
           {
@@ -200,19 +207,22 @@ export default function page() {
         ]}
       />
 
+      <LinkToTourPackage />
+
       <P>
-        Adjust this itinerary based on your interests and preferences, and don&apos;t
-        forget to leave some time for spontaneous exploration and relaxation!
-        With Travlio you are getting the best international tour packages from
-        Kolkata since we are a gold partner of Thomas Cook In India.{" "}
+        Adjust this itinerary based on your interests and preferences, and
+        don&apos;t forget to leave some time for spontaneous exploration and
+        relaxation! With Travlio you are getting the best international tour
+        packages from Kolkata since we are a gold partner of Thomas Cook In
+        India.{" "}
       </P>
       <P>
         In conclusion, well-curated and some of the best international tour
         packages offer an immersive experience in some of the most enchanting
         destinations in the world like Bali! From stunning beaches and lush rice
         terraces to vibrant culture and rich history, Bali has something to
-        offer every traveler. Whether you&apos;re seeking adventure, relaxation, or
-        cultural exploration, the best and cheap international tour packages
+        offer every traveler. Whether you&apos;re seeking adventure, relaxation,
+        or cultural exploration, the best and cheap international tour packages
         cater to diverse interests and preferences within your allocated travel
         budget. With carefully curated itineraries, knowledgeable guides, and
         convenient amenities, the best economical international tour package

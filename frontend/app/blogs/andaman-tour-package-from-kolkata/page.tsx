@@ -2,12 +2,13 @@ import React from "react";
 import ReadBlogLayout from "../ReadBlogLayout";
 import { Metadata } from "next";
 import { BASE_URL } from "@/app/constant";
+import LinkToTourPackage from "@/app/components/LinkToTourPackage";
 
 export const metadata: Metadata = {
   title: "Andaman Tour Package from Kolkata | Travlio",
   description:
     "Explore Andaman with Travlio's exclusive tour package from Kolkata. Dive into an unforgettable adventure. Read this blog for details!",
-    authors : [{name : "Travlio"}],
+  authors: [{ name: "Travlio" }],
   alternates: {
     canonical: BASE_URL + "/blogs/andaman-tour-package-from-kolkata",
   },
@@ -49,6 +50,7 @@ export default function page() {
           attractions, and recreational opportunities makes such sea
           destinations highly lucrative in the tourism industry.
         </p>
+        <LinkToTourPackage />
         <h3 className="font-semibold text-lg tracking-wider">
           Let’s explore some comprehensive Itineraries around Andaman and
           Nicobar Islands tour packages from Kolkata:
@@ -71,12 +73,12 @@ export default function page() {
         <p>
           <span className="font-semibold text-teal-700">Morning:</span>
           <br /> Arrive at Port Blair, the capital city. Visit the Cellular
-          Jail, a historical landmark that offers insights into India&apos;s freedom
-          struggle. <br />
+          Jail, a historical landmark that offers insights into India&apos;s
+          freedom struggle. <br />
           <span className="font-semibold text-teal-700">Afternoon:</span>
           <br />
-          Head to Corbyn&apos;s Cove Beach for some relaxation and water sports like
-          jet skiing or banana boat rides. <br />
+          Head to Corbyn&apos;s Cove Beach for some relaxation and water sports
+          like jet skiing or banana boat rides. <br />
           <span className="font-semibold text-teal-700">Evening:</span>
           <br /> Enjoy the Light and Sound Show at Cellular Jail, which narrates
           the story of the Indian freedom fighters.
@@ -99,8 +101,8 @@ export default function page() {
         <p>
           <span className="font-semibold text-teal-700">Morning:</span>
           <br /> Embark on a day trip to Havelock Island, known for its pristine
-          beaches, particularly Radhanagar Beach, often considered one of Asia&apos;s
-          best beaches. <br />
+          beaches, particularly Radhanagar Beach, often considered one of
+          Asia&apos;s best beaches. <br />
           <span className="font-semibold text-teal-700">Afternoon:</span>
           <br /> Enjoy water activities like swimming, sunbathing, or simply
           soaking in the scenic beauty. Do not forget to smother yourself with a
@@ -122,11 +124,11 @@ export default function page() {
         </p>
         <h2 className="font-semibold text-lg tracking-wider mt-6">Day 2:</h2>
         <p className="text-justify">
-          Port Blair Sightseeing includes visiting Corbyn&apos;s Cove Beach for water
-          sports and relaxation. Explore the Anthropological Museum to learn
-          about the indigenous tribes of Andaman. Visit Samudrika Naval Marine
-          Museum for insights into the marine life of the region. Shop for
-          souvenirs at Aberdeen Bazaar. Wood carvings, coconut shell
+          Port Blair Sightseeing includes visiting Corbyn&apos;s Cove Beach for
+          water sports and relaxation. Explore the Anthropological Museum to
+          learn about the indigenous tribes of Andaman. Visit Samudrika Naval
+          Marine Museum for insights into the marine life of the region. Shop
+          for souvenirs at Aberdeen Bazaar. Wood carvings, coconut shell
           cups-spoons-bowls, and pearl jewelry are to die for!
         </p>
         <h2 className="font-semibold text-lg tracking-wider mt-6">Day 3:</h2>
@@ -162,6 +164,8 @@ export default function page() {
           for last-minute shopping or relax at the hotel.Transfer to Veer
           Savarkar International Airport for departure.
         </p>
+
+        <LinkToTourPackage />
 
         <h2 className="font-semibold text-lg tracking-wider mt-6">
           Conclusion

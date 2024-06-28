@@ -5,6 +5,7 @@ import ReadBlogLayout from "../ReadBlogLayout";
 import Heading from "../Heading";
 import PointList from "../PointList";
 import P from "../P";
+import LinkToTourPackage from "@/app/components/LinkToTourPackage";
 
 export const metadata: Metadata = {
   title : "Maldives Tour Packages from Kolkata | Travlio",
@@ -50,6 +51,8 @@ export default function page() {
           },
         ]}
       />
+
+<LinkToTourPackage />
 
       <Heading type="H1">
         MAKING A QUICK MELLOW MALDIVES VISIT FOR AROUND 3 DAYS? HERE YOU GO FOR
@@ -177,6 +180,7 @@ export default function page() {
           },
         ]}
       />
+      <LinkToTourPackage />
       <Heading type="H2">CONCLUSION:</Heading>
       <P>
         Do send in queries for the Maldives tour package price from Kolkata at

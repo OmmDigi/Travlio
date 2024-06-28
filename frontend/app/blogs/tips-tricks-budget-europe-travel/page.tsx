@@ -4,6 +4,7 @@ import ReadBlogLayout from "../ReadBlogLayout";
 import Point from "../Point";
 import { Metadata } from "next";
 import { BASE_URL } from "@/app/constant";
+import LinkToTourPackage from "@/app/components/LinkToTourPackage";
 
 export const metadata: Metadata = {
   title: "Europe on a Budget: Tips and Tricks for Affordable Travel",
@@ -83,6 +84,8 @@ function page() {
             <Point key={index} title={item.title} subtitle={item.subtitle} />
           ))}
         </ul>
+
+        <LinkToTourPackage />
 
         <h3 className="mt-6 font-semibold">Conclusion</h3>
         <p className="font-medium mt-2">

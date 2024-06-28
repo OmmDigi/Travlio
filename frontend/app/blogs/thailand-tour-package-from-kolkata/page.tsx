@@ -5,15 +5,17 @@ import PointList from "../PointList";
 import Heading from "../Heading";
 import { BASE_URL } from "@/app/constant";
 import { Metadata } from "next";
+import LinkToTourPackage from "@/app/components/LinkToTourPackage";
 
 export const metadata: Metadata = {
-  title : "Thailand Tour Package from Kolkata | Travlio",
-  description : "Explore Thailand with Travlio's exclusive tour packages from Kolkata. Unforgettable experiences await! Read this blog for more information. ",
-  authors : [{name : "Travlio"}],
-    alternates: {
-      canonical: BASE_URL + "/blogs/thailand-tour-package-from-kolkata",
-    },
-  };
+  title: "Thailand Tour Package from Kolkata | Travlio",
+  description:
+    "Explore Thailand with Travlio's exclusive tour packages from Kolkata. Unforgettable experiences await! Read this blog for more information. ",
+  authors: [{ name: "Travlio" }],
+  alternates: {
+    canonical: BASE_URL + "/blogs/thailand-tour-package-from-kolkata",
+  },
+};
 
 export default function page() {
   return (
@@ -63,6 +65,8 @@ export default function page() {
           },
         ]}
       />
+
+      <LinkToTourPackage />
 
       <Heading type="H2">FIERY FIVE DAYS ACROSS THAILAND: </Heading>
       <PointList
@@ -130,6 +134,8 @@ export default function page() {
         A 7-day Thailand package would cost something around 1-1.5 lakhs,
         subject to customization.{" "}
       </Heading>
+
+      <LinkToTourPackage />
 
       <Heading type="H2">CONCLUSION</Heading>
       <P>

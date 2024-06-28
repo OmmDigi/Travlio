@@ -3,6 +3,7 @@ import ReadBlogLayout from "../ReadBlogLayout";
 import Point from "../Point";
 import { Metadata } from "next";
 import { BASE_URL } from "@/app/constant";
+import LinkToTourPackage from "@/app/components/LinkToTourPackage";
 
 export const metadata: Metadata = {
   title : "Hidden Gems: Exploring Europe's Off-The-Beaten-Path Destinations",
@@ -68,6 +69,8 @@ function page() {
             <Point key={index} title={item.title} subtitle={item.subtitle} />
           ))}
         </ul>
+
+        <LinkToTourPackage />
 
         <p className="mt-6 font-medium">
           In conclusion, Europe&apos;s off-the-beaten-path destinations offer a

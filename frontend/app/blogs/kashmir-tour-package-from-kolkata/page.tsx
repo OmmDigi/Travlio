@@ -5,6 +5,7 @@ import ReadBlogLayout from "../ReadBlogLayout";
 import P from "../P";
 import Heading from "../Heading";
 import PointList from "../PointList";
+import LinkToTourPackage from "@/app/components/LinkToTourPackage";
 
 export const metadata: Metadata = {
   title : "Kashmir Tour Package from Kolkata | Travlio",
@@ -45,6 +46,8 @@ export default function page() {
         Well, didn’t get your leave requests approved by your senior? No
         worries, we are catering to wander lust within the time crunch too.{" "}
       </P>
+
+      <LinkToTourPackage />
 
       <Heading type="H2">
         Here&apos;s a comprehensive 4-day itinerary for a trip to Kashmir from
@@ -113,6 +116,7 @@ export default function page() {
           },
         ]}
       />
+      <LinkToTourPackage />
       <Heading type="H2">CONCLUSION:</Heading>
       <P>
         Remember to check the weather conditions and any travel advisories

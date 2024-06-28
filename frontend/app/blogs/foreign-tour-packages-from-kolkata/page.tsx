@@ -5,15 +5,16 @@ import P from "../P";
 import PointList from "../PointList";
 import { Metadata } from "next";
 import { BASE_URL } from "@/app/constant";
+import LinkToTourPackage from "@/app/components/LinkToTourPackage";
 
 export const metadata: Metadata = {
-  title : "Foreign Tour Packages from Kolkata | Travlio",
-  description : "Discover exotic destinations with Travlio! Explore our Foreign Tour Packages from Kolkata. Read this blog for exclusive travel insights and offers.",
-  authors : [{name : "Travlio"}],
-    alternates: {
-      canonical:
-        BASE_URL + "/blogs/foreign-tour-packages-from-kolkata",
-    },
+  title: "Foreign Tour Packages from Kolkata | Travlio",
+  description:
+    "Discover exotic destinations with Travlio! Explore our Foreign Tour Packages from Kolkata. Read this blog for exclusive travel insights and offers.",
+  authors: [{ name: "Travlio" }],
+  alternates: {
+    canonical: BASE_URL + "/blogs/foreign-tour-packages-from-kolkata",
+  },
 };
 
 export default function page() {
@@ -33,20 +34,20 @@ export default function page() {
         Secondly, they provide opportunities for unique experiences not easily
         found domestically, such as visiting iconic landmarks or indulging in
         adventure sports. Additionally, foreign travel symbolizes status and
-        prestige, reflecting an individual&apos;s cosmopolitan outlook. For Bengalis
-        specifically, there&apos;s a historical connection due to the region&apos;s rich
-        literary and intellectual heritage, sparking curiosity about other
-        cultures. Moreover, globalization and increased disposable incomes have
-        made overseas travel more accessible and desirable for many Indians,
-        fostering a culture of exploration. Let’s decode seamlessly, foreign
-        tour packages with estimated price ranges and lucrative, compact
-        itineraries for families, friends, and couples. Our foreign family tour
-        packages are carefully crafted and curated by experienced international
-        travel hosts. The foreign tour packages for couples ensure a smooth and
-        leisurely journey not compromising on exploration. Let’s delve into the
-        lucrative and most sought-after foreign tour packages covering their
-        prices, itineraries, inclusions, and exclusions across the premium
-        travel layouts.
+        prestige, reflecting an individual&apos;s cosmopolitan outlook. For
+        Bengalis specifically, there&apos;s a historical connection due to the
+        region&apos;s rich literary and intellectual heritage, sparking
+        curiosity about other cultures. Moreover, globalization and increased
+        disposable incomes have made overseas travel more accessible and
+        desirable for many Indians, fostering a culture of exploration. Let’s
+        decode seamlessly, foreign tour packages with estimated price ranges and
+        lucrative, compact itineraries for families, friends, and couples. Our
+        foreign family tour packages are carefully crafted and curated by
+        experienced international travel hosts. The foreign tour packages for
+        couples ensure a smooth and leisurely journey not compromising on
+        exploration. Let’s delve into the lucrative and most sought-after
+        foreign tour packages covering their prices, itineraries, inclusions,
+        and exclusions across the premium travel layouts.
       </P>
 
       <Heading type="H2">
@@ -66,6 +67,8 @@ export default function page() {
           },
         ]}
       />
+
+      <LinkToTourPackage />
 
       <table className="w-full">
         <tr>
@@ -264,6 +267,8 @@ export default function page() {
         surreal sensation of snow, sea, and sand around you from all over the
         planet.{" "}
       </P>
+
+      <LinkToTourPackage />
       <Heading type="H2">CONCLUSION</Heading>
       <P>
         Foreign travel holds an enduring appeal for Indians, including Bengalis,
@@ -276,13 +281,13 @@ export default function page() {
       <P>
         foreign tour packages from Kolkata on our website Travlio also a gold
         partner of Thomas Cook in India... For Bengalis, in particular, foreign
-        destinations offer a bridge to their region&apos;s intellectual legacy and a
-        gateway to the wider world. With globalization and rising affluence, the
-        allure of overseas travel continues to grow, becoming a symbol of
-        cosmopolitanism and personal enrichment. Before investing in the best
-        foreign tour packages, do make a checklist of your allocated funds,
-        health issues if any, and time constraints if any. Ultimately, the
-        foreign travel you undertake will represent a journey of discovery,
+        destinations offer a bridge to their region&apos;s intellectual legacy
+        and a gateway to the wider world. With globalization and rising
+        affluence, the allure of overseas travel continues to grow, becoming a
+        symbol of cosmopolitanism and personal enrichment. Before investing in
+        the best foreign tour packages, do make a checklist of your allocated
+        funds, health issues if any, and time constraints if any. Ultimately,
+        the foreign travel you undertake will represent a journey of discovery,
         connection, and enrichment for individuals seeking to broaden their
         horizons. Find the best-suited cheapest foreign tour packages from
         Kolkata on our website which are customizable according to preference,
