@@ -16,7 +16,10 @@ function Point({ title, subtitle }: IProps) {
       </div>
       <div className="w-full">
         <h2 className="font-semibold text-lg tracking-wider">{title}</h2>
-        <p className="text-[15px] tracking-wider">{subtitle}</p>
+        <p
+          dangerouslySetInnerHTML={{ __html: subtitle }}
+          className="text-[15px] tracking-wider"
+        ></p>
       </div>
     </li>
   );

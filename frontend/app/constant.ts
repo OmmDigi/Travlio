@@ -153,6 +153,16 @@ export const BLOGS_LIST_DATA = [
     description:
       "For the seasoned traveler, the allure of the ordinary has long faded. The souvenir shops and generic tourist traps hold little appeal. You crave experiences that ignite your senses, broaden your horizons, and leave you with",
   },
+  {
+    id: "14",
+    title: "BEST INTERNATIONAL TRAVEL AGENCY IN KOLKATA: YOUR GATEWAY TO THE WORLD (THOMAS COOK)",
+    date: "02th July’24",
+    author: "Admin",
+    img: "/blogs/blog14.avif",
+    link: "/blogs/best-international-travel-agency-in-kolkata-your-gateway-to-the-world-thomas-cook",
+    description:
+      "International travel promises adventure, but navigating the details can be stressful. Let Travlio, a leading International Travel Agency in Kolkata, be your guide. From flight bookings and visa applications to accommodation and itinerary planning, navigating",
+  },
 ];
 
 export const DIALOG_TIMER_STATE = new Map<string, boolean>();
