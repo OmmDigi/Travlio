@@ -121,7 +121,7 @@ export default function page() {
 
       <Heading>Start Planning Your Dream Trip with Travlio Today</Heading>
       <P>
-        Whether it's a cultural immersion in Europe, a wildlife safari in
+        Whether it&apos;s a cultural immersion in Europe, a wildlife safari in
         Africa, or a relaxing beach escape in Southeast Asia, Travlio, the
         <Link className="linkStyle" href={"/tours"}>
           premier International Travel Agency in Kolkata
