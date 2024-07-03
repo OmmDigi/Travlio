@@ -45,7 +45,7 @@ export default function RootLayout({
         </Script>
       </head>
       <body
-        className={popins.className + " bg-[#FFFFFF] max-w-[1500px] mx-auto"}
+        className={popins.className + " bg-[#FFFFFF]"}
       >
         <MyProvider child={children} />
       </body>

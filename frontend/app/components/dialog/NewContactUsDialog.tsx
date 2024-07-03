@@ -59,7 +59,7 @@ function NewContactUsDialog() {
   return (
     <div
       onClick={closeDialgo}
-      className={`w-full h-full bg-[#ffffff91] absolute backdrop-blur-sm top-0 bottom-0 z-50 ${
+      className={`w-full h-full bg-[#ffffff91] fixed left-0 backdrop-blur-sm top-0 bottom-0 z-50 ${
         newContactUsDialgoVisibility ? "flex" : "hidden"
       } items-center justify-center`}
     >

@@ -9,21 +9,21 @@ import GalleryDialog from "../components/GalleryDialog";
 import NewContactUsDialog from "../components/dialog/NewContactUsDialog";
 import FloatingBtns from "../components/FloatingBtns";
 import OpenDialogAutomaticly from "../components/OpenDialogAutomaticly";
-import Head from "next/head";
-import Script from "next/script";
 
 export function MyProvider({ child }: { child: React.ReactNode }) {
   return (
     <Provider store={store}>
-      <div className="h-screen overflow-hidden overflow-y-scroll">
-        <DialogLayout />
-        <OpenDialogAutomaticly />
-        <NewContactUsDialog />
-        <FloatingBtns />
-        <GalleryDialog />
-        <Navbar />
-        {child}
-        <Footer />
+      <div className="w-full h-screen overflow-hidden overflow-y-scroll">
+        <div className="max-w-[1500px] mx-auto">
+          <DialogLayout />
+          <OpenDialogAutomaticly />
+          <NewContactUsDialog />
+          <FloatingBtns />
+          <GalleryDialog />
+          <Navbar />
+          {child}
+          <Footer />
+        </div>
       </div>
     </Provider>
   );

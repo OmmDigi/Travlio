@@ -23,7 +23,7 @@ function DialogLayout() {
   return (
     <div
       onClick={handleDialogDismiss}
-      className={`w-full h-full bg-[#0000006b] absolute z-20 items-center justify-center ${
+      className={`w-full h-full bg-[#0000006b] z-20 items-center justify-center ${
         dialog ? "flex" : "hidden"
       }`}
     >
