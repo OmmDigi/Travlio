@@ -41,7 +41,7 @@ function BannerImage() {
     //   ))}
     // </div>
     <div
-      className={`overflow-hidden h-[400px] w-full relative banner ${
+      className={`overflow-hidden bg-black w-full relative banner ${
         loaded ? "loaded" : ""
       }`}
     >
@@ -55,7 +55,7 @@ function BannerImage() {
             alt={`Banner ${index + 1}`}
             className={`img ${
               index === currentIndex ? "active" : ""
-            } sm:h-[350px] sm:object-cover`}
+            } sm:h-[350px] w-full sm:object-cover`}
           />
         ))}
       </div>
@@ -70,7 +70,7 @@ function BannerImage() {
             alt={`Banner ${index + 1}`}
             className={`img ${
               index === currentIndex ? "active" : ""
-            } sm:h-[350px] sm:object-cover`}
+            } sm:h-[350px] w-full sm:object-cover`}
           />
         ))}
       </div>

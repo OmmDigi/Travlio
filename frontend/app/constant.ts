@@ -145,7 +145,8 @@ export const BLOGS_LIST_DATA = [
   },
   {
     id: "13",
-    title: "EXCLUSIVE ADVENTURES FOR THE DISCERNING TRAVELER WITH INTERNATIONAL TRAVEL AGENTS IN KOLKATA",
+    title:
+      "EXCLUSIVE ADVENTURES FOR THE DISCERNING TRAVELER WITH INTERNATIONAL TRAVEL AGENTS IN KOLKATA",
     date: "26st Jun’24",
     author: "Admin",
     img: "/blogs/blog13.avif",
@@ -155,7 +156,8 @@ export const BLOGS_LIST_DATA = [
   },
   {
     id: "14",
-    title: "BEST INTERNATIONAL TRAVEL AGENCY IN KOLKATA: YOUR GATEWAY TO THE WORLD (THOMAS COOK)",
+    title:
+      "BEST INTERNATIONAL TRAVEL AGENCY IN KOLKATA: YOUR GATEWAY TO THE WORLD (THOMAS COOK)",
     date: "02th July’24",
     author: "Admin",
     img: "/blogs/blog14.avif",
@@ -163,6 +165,56 @@ export const BLOGS_LIST_DATA = [
     description:
       "International travel promises adventure, but navigating the details can be stressful. Let Travlio, a leading International Travel Agency in Kolkata, be your guide. From flight bookings and visa applications to accommodation and itinerary planning, navigating",
   },
+  {
+    id: "15",
+    title: "THE BEST PLACES TO VISIT IN AUSTRALIA WITH TRAVLIO",
+    date: "03th July’24",
+    author: "Admin",
+    img: "/blogs/blog15.webp",
+    link: "/blogs/the-best-places-to-visit-in-australia-with-travlio",
+    description:
+      "Australia, the land of sunshine, surf, and unique wildlife, beckons travelers with its diverse landscapes, vibrant cities, and rich Aboriginal culture. Whether you seek heart-pounding adventure or serene relaxation, Australia has so",
+  },
+  {
+    id: "16",
+    title: "VIETNAM TOUR FROM KOLKATA WITH TRAVLIO",
+    date: "03th July’24",
+    author: "Admin",
+    img: "/blogs/blog16.webp",
+    link: "/blogs/vietnam-tour-from-kolkata-with-travlio",
+    description:
+      "Vietnam, a Southeast Asian nation steeped in history, culture, and stunning natural beauty, beckons travelers with its vibrant charm. From the bustling streets of Ho Chi Minh City to the ethereal landscapes of Ha Long Bay,",
+  },
+  {
+    id: "17",
+    title: "AFRICA BUDGET TOUR FROM KOLKATA WITH TRAVLIO",
+    date: "03th July’24",
+    author: "Admin",
+    img: "/blogs/blog17.webp",
+    link: "/blogs/africa-budget-tour-from-kolkata-with-travlio",
+    description:
+      "Africa, the land of breathtaking landscapes, diverse wildlife, and vibrant cultures, beckons budget-conscious travelers with its unique experiences. From the rolling plains of the savanna to the majestic peaks of Mount Kilimanjaro, Africa offers adventure on a dime. As Kolkata's leading international travel agent, Travlio",
+  },
+  {
+    id: "18",
+    title: "MIDDLE EAST: TOUR PACKAGES FROM KOLKATA WITH TRAVLIO",
+    date: "03th July’24",
+    author: "Admin",
+    img: "/blogs/blog18.webp",
+    link: "/blogs/middle-east-tour-packages-from-kolkata-with-travlio",
+    description:
+      "The Middle East, a captivating region where ancient history meets modern marvels, beckons travelers with its rich tapestry of cultures, architectural wonders, and breathtaking landscapes. From the towering dunes of the Arabian Desert to the bustling souks of Dubai, the Middle East offers an unforgettable experience. As Kolkata's leading international travel agent, Travlio curates the perfect Middle E",
+  },
+  {
+    id: "19",
+    title: "BUDGET INTERNATIONAL TOUR PACKAGES FROM KOLKATA WITH TRAVLIO",
+    date: "03th July’24",
+    author: "Admin",
+    img: "/blogs/blog19.webp",
+    link: "/blogs/budget-international-tour-packages-from-kolkata-with-travlio",
+    description:
+      "Dreaming of an international escape but worried about breaking the bank? Fear not! Kolkata-based Travlio, your one-stop travel partner, unlocks the world with our curated Budget International Tour Packages from Kolkata",
+  }
 ];
 
 export const DIALOG_TIMER_STATE = new Map<string, boolean>();

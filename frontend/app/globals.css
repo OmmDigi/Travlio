@@ -341,3 +341,9 @@ td {
 }
 
 /* Button Style For Tour Package End */
+
+.max-layout {
+  max-width: 1500px;
+  margin-left: auto;
+  margin-right: auto;
+}

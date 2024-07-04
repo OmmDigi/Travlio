@@ -14,7 +14,7 @@ export function MyProvider({ child }: { child: React.ReactNode }) {
   return (
     <Provider store={store}>
       <div className="w-full h-screen overflow-hidden overflow-y-scroll">
-        <div className="max-w-[1500px] mx-auto">
+        <div>
           <DialogLayout />
           <OpenDialogAutomaticly />
           <NewContactUsDialog />
