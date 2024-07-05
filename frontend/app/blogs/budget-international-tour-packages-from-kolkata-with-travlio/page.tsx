@@ -3,12 +3,14 @@ import ReadBlogLayout from "../ReadBlogLayout";
 import LinkToTourPackage from "@/app/components/LinkToTourPackage";
 import { Metadata } from "next";
 
-
 export const metadata: Metadata = {
   title: "Budget International Tour Packages from Kolkata with Travlio",
+  description:
+    "unlocks the world with our curated Budget International Tour Packages from Kolkata.",
   authors: [{ name: "Travlio" }],
   alternates: {
-    canonical: "/blogs/budget-international-tour-packages-from-kolkata-with-travlio",
+    canonical:
+      "/blogs/budget-international-tour-packages-from-kolkata-with-travlio",
   },
 };
 

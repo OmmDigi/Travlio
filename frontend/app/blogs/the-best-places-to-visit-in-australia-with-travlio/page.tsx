@@ -5,12 +5,13 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "A Culinary Tour of Europe: Must-Try Dishes and Foodie Hotspots",
+  description:
+    "Travlio, the leading international travel agent in Kolkata, brings you the ultimate guide to the best places to visit in Australia.",
   authors: [{ name: "Travlio" }],
   alternates: {
     canonical: "/blogs/the-best-places-to-visit-in-australia-with-travlio",
   },
 };
-
 
 export default function page() {
   return (

@@ -2,10 +2,10 @@ import React from "react";
 import ReadBlogLayout from "../ReadBlogLayout";
 import LinkToTourPackage from "@/app/components/LinkToTourPackage";
 import { Metadata } from "next";
-import { BASE_URL } from "@/app/constant";
 
 export const metadata: Metadata = {
   title: "Vietnam Tour From Kolkata with Travlio",
+  description : "As Kolkata's leading international travel agent, Travlio curates the perfect Vietnam Tour From Kolkata, allowing you to explore this captivating country at your own pace.",
   authors: [{ name: "Travlio" }],
   alternates: {
     canonical: "/blogs/vietnam-tour-from-kolkata-with-travlio",

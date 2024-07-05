@@ -5,6 +5,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Middle East: Tour Packages From Kolkata with Travlio",
+  description : "Travlio curates the perfect Middle Eastern Tour Packages From Kolkata, allowing you to explore this fascinating region at your own pace.",
   authors: [{ name: "Travlio" }],
   alternates: {
     canonical: "/blogs/middle-east-tour-packages-from-kolkata-with-travlio",

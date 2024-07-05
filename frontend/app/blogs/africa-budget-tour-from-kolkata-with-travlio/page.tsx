@@ -5,6 +5,8 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Africa Budget Tour From Kolkata with Travlio",
+  description:
+    "As Kolkata's leading international travel agent, Travlio curates the perfect Africa Budget Tour From Kolkata, allowing you to explore this awe-inspiring continent without breaking the bank.",
   authors: [{ name: "Travlio" }],
   alternates: {
     canonical: "/blogs/africa-budget-tour-from-kolkata-with-travlio",
