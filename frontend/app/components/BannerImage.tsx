@@ -41,7 +41,7 @@ function BannerImage() {
     //   ))}
     // </div>
     <div
-      className={`overflow-hidden bg-black w-full relative banner ${
+      className={`overflow-hidden bg-black w-full relative banner h-[390px] ${
         loaded ? "loaded" : ""
       }`}
     >
