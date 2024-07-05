@@ -168,7 +168,7 @@ export const BLOGS_LIST_DATA = [
   {
     id: "15",
     title: "THE BEST PLACES TO VISIT IN AUSTRALIA WITH TRAVLIO",
-    date: "03th July’24",
+    date: "04th July’24",
     author: "Admin",
     img: "/blogs/blog15.webp",
     link: "/blogs/the-best-places-to-visit-in-australia-with-travlio",
@@ -178,7 +178,7 @@ export const BLOGS_LIST_DATA = [
   {
     id: "16",
     title: "VIETNAM TOUR FROM KOLKATA WITH TRAVLIO",
-    date: "03th July’24",
+    date: "04th July’24",
     author: "Admin",
     img: "/blogs/blog16.webp",
     link: "/blogs/vietnam-tour-from-kolkata-with-travlio",
@@ -188,7 +188,7 @@ export const BLOGS_LIST_DATA = [
   {
     id: "17",
     title: "AFRICA BUDGET TOUR FROM KOLKATA WITH TRAVLIO",
-    date: "03th July’24",
+    date: "04th July’24",
     author: "Admin",
     img: "/blogs/blog17.webp",
     link: "/blogs/africa-budget-tour-from-kolkata-with-travlio",
@@ -198,7 +198,7 @@ export const BLOGS_LIST_DATA = [
   {
     id: "18",
     title: "MIDDLE EAST: TOUR PACKAGES FROM KOLKATA WITH TRAVLIO",
-    date: "03th July’24",
+    date: "04th July’24",
     author: "Admin",
     img: "/blogs/blog18.webp",
     link: "/blogs/middle-east-tour-packages-from-kolkata-with-travlio",
@@ -208,12 +208,42 @@ export const BLOGS_LIST_DATA = [
   {
     id: "19",
     title: "BUDGET INTERNATIONAL TOUR PACKAGES FROM KOLKATA WITH TRAVLIO",
-    date: "03th July’24",
+    date: "04th July’24",
     author: "Admin",
     img: "/blogs/blog19.webp",
     link: "/blogs/budget-international-tour-packages-from-kolkata-with-travlio",
     description:
       "Dreaming of an international escape but worried about breaking the bank? Fear not! Kolkata-based Travlio, your one-stop travel partner, unlocks the world with our curated Budget International Tour Packages from Kolkata",
+  },
+  {
+    id: "20",
+    title: "NORTH EAST TOUR PACKAGES FROM KOLKATA WITH TRAVLIO",
+    date: "05th July’24",
+    author: "Admin",
+    img: "/blogs/blog20.webp",
+    link: "/blogs/north-east-tour-packages-from-kolkata-with-travlio",
+    description:
+      "Nestled in the eastern folds of India, the North East beckons travelers with its breathtaking landscapes, diverse cultures, and rich heritage. From snow-capped Himalayan peaks to lush valleys and cascading waterfalls, the North East offers an escape into a world untouched by time. ",
+  },
+  {
+    id: "21",
+    title: "Singapore Tour Packages from Kolkata with Travlio",
+    date: "05th July’24",
+    author: "Admin",
+    img: "/blogs/blog21.webp",
+    link: "/blogs/singapore-tour-packages-from-kolkata-with-travlio",
+    description:
+      "Singapore, a captivating island nation known for its futuristic cityscape, vibrant culture, and world-class attractions, beckons travelers with its unique blend of tradition and innovation. As Kolkata's leading travel agent, Travlio curates the perfect Singapore Tour Packages from Kolkata, allowing you to explore",
+  },
+  {
+    id: "22",
+    title: "Top Tourist Attractions in Mauritius with Travlio",
+    date: "05th July’24",
+    author: "Admin",
+    img: "/blogs/blog22.webp",
+    link: "/blogs/top-tourist-attractions-in-mauritius-with-travlio",
+    description:
+      "Mauritius, a volcanic island nation nestled in the turquoise waters of the Indian Ocean, beckons travelers with its pristine beaches, lush rainforests, and vibrant culture. From luxurious resorts to hidden waterfalls, Mauritius offers an unforgettable escape for every kind of traveler. As a leading international travel agent in Kolkata,",
   }
 ];
 
