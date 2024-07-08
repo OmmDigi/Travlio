@@ -50,6 +50,17 @@ app.get("/tours", async (req, res) => {
   }
 });
 
+app.get("/tourslugs", async (req, res) => {
+  const table_name = "tour";
+
+  try {
+    const result = await query(`SELECT URL FROM ${table_name}`);
+    res.status(200).json(new ApiResponse(200, "Success", result));
+  } catch (error) {
+    res.status(400).json(new ApiResponse(400, error.message, error));
+  }
+});
+
 app.get("/query", async (req, res) => {
   const tour_type = req.query.tour_type;
 
@@ -112,8 +123,6 @@ app.get("/tour/:URL", async (req, res) => {
   } catch (error) {
     res.status(200).json([]);
   }
-
-  
 });
 
 app.post("/sendemail", async (req, res) => {
@@ -188,53 +197,58 @@ app.post("/sendemail", async (req, res) => {
 app.get("/filter", async (req, res) => {
   const table_name = "tour";
   const LIMIT = 5;
-  const durations = Array.isArray(req.query.duration || []) ? req.query.duration : [req.query.duration];
-  const tourTypes = Array.isArray(req.query["tour-type"] || []) ? req.query["tour-type"] : [req.query["tour-type"]];
+  const durations = Array.isArray(req.query.duration || [])
+    ? req.query.duration
+    : [req.query.duration];
+  const tourTypes = Array.isArray(req.query["tour-type"] || [])
+    ? req.query["tour-type"]
+    : [req.query["tour-type"]];
 
   let tourTypesTxt = null;
   tourTypes?.forEach((element) => {
-    if(!tourTypesTxt) {
-      tourTypesTxt = `'${element}'`
-    }else {
-      tourTypesTxt += `,'${element}'`
+    if (!tourTypesTxt) {
+      tourTypesTxt = `'${element}'`;
+    } else {
+      tourTypesTxt += `,'${element}'`;
     }
-  })
+  });
 
   let durationTxt = null;
   durations?.forEach((element) => {
-    if(!durationTxt) {
-      durationTxt = `'${element}'`
-    }else {
-      durationTxt += `,'${element}'`
+    if (!durationTxt) {
+      durationTxt = `'${element}'`;
+    } else {
+      durationTxt += `,'${element}'`;
     }
-  })
+  });
 
-  let newSql = `SELECT * FROM ${table_name} WHERE TOUR_TYPE IN (${tourTypesTxt}) ${durationTxt ? `AND TIME IN (${durationTxt})` : ""}`;
+  let newSql = `SELECT * FROM ${table_name} WHERE TOUR_TYPE IN (${tourTypesTxt}) ${
+    durationTxt ? `AND TIME IN (${durationTxt})` : ""
+  }`;
   // console.log(newSql);
 
   let sql = `SELECT * FROM ${table_name}`;
 
-  if(!tourTypesTxt && durationTxt) {
+  if (!tourTypesTxt && durationTxt) {
     sql += ` WHERE TIME IN (${durationTxt})`;
   }
 
-  if(tourTypesTxt && !durationTxt) {
+  if (tourTypesTxt && !durationTxt) {
     sql += ` WHERE TOUR_TYPE IN (${tourTypesTxt})`;
   }
 
-  if(tourTypesTxt && durationTxt) {
+  if (tourTypesTxt && durationTxt) {
     sql += ` WHERE TOUR_TYPE IN (${tourTypesTxt}) AND TIME IN (${durationTxt})`;
   }
 
   // console.log(sql);
-
 
   // const totalDocuments = await query(newSql);
 
   // const totalPages = Math.ceil(totalDocuments?.[0].total_rows / LIMIT);
 
   // const SKIP = (1 - 1) * LIMIT;
-  
+
   // newSql += ` LIMIT ${LIMIT} OFFSET ${SKIP}`;
 
   // console.log(newSql)
@@ -259,16 +273,17 @@ app.get("/filter", async (req, res) => {
   //       sql_condition += ` AND ${filtersKeys[key]} = '${eachElement}'`
   //     }
   //   })
-  // }) 
+  // })
 
   // const sql = `SELECT * FROM ${table_name} ${sql_condition}`;
 
   const result = await query(sql);
-  res.status(200).json(new ApiResponse(200, "Success", {
-    tours : result,
-    total_page : 1
-  }));
+  res.status(200).json(
+    new ApiResponse(200, "Success", {
+      tours: result,
+      total_page: 1,
+    })
+  );
 });
-
 
 app.listen(8080, console.log("http://localhost:8080"));

@@ -244,6 +244,26 @@ export const BLOGS_LIST_DATA = [
     link: "/blogs/top-tourist-attractions-in-mauritius-with-travlio",
     description:
       "Mauritius, a volcanic island nation nestled in the turquoise waters of the Indian Ocean, beckons travelers with its pristine beaches, lush rainforests, and vibrant culture. From luxurious resorts to hidden waterfalls, Mauritius offers an unforgettable escape for every kind of traveler. As a leading international travel agent in Kolkata,",
+  },
+  {
+    id: "23",
+    title: "Singapore tour package from Kolkata with Travlio",
+    date: "08th July’24",
+    author: "Admin",
+    img: "/blogs/blog23.webp",
+    link: "/blogs/singapore-tour-package-from-kolkata-with-travlio",
+    description:
+      "Ever dreamt of conquering a futuristic city with sky-high gardens and movie magic islands? Then visit Singapore! Travlio, your one-stop travel partner, unlocks the secrets of this dazzling island nation with a specially crafted Singapore tour package from Kolkata, all without burning a hole in your pocket. (Yes, budget-friendly adventures exist!)",
+  },
+  {
+    id: "24",
+    title: "#1 Tour and Travel Agency in Kolkata: Travlio",
+    date: "08th July’24",
+    author: "Admin",
+    img: "/blogs/blog24.webp",
+    link: "/blogs/1-tour-and-travel-agency-in-kolkata-travlio",
+    description:
+      "Kolkata, the 'City of Joy,' is a vibrant tapestry of history, culture, and culinary delights. But the world beckons, with its breathtaking landscapes, diverse cultures, and unforgettable experiences. As you dream of your next adventure, look no further than Travlio, your #1 tour and travel agency in Kolkata.",
   }
 ];
 
