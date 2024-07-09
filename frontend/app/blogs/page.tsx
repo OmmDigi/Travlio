@@ -17,7 +17,7 @@ function page() {
       {/* <h2 className="w-full text-center pt-10 text-lg">Comming Soon..</h2> */}
 
       <ul className="w-full grid grid-cols-3 gap-6 sm:grid-cols-1 mt-8">
-        {BLOGS_LIST_DATA.reverse().map((_, index) => {
+        {BLOGS_LIST_DATA.map((_, index) => {
           currentIndex = (BLOGS_LIST_DATA.length - 1) - index;
           return (
             <li
