@@ -264,7 +264,57 @@ export const BLOGS_LIST_DATA = [
     link: "/blogs/1-tour-and-travel-agency-in-kolkata-travlio",
     description:
       "Kolkata, the 'City of Joy,' is a vibrant tapestry of history, culture, and culinary delights. But the world beckons, with its breathtaking landscapes, diverse cultures, and unforgettable experiences. As you dream of your next adventure, look no further than Travlio, your #1 tour and travel agency in Kolkata.",
-  }
+  },
+  {
+    id: "25",
+    title: "The Importance of Choosing the Right International Travel Agent in Kolkata",
+    date: "10th July’24",
+    author: "Admin",
+    img: "/blogs/blog25.webp",
+    link: "/blogs/the-importance-of-choosing-the-right-international-travel-agent-in-kolkata",
+    description:
+      "Kolkata, a city steeped in history and vibrant culture, is a fantastic starting point for your international adventures. But with so many international travel agents in Kolkata, choosing the right one can feel overwhelming.",
+  },
+  {
+    id: "26",
+    title: "Your Dream Europe Tour Package from Kolkata with Travlio",
+    date: "10th July’24",
+    author: "Admin",
+    img: "/blogs/blog26.webp",
+    link: "/blogs/your-dream-europe-tour-package-from-kolkata-with-travlio",
+    description:
+      "Europe, a continent steeped in history, captivating landscapes, and diverse cultures, beckons travelers with its timeless charm. As Kolkata's leading travel agency, Travlio curates the perfect Europe tour package from Kolkata,",
+  },
+  {
+    id: "27",
+    title: "Explore Beyond Borders with Foreign Tour Packages from Kolkata with Travlio",
+    date: "10th July’24",
+    author: "Admin",
+    img: "/blogs/blog27.webp",
+    link: "/blogs/explore-beyond-borders-with-foreign-tour-packages-from-kolkata-with-travlio",
+    description:
+      "Are you yearning to explore new cultures, witness breathtaking landscapes, and create unforgettable memories beyond the borders of India? Look no further than Travlio, your one-stop shop for exceptional foreign tour packages from Kolkata.",
+  },
+  {
+    id: "28",
+    title: "Breathtaking International Tour Packages Under 30,000 with Travlio",
+    date: "10th July’24",
+    author: "Admin",
+    img: "/blogs/blog28.webp",
+    link: "/blogs/breathtaking-international-tour-packages-under-30000-with-travlio",
+    description:
+      "The world beckons with its captivating landscapes, vibrant cultures, and unforgettable experiences. But travel costs can sometimes feel like a barrier. Here at Travlio, we believe everyone deserves to explore the world. That's why we offer a variety of exciting international tour packages under 30,000 that won't break the bank.",
+  },
+  {
+    id: "29",
+    title: "Why Travlio is the Best International Tour Operator in Kolkata",
+    date: "10th July’24",
+    author: "Admin",
+    img: "/blogs/blog29.webp",
+    link: "/blogs/why-travlio-is-the-best-international-tour-operator-in-kolkata",
+    description:
+      "Are you yearning to explore the world, discover new cultures, and create memories that last a lifetime? Look no further than Travlio, the best international tour operator in Kolkata.",
+  },
 ];
 
 export const DIALOG_TIMER_STATE = new Map<string, boolean>();
