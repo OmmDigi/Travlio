@@ -59,7 +59,7 @@ function BannerImage() {
             sizes="(min-width: 808px) 50vw, 100vw"
             className={`img ${
               index === currentIndex ? "active" : ""
-            } sm:h-auto w-full sm:object-contain`}
+            } sm:h-full w-full sm:object-cover`}
           />
         ))}
       </div>
