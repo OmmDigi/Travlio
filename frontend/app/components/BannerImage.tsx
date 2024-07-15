@@ -62,23 +62,6 @@ function BannerImage() {
           />
         ))}
       </div>
-
-      {/* <div className="hidden sm:block">
-        {mobilebannerlist.map((imageUrl, index) => (
-          <Image
-            loading="lazy"
-            key={index}
-            height={1500}
-            width={1500}
-            src={imageUrl}
-            alt={`Banner ${index + 1}`}
-            sizes="(min-width: 808px) 50vw, 100vw"
-            className={`img ${
-              index === currentIndex ? "active" : ""
-            } sm:h-full w-full sm:object-cover`}
-          />
-        ))}
-      </div> */}
     </div>
   );
 }
