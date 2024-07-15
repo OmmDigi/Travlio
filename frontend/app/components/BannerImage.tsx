@@ -27,21 +27,8 @@ function BannerImage() {
   }, [bannerList]);
 
   return (
-    // <div className={`w-full h-[350px] overflow-hidden ${loaded ? "loaded" : ""}`}>
-    //   {bannerList.map((image, index) => (
-    //     <Image
-    //       src={image}
-    //       alt="banner-2"
-    //       height={1200}
-    //       width={1200}
-    //       className={`img w-full h-full object-cover ${
-    //         index === currentIndex ? "active" : ""
-    //       } sm:h-[350px] sm:object-cover`}
-    //     />
-    //   ))}
-    // </div>
     <div
-      className={`overflow-hidden bg-black w-full relative banner h-[390px] ${
+      className={`overflow-hidden bg-black w-full relative banner max-h-[390px] min-h-[340px] ${
         loaded ? "loaded" : ""
       }`}
     >
@@ -69,9 +56,10 @@ function BannerImage() {
             width={1500}
             src={imageUrl}
             alt={`Banner ${index + 1}`}
+            sizes="(min-width: 808px) 50vw, 100vw"
             className={`img ${
               index === currentIndex ? "active" : ""
-            } sm:h-[350px] w-full sm:object-cover`}
+            } sm:h-auto w-full sm:object-contain`}
           />
         ))}
       </div>
