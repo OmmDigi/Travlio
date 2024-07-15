@@ -52,6 +52,7 @@ function BannerImage() {
           <Image
             key={index}
             height={1500}
+            loading="eager"
             width={1500}
             src={imageUrl}
             sizes="(max-width: 639px) 100vw, 100vw"
