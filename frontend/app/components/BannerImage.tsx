@@ -1,13 +1,19 @@
 "use client";
 
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import React, { useEffect, useState } from "react";
 import { MOBILE_VIEW_WIDTH } from "../constant";
 
+import MobileHome1 from "@/public/mobile-banner1.webp";
+import MobileHome2 from "@/public/mobile-banner2.webp";
+
+import HomeBanner1 from "@/public/home-page-1.jpg";
+import HomeBanner2 from "@/public/home-page-2.jpg";
+
 function BannerImage() {
-  const bannerList = ["/home-page-1.jpg", "/home-page-2.jpg"];
-  const mobilebannerlist = ["/mobile-banner1.webp", "/mobile-banner2.webp"];
-  const [finalBannerList, setFinalBannerList] = useState<string[]>([]);
+  const bannerList = [HomeBanner1, HomeBanner2];
+  const mobilebannerlist = [MobileHome1, MobileHome2];
+  const [finalBannerList, setFinalBannerList] = useState<StaticImageData[]>([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [loaded, setLoaded] = useState(false);
 
@@ -20,8 +26,6 @@ function BannerImage() {
       }
     }
   }, []);
-
-  console.log(finalBannerList);
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -46,16 +50,12 @@ function BannerImage() {
         loaded ? "loaded" : "animate-pulse"
       }`}
     >
-      
       <div>
         {finalBannerList.map((imageUrl, index) => (
           <Image
             key={index}
-            height={1500}
             loading="eager"
-            width={1500}
             src={imageUrl}
-            sizes="(max-width: 639px) 100vw, 100vw"
             alt={`Banner ${index + 1}`}
             className={`img ${
               index === currentIndex ? "active" : ""
