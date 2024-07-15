@@ -28,7 +28,7 @@ function page() {
                 <Image
                   className="h-60 object-cover"
                   src={BLOGS_LIST_DATA[currentIndex].img}
-                  alt=""
+                  alt={BLOGS_LIST_DATA[currentIndex].title}
                   height={1200}
                   width={1200}
                 />

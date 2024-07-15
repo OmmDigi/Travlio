@@ -3,7 +3,6 @@ import { Poppins } from "next/font/google";
 import "./globals.css";
 import { MyProvider } from "./redux/provider";
 import { BASE_URL } from "./constant";
-import Script from "next/script";
 
 const popins = Poppins({ subsets: ["latin"], weight: "300" });
 

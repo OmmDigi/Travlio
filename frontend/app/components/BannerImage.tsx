@@ -11,21 +11,12 @@ import HomeBanner1 from "@/public/home-page-1.jpg";
 import HomeBanner2 from "@/public/home-page-2.jpg";
 
 function BannerImage() {
+
   const bannerList = [HomeBanner1, HomeBanner2];
   const mobilebannerlist = [MobileHome1, MobileHome2];
-  const [finalBannerList, setFinalBannerList] = useState<StaticImageData[]>([]);
+
   const [currentIndex, setCurrentIndex] = useState(0);
   const [loaded, setLoaded] = useState(false);
-
-  useEffect(() => {
-    if (window) {
-      if (window.innerWidth >= MOBILE_VIEW_WIDTH) {
-        setFinalBannerList([...bannerList]);
-      } else {
-        setFinalBannerList([...mobilebannerlist]);
-      }
-    }
-  }, []);
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -46,12 +37,26 @@ function BannerImage() {
 
   return (
     <div
-      className={`overflow-hidden bg-gray-400 w-full relative banner max-h-[390px] h-[390px] sm:h-[350px] ${
-        loaded ? "loaded" : "animate-pulse"
+      className={`overflow-hidden w-full relative banner max-h-[390px] h-[390px] sm:h-[350px] ${
+        loaded ? "loaded" : ""
       }`}
     >
-      <div>
-        {finalBannerList.map((imageUrl, index) => (
+      <div className="sm:hidden">
+        {bannerList.map((imageUrl, index) => (
+          <Image
+            key={index}
+            loading="eager"
+            src={imageUrl}
+            alt={`Banner ${index + 1}`}
+            className={`img ${
+              index === currentIndex ? "active" : ""
+            } sm:h-[350px] w-full sm:object-cover`}
+          />
+        ))}
+      </div>
+
+      <div className="hidden sm:block">
+        {bannerList.map((imageUrl, index) => (
           <Image
             key={index}
             loading="eager"

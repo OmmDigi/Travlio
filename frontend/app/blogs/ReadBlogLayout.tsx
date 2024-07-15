@@ -32,8 +32,9 @@ function ReadBlogLayout(props: IProps) {
         </p> */}
 
         <ShimmerImage
+
           src={props.bannerimage}
-          alt="blog-img"
+          alt={props.heading}
           width={1280}
           height={1280}
           className="w-[70%] mt-4 sm:w-full rounded-3xl aspect-video"
