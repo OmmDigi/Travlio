@@ -9,7 +9,7 @@ function page() {
   let currentIndex = 0;
   return (
     <section className={`w-full ${GLOBAL_X_PADDING} py-5`}>
-      <PageIntroBanner src="/gallery.jpg" text="BLOGS" />
+      <PageIntroBanner alt="Gallery Banner" src="/gallery.jpg" text="BLOGS" />
       {/* <div className="w-full flex items-center justify-center my-10">
         <SearchInput />
       </div> */}

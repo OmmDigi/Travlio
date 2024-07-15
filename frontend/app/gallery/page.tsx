@@ -18,7 +18,7 @@ function page() {
 
   return (
     <div className={`${GLOBAL_X_PADDING} sm:mt-3`}>
-      <PageIntroBanner src="/gallery.jpg" text="GALLERY" />
+      <PageIntroBanner alt="Gallery Image" src="/gallery.jpg" text="GALLERY" />
       <ul className="w-full grid grid-cols-4 gap-5 py-6 sm:grid-cols-1">
         {galleryImg.map((item, index) => (
          <GalleryImageItem key={index} image={item}/>
