@@ -28,21 +28,6 @@ export default function RootLayout({
           name="google-site-verification"
           content="s-9GCCA6Jp6qLihIFxw1m1Md4VxgsAKxyedRySvV1CE"
         />
-
-        <script
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=G-YQ1NB78HK4"
-        />
-        <Script id="googletagmanager">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){
-              dataLayer.push(arguments);
-            }
-            gtag('js', new Date());
-            gtag('config', 'G-YQ1NB78HK4');
-        `}
-        </Script>
       </head>
       <body
         className={popins.className + " bg-[#FFFFFF]"}

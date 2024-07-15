@@ -3,6 +3,7 @@ import React from "react";
 import { GLOBAL_X_PADDING } from "../constant";
 import Link from "next/link";
 import { TbCopyright } from "react-icons/tb";
+import Script from "next/script";
 
 function Footer() {
   return (
@@ -10,6 +11,20 @@ function Footer() {
       <footer
         className={`w-full flex items-start sm:flex-col py-10 gap-12 sm:px-10 sm:gap-0 h-72 sm:h-auto bg-[#222222] ${GLOBAL_X_PADDING}`}
       >
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-YQ1NB78HK4"
+        />
+        <Script id="googletagmanager">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){
+              dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+            gtag('config', 'G-YQ1NB78HK4');
+        `}
+        </Script>
         <div className="text-white w-96 text-justify">
           <Image
             src="/footerLogo.png"
@@ -81,20 +96,19 @@ function Footer() {
           </div> */}
           <h2 className="font-extrabold text-white">Office Locations</h2>
           <div className="w-full text-sm text-gray-300 mt-3 flex flex-col gap-5">
-          <Link href="https://maps.app.goo.gl/TZ9vQRj6UHAaL6iXA">
-            Shop No 9/38, Jhautala, near Aminia Restaurant, Chinar Park,
-            Kolkata, West Bengal 700157
-          </Link>
-          <Link href="https://maps.app.goo.gl/cHrSCpa4BDMKzC138">
-            AD 77, Sector 1, Saltalke, Kolkata - 700064, Kolkata, West Bengal
-            700064
-          </Link>
-          <Link href="https://maps.app.goo.gl/H1W3N4YDjSf1Lv2AA">
-            55, Gariahat Rd, Dover Terrace, Ballygunge, Kolkata, West Bengal
-            700019
-          </Link>
+            <Link href="https://maps.app.goo.gl/TZ9vQRj6UHAaL6iXA">
+              Shop No 9/38, Jhautala, near Aminia Restaurant, Chinar Park,
+              Kolkata, West Bengal 700157
+            </Link>
+            <Link href="https://maps.app.goo.gl/cHrSCpa4BDMKzC138">
+              AD 77, Sector 1, Saltalke, Kolkata - 700064, Kolkata, West Bengal
+              700064
+            </Link>
+            <Link href="https://maps.app.goo.gl/H1W3N4YDjSf1Lv2AA">
+              55, Gariahat Rd, Dover Terrace, Ballygunge, Kolkata, West Bengal
+              700019
+            </Link>
           </div>
-          
         </div>
       </footer>
 

@@ -63,6 +63,7 @@ function BannerImage() {
       <div className="hidden sm:block">
         {mobilebannerlist.map((imageUrl, index) => (
           <Image
+            loading="eager"
             key={index}
             height={1500}
             width={1500}
