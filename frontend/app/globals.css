@@ -347,3 +347,13 @@ td {
   margin-left: auto;
   margin-right: auto;
 }
+
+.animate-banner {
+  animation: animateBanner 2.8s infinite forwards;
+}
+
+@keyframes animateBanner {
+
+  
+
+}

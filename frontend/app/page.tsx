@@ -1,15 +1,10 @@
-import Image from "next/image";
 import BannerImage from "./components/BannerImage";
 import { GLOBAL_X_PADDING } from "./constant";
 import HomeInfo from "./components/HomeInfo";
 import TourPackages from "./components/TourPackages";
 import Deal from "./components/Deal";
-import Testimonial from "./components/Testimonial";
-import RecentBlogs from "./components/RecentBlogs";
-import MoreAboutUs from "./components/MoreAboutUs";
 import CollapsibleMenu from "./components/CollapsibleMenu";
 import Service from "./components/Service";
-import NewCarousel from "./components/NewCarousel";
 import NewTestimonial from "./components/NewTestimonial/NewTestimonial";
 import Blogs from "./components/blogs/Blogs";
 
