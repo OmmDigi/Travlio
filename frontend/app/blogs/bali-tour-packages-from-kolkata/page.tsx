@@ -24,7 +24,7 @@ export default function page() {
       author="Admin"
       bannerimage="/blogs/blog12.webp"
       date="21 May, 2024"
-      shortdescription=""
+      shortdescription="Explore Bali with our exclusive tour packages from Kolkata. Discover stunning landscapes and cultural delights. Read this blog to learn more."
     >
       <P>
         Bali is popular for its stunning beaches, vibrant culture, lush

@@ -1,4 +1,3 @@
-import { API_BASE_URL, BASE_URL } from "@/app/constant";
 import { ITours } from "@/app/types";
 import Image from "next/image";
 import Link from "next/link";
@@ -15,7 +14,7 @@ function PackagesLI({ info }: IProps) {
   return (
     <li className="w-full toupPackagesShdow relative hover:scale-105 transition-all duration-500">
       <Link href={URL}>
-        <Image src={info.IMG} alt="img" width={1200} height={1200} />
+        <Image src={info.IMG} alt={info.TITLE} width={1200} height={1200} />
         <div className="text-[10px] tracking-widest px-3 py-2 bg-[#00000091] text-white absolute top-5 right-5 font-semibold rounded-full">
           {info.TOUR_TYPE}
         </div>

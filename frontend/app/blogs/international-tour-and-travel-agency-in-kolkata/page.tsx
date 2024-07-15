@@ -149,7 +149,7 @@ export default function page() {
       bannerimage="/blogs/blog7.webp"
       date="20 May, 2024"
       heading="INTERNATIONAL TOUR AND TRAVEL AGENCY IN KOLKATA"
-      shortdescription=""
+      shortdescription="Discover Travlio, your premier international tour and travel agency in Kolkata. Explore exciting destinations worldwide. Read this blog for more information!"
     >
       <P>
         Embarking on a{" "}

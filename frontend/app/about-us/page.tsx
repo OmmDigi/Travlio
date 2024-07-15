@@ -27,6 +27,7 @@ function page() {
   const topDestinationsList = [
     {
       image: "/himachal.webp",
+      alt: "TOP DESTINATIONS EUROPE",
     },
     {
       title: "EUROPE",
@@ -36,6 +37,7 @@ function page() {
 
     {
       image: "/greece.webp",
+      alt: "TOP DESTINATIONS HIMACHAL",
     },
 
     {
@@ -46,6 +48,7 @@ function page() {
 
     {
       image: "/europe.webp",
+      alt: "TOP DESTINATIONS GREECE",
     },
 
     {
@@ -60,7 +63,7 @@ function page() {
       <Image
         className="w-full sm:h-[720px] sm:object-cover"
         src="/about-banner.webp"
-        alt=""
+        alt="TRAVLIO Best Travel Agency in Kolkata for your"
         height={1200}
         width={1200}
       />
@@ -139,7 +142,7 @@ function page() {
                 <Image
                   className="w-full h-full"
                   src={item.image}
-                  alt=""
+                  alt={item.alt}
                   height={1024}
                   width={1024}
                 />
@@ -150,7 +153,9 @@ function page() {
                   <h2 className="text-center source-sans-3-700 text-gray-800 text-[15px]">
                     {item.title}
                   </h2>
-                  <p className="text-center text-xs pt-1 sm:text-justify">{item.subtitle}</p>
+                  <p className="text-center text-xs pt-1 sm:text-justify">
+                    {item.subtitle}
+                  </p>
                 </div>
               ) : null}
             </li>
@@ -158,7 +163,6 @@ function page() {
         </ul>
       </div>
 
- 
       <div className="grid grid-cols-2 mt-7 aboutBottomBanner sm:grid-cols-1">
         <div className="p-10 px-20 sm:px-5">
           <h2 className="font-semibold text-2xl tracking-widest">

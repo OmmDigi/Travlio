@@ -22,7 +22,7 @@ export default function page() {
       heading="Why Travlio is the Best International Tour Operator in Kolkata"
       author="Admin"
       date="10th July’24"
-      shortdescription=""
+      shortdescription="Are you yearning to explore the world, discover new cultures, and create memories that last a lifetime? Look no further than Travlio, the best international tour operator in Kolkata."
     >
       <div
         className="mt-5"

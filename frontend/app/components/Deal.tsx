@@ -25,7 +25,7 @@ function Deal() {
           </Link>
       
         </div>
-        <Image src={ForexCardImg} alt="" sizes="(min-width: 808px) 50vw, 100vw" />
+        <Image src={ForexCardImg} alt="Forex card Services" sizes="(min-width: 808px) 50vw, 100vw" />
       </div>
 
       <div className="relative w-full shadow-2xl">
@@ -35,7 +35,7 @@ function Deal() {
           </h2>
           <ContactMenuBtn text="Contact Us Now" className="blinkAnimation w-full text-left text-white" />
         </div>
-        <Image src={RewardImg} alt="" sizes="(min-width: 808px) 50vw, 100vw" />
+        <Image src={RewardImg} alt="Exclusive Tour Discounts for Thrill-Seekers!" sizes="(min-width: 808px) 50vw, 100vw" />
       </div>
     </section>
   );

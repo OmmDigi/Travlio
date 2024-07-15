@@ -23,7 +23,7 @@ export default function page() {
       date="20th May’24"
       bannerimage="/blogs/blog10.webp"
       heading="MALDIVES TOUR PACKAGES FROM KOLKATA"
-      shortdescription=""
+      shortdescription="Explore Maldives Tour Packages from Kolkata with Travlio. Discover pristine beaches and azure waters. Read this blog for your next adventure!"
     >
       <Heading type="H1">
         WHY IS MALDIVES A TOURIST HOTSPOT? LET&apos;S EXPLORE!

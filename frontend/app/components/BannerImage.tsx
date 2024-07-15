@@ -11,9 +11,14 @@ import HomeBanner1 from "@/public/home-page-1.jpg";
 import HomeBanner2 from "@/public/home-page-2.jpg";
 
 function BannerImage() {
-
-  const bannerList = [HomeBanner1, HomeBanner2];
-  const mobilebannerlist = [MobileHome1, MobileHome2];
+  const bannerList = [
+    { src: HomeBanner1, alt: "Discover Europe" },
+    { src: HomeBanner2, alt: "Best Tour Packages" },
+  ];
+  const mobilebannerlist = [
+    { src: MobileHome1, alt: "Discover Europe" },
+    { src: MobileHome2, alt: "Best Tour Packages" },
+  ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
   const [loaded, setLoaded] = useState(false);
@@ -42,12 +47,12 @@ function BannerImage() {
       }`}
     >
       <div className="sm:hidden">
-        {bannerList.map((imageUrl, index) => (
+        {bannerList.map((imgInfo, index) => (
           <Image
             key={index}
             loading="eager"
-            src={imageUrl}
-            alt={`Banner ${index + 1}`}
+            src={imgInfo.src}
+            alt={imgInfo.alt}
             className={`img ${
               index === currentIndex ? "active" : ""
             } sm:h-[350px] w-full sm:object-cover`}
@@ -56,12 +61,12 @@ function BannerImage() {
       </div>
 
       <div className="hidden sm:block">
-        {bannerList.map((imageUrl, index) => (
+        {mobilebannerlist.map((imgInfo, index) => (
           <Image
             key={index}
             loading="eager"
-            src={imageUrl}
-            alt={`Banner ${index + 1}`}
+            src={imgInfo.src}
+            alt={imgInfo.alt}
             className={`img ${
               index === currentIndex ? "active" : ""
             } sm:h-[350px] w-full sm:object-cover`}

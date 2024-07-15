@@ -26,7 +26,7 @@ export default function page() {
       heading="Best International Travel Agency in Kolkata: Your Gateway to the World (Thomas Cook)"
       author="Admin"
       date="02th July’24"
-      shortdescription=""
+      shortdescription="The best International Travel Agency in Kolkata! Travlio offers stress-free travel planning, expert advice, & unforgettable experiences worldwide. Contact us for your dream vacation!"
     >
       <P>
         International travel promises adventure, but navigating the details can

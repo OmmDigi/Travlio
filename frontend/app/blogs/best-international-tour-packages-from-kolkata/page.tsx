@@ -56,7 +56,7 @@ const datas = [
 export const metadata: Metadata = {
   title: "Best International Tour Packages from Kolkata | Travlio",
   description:
-    "Discover the best international tour packages from Kolkata with Travlio. Read this blog to plan your dream vacation today. Unforgettable adventures await! ",
+    "Discover the best international tour packages from Kolkata with Travlio. Read this blog to plan your dream vacation today. Unforgettable adventures await!",
   authors: [{ name: "Travlio" }],
   alternates: {
     canonical:
@@ -72,7 +72,7 @@ export default function page() {
         heading="Best International Tour Packages From Kolkata"
         author="Admin"
         date="18th May’24"
-        shortdescription="Traveling abroad from Kolkata, India offers a myriad of enriching experiences that blend history, culture, and adventure. Kolkata rather than India’s rich colonial heritage serves as a gateway to explore the world beyond its borders. Here are a few reasons why foreign travel from Kolkata is enticing…"
+        shortdescription="Discover the best international tour packages from Kolkata with Travlio. Read this blog to plan your dream vacation today. Unforgettable adventures await!"
       >
         <ul className="w-full py-10 space-y-8">
           {datas.map((item, index) => (

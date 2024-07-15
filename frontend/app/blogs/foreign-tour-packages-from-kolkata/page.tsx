@@ -24,7 +24,7 @@ export default function page() {
       date="20th May’24"
       bannerimage="/blogs/blog8.webp"
       heading="FOREIGN TOUR PACKAGES FROM KOLKATA"
-      shortdescription=""
+      shortdescription="Discover exotic destinations with Travlio! Explore our Foreign Tour Packages from Kolkata. Read this blog for exclusive travel insights and offers."
     >
       <Heading type="H2">INTRODUCTION</Heading>
       <P>

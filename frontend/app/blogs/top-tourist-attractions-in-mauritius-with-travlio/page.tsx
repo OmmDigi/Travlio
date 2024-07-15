@@ -5,7 +5,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Top Tourist Attractions in Mauritius with Travlio",
-  description : " Mauritius offers an unforgettable escape for every kind of traveler. As a leading international travel agent in Kolkata, Travlio curates the perfect Mauritius vacation, allowing you to explore this captivating island at your own pace.",
+  description : "Mauritius offers an unforgettable escape for every kind of traveler. As a leading international travel agent in Kolkata, Travlio curates the perfect Mauritius vacation, allowing you to explore this captivating island at your own pace.",
   authors: [{ name: "Travlio" }],
   alternates: {
     canonical: "/blogs/top-tourist-attractions-in-mauritius-with-travlio",
@@ -19,7 +19,7 @@ export default function page() {
       heading="Top Tourist Attractions in Mauritius with Travlio"
       author="Admin"
       date="05th July’24"
-      shortdescription=""
+      shortdescription="Mauritius offers an unforgettable escape for every kind of traveler. As a leading international travel agent in Kolkata, Travlio curates the perfect Mauritius vacation, allowing you to explore this captivating island at your own pace."
     >
       <div
         className="mt-5"

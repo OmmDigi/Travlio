@@ -20,7 +20,7 @@ export default function page() {
       heading="Africa Budget Tour From Kolkata with Travlio"
       author="Admin"
       date="04th July’24"
-      shortdescription=""
+      shortdescription="As Kolkata's leading international travel agent, Travlio curates the perfect Africa Budget Tour From Kolkata, allowing you to explore this awe-inspiring continent without breaking the bank."
     >
       <div
         className="mt-5"

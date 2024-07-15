@@ -26,7 +26,7 @@ export default function page() {
       date="26th Jun’24"
       bannerimage="/blogs/blog13.avif"
       heading="EXCLUSIVE ADVENTURES FOR THE DISCERNING TRAVELER WITH INTERNATIONAL TRAVEL AGENTS IN KOLKATA"
-      shortdescription=""
+      shortdescription="Discover how international travel agents in Kolkata curate bespoke itineraries for the discerning traveler. VIP access, unique experiences & stress-free travel await!"
     >
       <P>
         For the seasoned traveler, the allure of the ordinary has long faded.

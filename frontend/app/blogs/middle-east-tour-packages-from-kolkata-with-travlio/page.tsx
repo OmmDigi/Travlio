@@ -19,7 +19,7 @@ export default function page() {
       heading="Middle East: Tour Packages From Kolkata with Travlio"
       author="Admin"
       date="04th July’24"
-      shortdescription=""
+      shortdescription="Travlio curates the perfect Middle Eastern Tour Packages From Kolkata, allowing you to explore this fascinating region at your own pace."
     >
       <div
         className="mt-5"

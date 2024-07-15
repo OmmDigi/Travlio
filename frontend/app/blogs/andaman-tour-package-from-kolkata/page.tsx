@@ -22,7 +22,7 @@ export default function page() {
         heading="Andaman tour package from Kolkata"
         author="Admin"
         date="18th May’24"
-        shortdescription="Why are sea destinations so lucrative among travelers? Well, firstly, they offer a diverse range of attractions, from pristine beaches to vibrant marine life, making them appealing to a wide range of travelers."
+        shortdescription="Explore Andaman with Travlio's exclusive tour package from Kolkata. Dive into an unforgettable adventure. Read this blog for details!"
       >
         <p className="mt-6 font-medium">
           Why are sea destinations so lucrative among travelers? Well, firstly,

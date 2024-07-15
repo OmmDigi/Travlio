@@ -21,7 +21,7 @@ export default function page() {
       heading="Budget International Tour Packages from Kolkata with Travlio"
       author="Admin"
       date="04th July’24"
-      shortdescription=""
+      shortdescription="unlocks the world with our curated Budget International Tour Packages from Kolkata."
     >
       <div
         className="mt-5"

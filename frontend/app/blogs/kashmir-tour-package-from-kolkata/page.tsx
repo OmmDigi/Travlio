@@ -23,7 +23,7 @@ export default function page() {
       date="20th May’24"
       bannerimage="/blogs/blog9.webp"
       heading="KASHMIR TOUR PACKAGE FROM KOLKATA"
-      shortdescription=""
+      shortdescription="Discover the wonders of Kashmir with Travlio's tour package from Kolkata. Read this blog to learn about the best destinations for an unforgettable journey!"
     >
       <P>
         Well, let alone the breathtaking natural beauty; even Bollywood has

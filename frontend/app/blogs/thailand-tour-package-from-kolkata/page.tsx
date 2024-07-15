@@ -10,7 +10,7 @@ import LinkToTourPackage from "@/app/components/LinkToTourPackage";
 export const metadata: Metadata = {
   title: "Thailand Tour Package from Kolkata | Travlio",
   description:
-    "Explore Thailand with Travlio's exclusive tour packages from Kolkata. Unforgettable experiences await! Read this blog for more information. ",
+    "Explore Thailand with Travlio's exclusive tour packages from Kolkata. Unforgettable experiences await! Read this blog for more information.",
   authors: [{ name: "Travlio" }],
   alternates: {
     canonical: BASE_URL + "/blogs/thailand-tour-package-from-kolkata",
@@ -24,7 +24,7 @@ export default function page() {
       bannerimage="/blogs/blog11.webp"
       heading="THAILAND TOUR PACKAGE FROM KOLKATA"
       date="22 May, 2024"
-      shortdescription=""
+      shortdescription="Explore Thailand with Travlio's exclusive tour packages from Kolkata. Unforgettable experiences await! Read this blog for more information."
     >
       <P>
         Why, Thailand? Well, why not? Thailand has been increasingly popular as

@@ -6,14 +6,14 @@ import { BASE_URL } from "./constant";
 
 const popins = Poppins({ subsets: ["latin"], weight: "300" });
 
-export const metadata: Metadata = {
-  title: "Travel Agency in Kolkata | Travlio (Thomas Cook)",
-  description:
-    "Travlio is your go-to travel agent for international and domestic trips from Kolkata. Book now for expert assistance, exclusive deals, and forex card!",
-  alternates: {
-    canonical: BASE_URL,
-  },
-};
+// export const metadata: Metadata = {
+//   title: "Travel Agency in Kolkata | Travlio (Thomas Cook)",
+//   description:
+//     "Travlio is your go-to travel agent for international and domestic trips from Kolkata. Book now for expert assistance, exclusive deals, and forex card!",
+//   alternates: {
+//     canonical: BASE_URL,
+//   },
+// };
 //adsf
 export default function RootLayout({
   children,

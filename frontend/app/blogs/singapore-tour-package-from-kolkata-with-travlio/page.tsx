@@ -20,7 +20,7 @@ function page() {
       heading="Singapore Tour Packages from Kolkata with Travlio"
       author="Admin"
       date="08th July’24"
-      shortdescription=""
+      shortdescription="Travlio, your one-stop travel partner, unlocks the secrets of this dazzling island nation with a specially crafted Singapore tour package from Kolkata, all without burning a hole in your pocket. (Yes, budget-friendly adventures exist!)"
     >
       <div
         className="mt-5"

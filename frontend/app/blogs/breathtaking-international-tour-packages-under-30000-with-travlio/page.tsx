@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title:
     "Breathtaking International Tour Packages Under 30,000 with Travlio",
   description:
-    " Here at Travlio, we believe everyone deserves to explore the world. That's why we offer a variety of exciting international tour packages under 30,000 that won't break the bank.",
+    "Here at Travlio, we believe everyone deserves to explore the world. That's why we offer a variety of exciting international tour packages under 30,000 that won't break the bank.",
   authors: [{ name: "Travlio" }],
   alternates: {
     canonical:
@@ -22,7 +22,7 @@ export default function page() {
       heading="Breathtaking International Tour Packages Under 30,000 with Travlio"
       author="Admin"
       date="10th July’24"
-      shortdescription=""
+      shortdescription="Here at Travlio, we believe everyone deserves to explore the world. That's why we offer a variety of exciting international tour packages under 30,000 that won't break the bank."
     >
       <div
         className="mt-5"

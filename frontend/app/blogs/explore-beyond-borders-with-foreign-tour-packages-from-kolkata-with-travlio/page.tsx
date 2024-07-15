@@ -22,7 +22,7 @@ export default function page() {
       heading="Explore Beyond Borders with Foreign Tour Packages from Kolkata with Travlio"
       author="Admin"
       date="10th July’24"
-      shortdescription=""
+      shortdescription="Look no further than Travlio, your one-stop shop for exceptional foreign tour packages from Kolkata."
     >
       <div
         className="mt-5"

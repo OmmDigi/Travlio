@@ -20,7 +20,7 @@ export default function page() {
       heading="#1 Tour and Travel Agency in Kolkata: Travlio"
       author="Admin"
       date="08th July’24"
-      shortdescription=""
+      shortdescription="As you dream of your next adventure, look no further than Travlio, your #1 tour and travel agency in Kolkata."
     >
       <div
         className="mt-5"

@@ -20,7 +20,7 @@ export default function page() {
       heading="North East Tour Packages from Kolkata with Travlio"
       author="Admin"
       date="05th July’24"
-      shortdescription=""
+      shortdescription="As the best international travel agent in Kolkata, Travlio curates the perfect North East Tour Packages from Kolkata."
     >
       <div
         className="mt-5"

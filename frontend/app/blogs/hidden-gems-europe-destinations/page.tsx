@@ -51,7 +51,7 @@ function page() {
         heading="Hidden Gems: Exploring Europe&apos;s Off-the-Beaten-Path Destinations"
         author="Admin"
         date="24th April’24"
-        shortdescription="Europe is a continent teeming with iconic landmarks, bustling cities, and well-trodden tourist trails. "
+        shortdescription="Discover hidden gems: exploring Europe's off-the-beaten-path destinations with Travlio Kolkata. Read this blog to uncover the secrets of Europe."
       >
         <p className="mt-6 font-medium">
           Europe is a continent teeming with iconic landmarks, bustling cities,

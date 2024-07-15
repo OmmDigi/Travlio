@@ -20,7 +20,7 @@ export default function page() {
       heading="A Culinary Tour of Europe: Must-Try Dishes and Foodie Hotspots"
       author="Admin"
       date="04th July’24"
-      shortdescription="Europe's rich tapestry of cultures, landscapes, and traditions is beautifully reflected in its diverse culinary scene."
+      shortdescription="Travlio, the leading international travel agent in Kolkata, brings you the ultimate guide to the best places to visit in Australia."
     >
       <div
         className="mt-5"

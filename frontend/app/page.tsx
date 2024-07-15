@@ -7,6 +7,16 @@ import CollapsibleMenu from "./components/CollapsibleMenu";
 import Service from "./components/Service";
 import NewTestimonial from "./components/NewTestimonial/NewTestimonial";
 import Blogs from "./components/blogs/Blogs";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Travel Agency in Kolkata | Travlio (Thomas Cook)",
+  description:
+    "Travlio is your go-to travel agent for international and domestic trips from Kolkata. Book now for expert assistance, exclusive deals, and forex card!",
+  alternates: {
+    canonical: "/",
+  },
+};
 
 export default async function Home() {
   return (

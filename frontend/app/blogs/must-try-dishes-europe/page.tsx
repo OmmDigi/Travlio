@@ -51,7 +51,7 @@ function page() {
         heading="A Culinary Tour of Europe: Must-Try Dishes and Foodie Hotspots"
         author="Admin"
         date="24th April’24"
-        shortdescription="Europe&apos;s rich tapestry of cultures, landscapes, and traditions is beautifully reflected in its diverse culinary scene."
+        shortdescription="Discover Travlio's guide on a culinary tour of Europe. Explore must-try dishes and foodie hotspots from Kolkata's leading travel agency. Read this blog now!"
       >
         <p className="mt-6 font-medium">
           Europe&apos;s rich tapestry of cultures, landscapes, and traditions is

@@ -67,7 +67,7 @@ function page() {
         heading="Europe on a Budget: Tips and Tricks for Affordable Travel"
         author="Admin"
         date="24th April’24"
-        shortdescription="Europe: a continent steeped in history, culture, and charm. From the picturesque streets of Paris to the stunning coastlines of Croatia, Europe offers a plethora of experiences for travelers."
+        shortdescription="Explore Europe on a Budget: Tips and Tricks for Affordable Travel by Travlio Kolkata. Read this blog to learn how to enjoy Europe without overspending."
       >
         <p className="mt-6 font-medium">
           Europe: a continent steeped in history, culture, and charm. From the

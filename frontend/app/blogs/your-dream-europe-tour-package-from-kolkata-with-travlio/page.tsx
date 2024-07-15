@@ -23,7 +23,7 @@ export default function page() {
       heading="Your Dream Europe Tour Package from Kolkata with Travlio"
       author="Admin"
       date="10th July’24"
-      shortdescription=""
+      shortdescription="As Kolkata's leading travel agency, Travlio curates the perfect Europe tour package from Kolkata, allowing you to explore this magnificent region at your own pace."
     >
       <div
         className="mt-5"

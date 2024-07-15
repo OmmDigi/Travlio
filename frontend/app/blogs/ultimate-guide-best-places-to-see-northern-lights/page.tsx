@@ -51,7 +51,7 @@ function page() {
         heading="The Ultimate Guide: Best Places to See the Northern Lights, from Iceland to Alaska"
         author="Admin"
         date="26th April’24"
-        shortdescription="The dancing colors of the Northern Lights, also known as the Aurora Borealis, have captivated humanity for centuries."
+        shortdescription="Explore the ultimate guide: best places to see the northern lights by travlio. Read this blog to discover the best spots for an aurora experience."
       >
         <h2 className="font-semibold mt-6">Introduction</h2>
         <p className="font-medium">

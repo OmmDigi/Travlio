@@ -22,7 +22,7 @@ export default function page() {
       heading="The Importance of Choosing the Right International Travel Agent in Kolkata"
       author="Admin"
       date="10th July’24"
-      shortdescription=""
+      shortdescription="So many international travel agents in Kolkata, choosing the right one can feel overwhelming. Here at Travlio, we understand the importance of a seamless travel experience, and we strive to be your trusted partner in exploration."
     >
       <div
         className="mt-5"

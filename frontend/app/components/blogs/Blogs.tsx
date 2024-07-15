@@ -27,7 +27,7 @@ function Blogs() {
                 <ShimmerImage
                   className="w-full h-full hover:scale-105 cursor-pointer transition-all duration-500"
                   src={item.img}
-                  alt=""
+                  alt={item.title}
                   width={1200}
                   height={1200}
                 />
