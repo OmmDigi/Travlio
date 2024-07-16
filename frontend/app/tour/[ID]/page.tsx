@@ -9,15 +9,9 @@ import { FaUser } from "react-icons/fa";
 import { IoPricetagOutline } from "react-icons/io5";
 import { API_BASE_URL } from "@/app/constant";
 import { ITours } from "@/app/types";
-import { Metadata } from "next";
+import { TOURS_META_INFO } from "@/app/constant";
 
-export const metadata: Metadata = {
-  title: "Travel Agency in Kolkata | Travlio (Thomas Cook)",
-  description:
-    "Travlio is your go-to travel agent for international and domestic trips from Kolkata. Book now for expert assistance, exclusive deals, and forex card!",
-};
-
-async function page({ params }: { params: { ID: number } }) {
+async function page({ params }: { params: { ID: string } }) {
   const URL = `${API_BASE_URL}/tour/${params.ID}`;
 
   const response = await fetch(URL);
@@ -28,25 +22,24 @@ async function page({ params }: { params: { ID: number } }) {
   );
   const tourResult = (await tourResponse.json()) as ITours;
 
+  const metaInfo = TOURS_META_INFO.find((info) => info.tourtitle === tourResult.TITLE);
+
+
   return (
     <>
       <head>
+        <title>{metaInfo?.metatitle || "Travel Agency in Kolkata | Travlio (Thomas Cook)"}</title>
+        <meta
+          name="description"
+          content={metaInfo?.metadescription || "Travlio is your go-to travel agent for international and domestic trips from Kolkata. Book now for expert assistance, exclusive deals, and forex card!"}
+        ></meta>
         <link rel="canonical" href={`/tour/${params.ID}`} />
 
         <meta property="og:title" content="Exotic Bali Tour Package" />
         <meta property="og:type" content="product" />
-        <meta
-          property="og:url"
-          content={`/tour/${params.ID}`}
-        />
-        <meta
-          property="og:image"
-          content={tourResult.IMG}
-        />
-        <meta
-          property="og:description"
-          content={tour.title}
-        />
+        <meta property="og:url" content={`/tour/${params.ID}`} />
+        <meta property="og:image" content={tourResult.IMG} />
+        <meta property="og:description" content={tour.title} />
         <meta property="og:site_name" content="Travlio (Thomas Cook)" />
         <meta property="og:locale" content="en_US" />
 
@@ -55,14 +48,8 @@ async function page({ params }: { params: { ID: number } }) {
 
         <meta name="twitter:card" content={tour.title} />
         <meta name="twitter:title" content={tour.title} />
-        <meta
-          name="twitter:description"
-          content={tour.title}
-        />
-        <meta
-          name="twitter:image"
-          content={tourResult.IMG}
-        />
+        <meta name="twitter:description" content={tour.title} />
+        <meta name="twitter:image" content={tourResult.IMG} />
       </head>
 
       <section className="w-full">

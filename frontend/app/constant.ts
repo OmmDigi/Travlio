@@ -267,7 +267,8 @@ export const BLOGS_LIST_DATA = [
   },
   {
     id: "25",
-    title: "The Importance of Choosing the Right International Travel Agent in Kolkata",
+    title:
+      "The Importance of Choosing the Right International Travel Agent in Kolkata",
     date: "10th July’24",
     author: "Admin",
     img: "/blogs/blog25.webp",
@@ -287,7 +288,8 @@ export const BLOGS_LIST_DATA = [
   },
   {
     id: "27",
-    title: "Explore Beyond Borders with Foreign Tour Packages from Kolkata with Travlio",
+    title:
+      "Explore Beyond Borders with Foreign Tour Packages from Kolkata with Travlio",
     date: "10th July’24",
     author: "Admin",
     img: "/blogs/blog27.webp",
@@ -314,6 +316,271 @@ export const BLOGS_LIST_DATA = [
     link: "/blogs/why-travlio-is-the-best-international-tour-operator-in-kolkata",
     description:
       "Are you yearning to explore the world, discover new cultures, and create memories that last a lifetime? Look no further than Travlio, the best international tour operator in Kolkata.",
+  },
+];
+
+export const TOURS_META_INFO = [
+  {
+    tourtitle: "Manmohak Europe (Summer 2024)",
+    metatitle:
+      "Manmohak Europe Tour Package From Kolkata | Travlio (Thomas Cook Kolkata)",
+    metadescription:
+      "Explore the Manmohak Europe Tour package with Travlio (Thomas Cook Kolkata). Book your unforgettable journey today and experience the best destinations and activities.",
+  },
+  {
+    tourtitle: "Ananya Europe (Summer 2024)",
+    metatitle:
+      "Ananya Europe Tour Package From Kolkata | Travlio (Thomas Cook Kolkata)",
+    metadescription:
+      "Explore the Ananya EuropeTour Package with Travlio (Thomas Cook Kolkata). Book your unforgettable journey today and experience the best destinations and activities.",
+  },
+  {
+    tourtitle: "Snighdo Sarathe Europe – Durga Puja Special",
+    metatitle:
+      "Snighdo Sarathe Europe – Durga Puja Special Tour Package From Kolkata | Travlio (Thomas Cook Kolkata)",
+    metadescription:
+      "Explore the Snighdo Sarathe Europe – Durga Puja Special package with Travlio (Thomas Cook Kolkata). Book your unforgettable journey today and experience the best destinations and activities.",
+  },
+  {
+    tourtitle: "Fantastic France",
+    metatitle:
+      "Fantastic France Tour Package From Kolkata | Travlio (Thomas Cook Kolkata)",
+    metadescription:
+      "Explore the Fantastic France package with Travlio (Thomas Cook Kolkata). Book your unforgettable journey today and experience the best destinations and activities.",
+  },
+  {
+    tourtitle: "Magical Europe (Summer 2024)",
+    metatitle:
+      "Magical Europe Tour Package From Kolkata | Travlio (Thomas Cook Kolkata)",
+    metadescription:
+      "Explore the Magical Europe Tour Package with Travlio (Thomas Cook Kolkata). Book your unforgettable journey today and experience the best destinations and activities.",
+  },
+  {
+    tourtitle: "Super Budget Tour Of Europe (Summer 2024)",
+    metatitle:
+      "Super Budget Tour Of Europe Tour Package From Kolkata | Travlio (Thomas Cook Kolkata)",
+    metadescription:
+      "Explore the Super Budget Tour Of Europe Tour Package with Travlio (Thomas Cook Kolkata). Book your unforgettable journey today and experience the best destinations and activities.",
+  },
+  {
+    tourtitle: "Darsaniya Europe With Love – Durga Puja Special",
+    metatitle:
+      "Darsaniya Europe With Love – Durga Puja Special Tour Package From Kolkata | Travlio (Thomas Cook Kolkata)",
+    metadescription:
+      "Explore the Darsaniya Europe With Love – Durga Puja Special tour package with Travlio (Thomas Cook Kolkata). Book your unforgettable journey today and experience the best destinations and activities.",
+  },
+  {
+    tourtitle: "Darsaniya Europe – Durga Puja Special",
+    metatitle:
+      "Durga Puja Special Europe Tour Package From Kolkata | Travlio (Thomas Cook Kolkata)",
+    metadescription:
+      "Explore the Darsaniya Europe – Durga Puja Special Tour Package with Travlio (Thomas Cook Kolkata). Book your unforgettable journey today and experience the best destinations and activities.",
+  },
+  {
+    tourtitle: "Darsaniya Europe (Summer 2024)",
+    metatitle:
+      "Darsaniya Europe Tour Package From Kolkata | Travlio (Thomas Cook Kolkata)",
+    metadescription:
+      "Explore the Darsaniya EuropeTour Package with Travlio (Thomas Cook Kolkata). Book your unforgettable journey today and experience the best destinations and activities.",
+  },
+  {
+    tourtitle: "Fusion Europe (Winter)",
+    metatitle:
+      "Fusion Europe Tour Package From Kolkata | Travlio (Thomas Cook Kolkata)",
+    metadescription:
+      "Explore the Fusion Europe Tour Package with Travlio (Thomas Cook Kolkata). Book your unforgettable journey today and experience the best destinations and activities.",
+  },
+  {
+    tourtitle: "European Fusion Dreams – Senior Citizens Special (Summer 2024)",
+    metatitle:
+      "European Fusion Dreams – Senior Citizens Special Tour Package From Kolkata | Travlio (Thomas Cook Kolkata)",
+    metadescription:
+      "Explore the European Fusion Dreams – Senior Citizens Special (Summer 2024) package with Travlio (Thomas Cook Kolkata). Book your unforgettable journey today and experience the best destinations and activities.",
+  },
+  {
+    tourtitle: "Fusion Europe (Summer 2024)",
+    metatitle:
+      "Fusion Europe Tour Package From Kolkata | Travlio (Thomas Cook Kolkata)",
+    metadescription:
+      "Explore the Fusion Europe (Summer 2024) package with Travlio (Thomas Cook Kolkata). Book your unforgettable journey today and experience the best destinations and activities.",
+  },
+  {
+    tourtitle: "European Dreams – Senior Citizen Special (Summer 2024)",
+    metatitle:
+      "European Dreams – Senior Citizen Special Tour Package From Kolkata | Travlio (Thomas Cook Kolkata)",
+    metadescription:
+      "Explore the European Dreams – Senior Citizen Special (Summer 2024) package with Travlio (Thomas Cook Kolkata). Book your unforgettable journey today and experience the best destinations and activities.",
+  },
+  {
+    tourtitle: "Highlights of Europe (DISNEYLAND®) (Summer 2024)",
+    metatitle:
+      "Highlights of Europe Tour Package From Kolkata | Travlio (Thomas Cook Kolkata)",
+    metadescription:
+      "Explore the Highlights of Europe (DISNEYLAND®) (Summer 2024) package with Travlio (Thomas Cook Kolkata). Book your unforgettable journey today and experience the best destinations and activities.",
+  },
+  {
+    tourtitle: "Enchanting East Europe With 4 Nights Balkans (Summer 2024)",
+    metatitle:
+      "Enchanting East Europe With 4 Nights Balkans Tour Package From Kolkata | Travlio (Thomas Cook Kolkata)",
+    metadescription:
+      "Explore the Enchanting East Europe With 4 Nights Balkans (Summer 2024) package with Travlio (Thomas Cook Kolkata). Book your unforgettable journey today and experience the best destinations and activities.",
+  },
+  {
+    tourtitle: "Chitramoy Europe (Summer 2024)",
+    metatitle:
+      "Chitramoy Europe Tour Package From Kolkata | Travlio (Thomas Cook Kolkata)",
+    metadescription:
+      "Explore the Chitramoy Europe (Summer 2024) package with Travlio (Thomas Cook Kolkata). Book your unforgettable journey today and experience the best destinations and activities.",
+  },
+  {
+    tourtitle: "Chitramoy Europe – Durga Puja Special",
+    metatitle:
+      "Chitramoy Europe – Durga Puja Special Tour Package From Kolkata | Travlio (Thomas Cook Kolkata)",
+    metadescription:
+      "Explore the Chitramoy Europe – Durga Puja Special package with Travlio (Thomas Cook Kolkata). Book your unforgettable journey today and experience the best destinations and activities.",
+  },
+  {
+    tourtitle:
+      "Grand Bargain Tour Of Europe With Versailles And Montmartre (Summer 2024)",
+    metatitle:
+      "Grand Bargain Tour Of Europe With Versailles And Montmartre Tour Package From Kolkata | Travlio (Thomas Cook Kolkata)",
+    metadescription:
+      "Explore the Grand Bargain Tour Of Europe With Versailles And Montmartre (Summer 2024) package with Travlio (Thomas Cook Kolkata). Book your unforgettable journey today and experience the best destinations and activities.",
+  },
+  {
+    tourtitle: "Grand Bargain Tour Of Europe With Disneyland (Summer 2024)",
+    metatitle:
+      "Grand Bargain Tour Of Europe With Disneyland Tour Package From Kolkata | Travlio (Thomas Cook Kolkata)",
+    metadescription:
+      "Explore the Grand Bargain Tour Of Europe With Disneyland (Summer 2024) package with Travlio (Thomas Cook Kolkata). Book your unforgettable journey today and experience the best destinations and activities.",
+  },
+  {
+    tourtitle: "Best Of East and West Europe (Summer 2024)",
+    metatitle:
+      "Best Of East and West Europe Tour Package From Kolkata | Travlio (Thomas Cook Kolkata)",
+    metadescription:
+      "Explore the Best Of East and West Europe (Summer 2024) package with Travlio (Thomas Cook Kolkata). Book your unforgettable journey today and experience the best destinations and activities.",
+  },
+  {
+    tourtitle: "Sensational Europe (Summer 2024)",
+    metatitle:
+      "Sensational Europe Tour Package From Kolkata | Travlio (Thomas Cook Kolkata)",
+    metadescription:
+      "Explore the Sensational Europe (Summer 2024) package with Travlio (Thomas Cook Kolkata). Book your unforgettable journey today and experience the best destinations and activities.",
+  },
+  {
+    tourtitle: "Highlights of Europe (Summer 2024)",
+    metatitle:
+      "Highlights of Europe Tour Package From Kolkata | Travlio (Thomas Cook Kolkata)",
+    metadescription:
+      "Explore the Highlights of Europe (Summer 2024) package with Travlio (Thomas Cook Kolkata). Book your unforgettable journey today and experience the best destinations and activities.",
+  },
+  {
+    tourtitle: "Apna Punjab With Himachal – Private Tour",
+    metatitle:
+      "Apna Punjab With Himachal – Private Tour Tour Package From Kolkata | Travlio (Thomas Cook Kolkata)",
+    metadescription:
+      "Explore the Apna Punjab With Himachal – Private Tour package with Travlio (Thomas Cook Kolkata). Book your unforgettable journey today and experience the best destinations and activities.",
+  },
+  {
+    tourtitle: "Customizable Himachal (Shimla – Manali – Chandigarh)",
+    metatitle:
+      "Customizable Himachal (Shimla – Manali – Chandigarh) Tour Package From Kolkata | Travlio (Thomas Cook Kolkata)",
+    metadescription:
+      "Explore the Customizable Himachal (Shimla – Manali – Chandigarh) package with Travlio (Thomas Cook Kolkata). Book your unforgettable journey today and experience the best destinations and activities.",
+  },
+  {
+    tourtitle: "Nubra Valley Trails with Leh and Pangong",
+    metatitle:
+      "Nubra Valley Trails with Leh and Pangong Tour Package From Kolkata | Travlio (Thomas Cook Kolkata)",
+    metadescription:
+      "Explore the Nubra Valley Trails with Leh and Pangong package with Travlio (Thomas Cook Kolkata). Book your unforgettable journey today and experience the best destinations and activities.",
+  },
+  {
+    tourtitle: "Marvellous Ladakh with Turtuk",
+    metatitle:
+      "Marvellous Ladakh with Turtuk Tour Package From Kolkata | Travlio (Thomas Cook Kolkata)",
+    metadescription:
+      "Explore the Marvellous Ladakh with Turtuk package with Travlio (Thomas Cook Kolkata). Book your unforgettable journey today and experience the best destinations and activities.",
+  },
+  {
+    tourtitle: "Classic Ladakh",
+    metatitle:
+      "Classic Ladakh Tour Package From Kolkata | Travlio (Thomas Cook Kolkata)",
+    metadescription:
+      "Explore the Classic Ladakh package with Travlio (Thomas Cook Kolkata). Book your unforgettable journey today and experience the best destinations and activities.",
+  },
+  {
+    tourtitle: "Marvellous Ladakh",
+    metatitle:
+      "Marvellous Ladakh Tour Package From Kolkata | Travlio (Thomas Cook Kolkata)",
+    metadescription:
+      "Explore the Marvellous Ladakh package with Travlio (Thomas Cook Kolkata). Book your unforgettable journey today and experience the best destinations and activities.",
+  },
+  {
+    tourtitle: "Leh Ladakh With Hanle And Umlingla Pass",
+    metatitle:
+      "Leh Ladakh With Hanle And Umlingla Pass Tour Package From Kolkata | Travlio (Thomas Cook Kolkata)",
+    metadescription:
+      "Explore the Leh Ladakh With Hanle And Umlingla Pass package with Travlio (Thomas Cook Kolkata). Book your unforgettable journey today and experience the best destinations and activities.",
+  },
+  {
+    tourtitle: "Exotic Kashmir with Gulmarg – Durga Puja Special",
+    metatitle:
+      "Exotic Kashmir with Gulmarg – Durga Puja Special Tour Package From Kolkata | Travlio (Thomas Cook Kolkata)",
+    metadescription:
+      "Explore the Exotic Kashmir with Gulmarg – Durga Puja Special package with Travlio (Thomas Cook Kolkata). Book your unforgettable journey today and experience the best destinations and activities.",
+  },
+  {
+    tourtitle: "Exotic Kashmir with Sonmarg – Durga Puja Special",
+    metatitle:
+      "Exotic Kashmir with Sonmarg – Durga Puja Special Tour Package From Kolkata | Travlio (Thomas Cook Kolkata)",
+    metadescription:
+      "Explore the Exotic Kashmir with Sonmarg – Durga Puja Special package with Travlio (Thomas Cook Kolkata). Book your unforgettable journey today and experience the best destinations and activities.",
+  },
+  {
+    tourtitle:
+      "Honeymoon – Amazing Moments Kashmir with Sonmarg Excursion – Summer Special",
+    metatitle:
+      "Honeymoon – Amazing Moments Kashmir with Sonmarg Excursion – Summer Special Tour Package From Kolkata | Travlio (Thomas Cook Kolkata)",
+    metadescription:
+      "Explore the Honeymoon – Amazing Moments Kashmir with Sonmarg Excursion – Summer Special package with Travlio (Thomas Cook Kolkata). Book your unforgettable journey today and experience the best destinations and activities.",
+  },
+  {
+    tourtitle: "Honeymoon – Amazing Moments Kashmir with Sonmarg Excursion",
+    metatitle:
+      "Honeymoon – Amazing Moments Kashmir with Sonmarg Excursion Tour Package From Kolkata | Travlio (Thomas Cook Kolkata)",
+    metadescription:
+      "Explore the Honeymoon – Amazing Moments Kashmir with Sonmarg Excursion package with Travlio (Thomas Cook Kolkata). Book your unforgettable journey today and experience the best destinations and activities.",
+  },
+  {
+    tourtitle: "Customizable Kashmir Week",
+    metatitle:
+      "Customizable Kashmir Week Tour Package From Kolkata | Travlio (Thomas Cook Kolkata)",
+    metadescription:
+      "Explore the Customizable Kashmir Week package with Travlio (Thomas Cook Kolkata). Book your unforgettable journey today and experience the best destinations and activities.",
+  },
+  {
+    tourtitle: "Customizable Experience Kashmir With Sonmarg Excursion",
+    metatitle:
+      "Customizable Experience Kashmir With Sonmarg Excursion Tour Package From Kolkata | Travlio (Thomas Cook Kolkata)",
+    metadescription:
+      "Explore the Customizable Experience Kashmir With Sonmarg Excursion package with Travlio (Thomas Cook Kolkata). Book your unforgettable journey today and experience the best destinations and activities.",
+  },
+  {
+    tourtitle: "Heaven Kashmir with Sonmarg – Gulmarg Excursion",
+    metatitle:
+      "Heaven Kashmir with Sonmarg – Gulmarg Excursion Tour Package From Kolkata | Travlio (Thomas Cook Kolkata)",
+    metadescription:
+      "Explore the Heaven Kashmir with Sonmarg – Gulmarg Excursion package with Travlio (Thomas Cook Kolkata). Book your unforgettable journey today and experience the best destinations and activities.",
+  },
+  {
+    tourtitle:
+      "Customizable Kashmir-Wow Kashmir With Gulmarg And Sonmarg Excursion",
+    metatitle:
+      "Customizable Kashmir-Wow Kashmir With Gulmarg And Sonmarg Excursion Tour Package From Kolkata | Travlio (Thomas Cook Kolkata)",
+    metadescription:
+      "Explore the Customizable Kashmir-Wow Kashmir With Gulmarg And Sonmarg Excursion package with Travlio (Thomas Cook Kolkata). Book your unforgettable journey today and experience the best destinations and activities.",
   },
 ];
 
