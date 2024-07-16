@@ -1,13 +1,8 @@
 import Image from "next/image";
 import React from "react";
-import { BASE_URL, GLOBAL_X_PADDING } from "../constant";
-import PageIntroBanner from "../components/PageIntroBanner";
+import { BASE_URL } from "../constant";
 import { IoMdAirplane } from "react-icons/io";
 import AboutServiceItem from "./AboutServiceItem";
-import { MdAirportShuttle } from "react-icons/md";
-import { SiAirbyte } from "react-icons/si";
-import { SiBoost } from "react-icons/si";
-import { VscDebugBreakpointLog } from "react-icons/vsc";
 import ContactMenuBtn from "../components/ContactMenuBtn";
 import { FaRegAddressCard } from "react-icons/fa";
 import { MdSupportAgent } from "react-icons/md";
@@ -15,9 +10,9 @@ import { MdOutlineEmojiTransportation } from "react-icons/md";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "About Us | Travlio",
+  title: "Leading International Travel Agent in Kolkata - Travlio (Thomas Cook Kolkata)",
   description:
-    "Travlio is an authorized gold partner of Thomas Cook India. Learn more about us, our services, and our top destinations.",
+    "Travlio (Thomas Cook Kolkata) - International travel agent in Kolkata offering unparalleled travel experiences.",
   alternates: {
     canonical: BASE_URL + "/about-us",
   },

@@ -6,9 +6,9 @@ import ContactPageForm from "./ContactPageForm";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Contact Us | Travlio (Thomas Cook Kolkata)",
+  title: "Find Exclusive Foreign Tour Packages with Travlio (Thomas Cook Kolkata)",
   description:
-    "Contact us for booking your international or domestic packages from Kolkata. Also, get the office addresses of Travlio (Thomas Cook) for visiting us.",
+    "Plan your next adventure with travlio (Thomas Cook Kolkata) Travel Agency's foreign and international tour packages from Kolkata. Contact us for expert travel guidance and bookings.",
   alternates: {
     canonical: BASE_URL + "/contact-us",
   },

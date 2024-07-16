@@ -2,6 +2,17 @@ import React from "react";
 import { GLOBAL_X_PADDING } from "../constant";
 import PageIntroBanner from "../components/PageIntroBanner";
 import GalleryImageItem from "./GalleryImageItem";
+import { Metadata } from "next";
+
+
+export const metadata: Metadata = {
+  title: "Explore Top International Travel Agents in Kolkata-Travlio (Thomas Cook Kolkata)",
+  description:
+    "Plan your next adventure with Travlio (Thomas Cook Kolkata), the leading international travel agency in Kolkata.",
+  alternates: {
+    canonical: "/gallery",
+  },
+};
 
 function page() {
   const galleryImg = [

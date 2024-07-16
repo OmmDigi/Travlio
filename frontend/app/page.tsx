@@ -10,9 +10,9 @@ import Blogs from "./components/blogs/Blogs";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Travel Agency in Kolkata | Travlio (Thomas Cook)",
+  title: "Best International Travel Agency in Kolkata | Travlio (Thomas Cook Kolkata)",
   description:
-    "Travlio is your go-to travel agent for international and domestic trips from Kolkata. Book now for expert assistance, exclusive deals, and forex card!",
+    "Looking for the best International travel agency in Kolkata? Look no further than Travlio (Thomas Cook Kolkata)",
   alternates: {
     canonical: "/",
   },
