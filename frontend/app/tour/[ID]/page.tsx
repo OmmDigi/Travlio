@@ -35,9 +35,9 @@ async function page({ params }: { params: { ID: string } }) {
         ></meta>
         <link rel="canonical" href={`/tour/${params.ID}`} />
 
-        <meta property="og:title" content="Exotic Bali Tour Package" />
+        <meta property="og:title" content={tourResult.TITLE} />
         <meta property="og:type" content="product" />
-        <meta property="og:url" content={`/tour/${params.ID}`} />
+        <meta property="og:url" content={`https://www.travlio.in/tour/${params.ID}`} />
         <meta property="og:image" content={tourResult.IMG} />
         <meta property="og:description" content={tour.title} />
         <meta property="og:site_name" content="Travlio (Thomas Cook)" />
