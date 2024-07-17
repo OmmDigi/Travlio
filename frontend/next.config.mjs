@@ -8,6 +8,21 @@ const nextConfig = {
         destination: "/blogs/best-international-tour-packages-from-kolkata",
         permanent: true,
       },
+      {
+        source: "/tour-packages/domestic-tour",
+        destination: "/tours?tour-type=Domestic+Tour",
+        permanent: true,
+      },
+      {
+        source: "/tour-packages/international-tour",
+        destination: "/tours?tour-type=International+Tour",
+        permanent: true,
+      },
+      {
+        source: "/tour-packages/all",
+        destination: "/tours",
+        permanent: true,
+      },
     ];
   },
   images: {
