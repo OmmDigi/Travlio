@@ -1,7 +1,7 @@
 export const GLOBAL_X_PADDING = "px-24 sm:px-3";
 
 export let BASE_URL = "https://travlio.in";
-export let API_BASE_URL = "https://travliobackend.vercel.app";
+export let API_BASE_URL = "https://travlio.vercel.app";
 
 export const SEND_EMAIL_API = `${API_BASE_URL}/sendemail`;
 
@@ -13,7 +13,7 @@ export const SEND_EMAIL_API = `${API_BASE_URL}/sendemail`;
 // } else {
 //   // do something
 //   BASE_URL = "https://travlio.in";
-//   API_BASE_URL = "https://travliobackend.vercel.app";
+//   API_BASE_URL = "https://travlio.vercel.app";
 // }
 
 export const MOBILE_VIEW_WIDTH = 639;
