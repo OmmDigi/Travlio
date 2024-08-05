@@ -317,6 +317,16 @@ export const BLOGS_LIST_DATA = [
     description:
       "Are you yearning to explore the world, discover new cultures, and create memories that last a lifetime? Look no further than Travlio, the best international tour operator in Kolkata.",
   },
+  {
+    id: "30",
+    title: "Discover the Best Cheap International Destinations from Kolkata with Travlio!",
+    date: "5th Aug, 2024",
+    author: "Admin",
+    img: "/blogs/blog30.webp",
+    link: "/blogs/discover-the-best-cheap-international-destinations-from-kolkata-with-travlio",
+    description:
+      "Hello, fellow travel enthusiasts! Are you sitting in Kolkata, dreaming of a getaway that won’t drain your bank account?",
+  },
 ];
 
 export const TOURS_META_INFO = [
