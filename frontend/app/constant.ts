@@ -327,6 +327,16 @@ export const BLOGS_LIST_DATA = [
     description:
       "Hello, fellow travel enthusiasts! Are you sitting in Kolkata, dreaming of a getaway that won’t drain your bank account?",
   },
+  {
+    id: "31",
+    title: "Discover Your Perfect Foreign Tour Package from Kolkata with Travlio",
+    date: "8th Aug, 2024",
+    author: "Admin",
+    img: "/blogs/blog31.webp",
+    link: "/blogs/discover-your-perfect-foreign-tour-package-from-kolkata-with-travlio",
+    description:
+      "Are you dreaming of exploring new horizons? Travlio, your trusted international travel agent based in Kolkata, is here to make those dreams come true with our exclusive foreign tour packages. Whether you’re craving a peaceful getaway",
+  },
 ];
 
 export const TOURS_META_INFO = [
